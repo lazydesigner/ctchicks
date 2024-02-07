@@ -14,7 +14,7 @@ $phone_number = '+917388211116';
 
 
 $noindex = '<meta name="robots" content="noindex, nofollow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
-    <link rel="icon" href="'.$cdn_url.'favicon.png" type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" href="'.$cdn_url.'favicon.png" />
     ';
 $page_css = ' 
 <link rel="stylesheet" href="'.get_url().'assets/css/navbar.css">

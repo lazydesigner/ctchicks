@@ -3,10 +3,11 @@
 }
 
 :root {
-    --primary: #022F52;
+    --primary: #0075DA;
+    /* --primary: #022F52; */
     --secondary: #A3B4C7;
     --secondaryC:rgb(223, 229, 235);
-    --link: #022F52;
+    --link: #0019da;
 }
 
 html,
@@ -174,14 +175,14 @@ footer {
     width: 100%;
     height: auto;
     padding: 2% 0;
-    background-color: var(--primary);
-    color: white;
+    background-color: var(--secondary);
+    color: rgb(25, 25, 25);
 }
 .footer-container{
     width: 75%;
     margin: auto;
 }
-.footer-container p{padding: 0;margin: 0;font-size: 1.2rem;}
+.footer-container p{padding: 0;margin: 0;font-size: 1.2rem;font-weight: bold;}
 .footer-container ul{
     list-style: none;
     display: flex;
@@ -192,7 +193,7 @@ footer {
 .footer-container ul li{
     margin: 0;
     padding:0 2%;
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(28, 28, 28);
 }
 .footer-container ul li:last-child{border: 0;}
 
