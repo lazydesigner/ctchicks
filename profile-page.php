@@ -57,7 +57,7 @@ if (mysqli_num_rows($result) > 0) {
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?= $row['page_title'] ?>" />
     <meta property="og:description" content="<?= $row['meta_description'] ?>" />
-    <meta property="og:url" content="https://ctchicks.com/<?= $cat . '/' . $_GET['cities'] . '/' . $_GET['areas'] . '/' . $id . '/' ?>" />
+    <meta property="og:url" content="https://ctchicks.com/<?= $cat . '/' . $_GET['city'] . '/' . $_GET['area'] . '/' . $id . '/' ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="<?= $row['page_title'] ?>" />
@@ -311,7 +311,7 @@ if (mysqli_num_rows($result) > 0) {
                                 $cat_2 = json_decode($row['cat_'],true);
                                     $cat = '';
                                 foreach($cat_2 as $i1 => $cats){
-                                    if($i1 == count($cat_2)){
+                                    if($i1 == (count($cat_2)-1)){
                                         $cat .= $cats;
                                     }else{
                                         $cat .= $cats.', ';
@@ -330,7 +330,7 @@ if (mysqli_num_rows($result) > 0) {
                                 $body = json_decode($row['profile_body_shape'],true);
                                     $fig = '';
                                 foreach($body as $i1 => $shape){
-                                    if($i1 == count($body)){
+                                    if($i1 == (count($body)-1)){
                                         $fig .= $shape;
                                     }else{
                                         $fig .= $shape.'-';
