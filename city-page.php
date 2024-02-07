@@ -21,6 +21,7 @@ foreach($c as $i=>$ct){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?=$noindex ?>
     <title>The Best Escort Services In India | CtChicks</title>
     <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, CtChicks is one of the top escort platforms that can provide you with many call girls." />
     <link rel="canonical" href="https://ctchicks.com/" />

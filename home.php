@@ -1,10 +1,20 @@
 <?php include './inc.php' ?>
+
+<?php
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?=$noindex ?>
     <title>The Best Escort Services In India | CtChicks</title>
     <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, CtChicks is one of the top escort platforms that can provide you with many call girls." />
     <link rel="canonical" href="https://ctchicks.com/" />
@@ -29,9 +39,25 @@
     </div>
 
     <div class="container">
+    <strong>Indian Call Girls(<?php $sql = "SELECT COUNT(*) as a FROM `profiles` WHERE `callgirl_escort` = 'call-girls';
+";
+                                    $res = mysqli_query($con, $sql);
+                                    $row = mysqli_fetch_array($res);
+                                    echo $row['a'] ?>)</strong>
+
+
 
     </div>
+    <div class="container">
+    <strong>Indian Escorts(<?php $sql = "SELECT COUNT(*) as a FROM `profiles` WHERE `callgirl_escort` = 'escort';
+";
+                                    $res = mysqli_query($con, $sql);
+                                    $row = mysqli_fetch_array($res);
+                                    echo $row['a'] ?>)</strong>
 
+
+
+    </div>
     <?php include './footer2.php' ?>
 
 </body>
