@@ -493,6 +493,11 @@ if (mysqli_num_rows($result) > 0) {
                 document.getElementById('image-preview-box').src = image_url;
             })
         }
+
+        document.getElementById('image-preview').addEventListener('click',()=>{
+            document.getElementById('image-preview').style.display = 'none'
+            document.getElementById('image-preview-box').src = '';
+        })
     </script>
 </body>
 
