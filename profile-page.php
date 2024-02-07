@@ -29,12 +29,11 @@ $profile_query = "SELECT * FROM profiles WHERE identity_cat = '$id'";
 
 $result = mysqli_query($con, $profile_query);
 
-if(mysqli_num_rows($result)>0){
+if (mysqli_num_rows($result) > 0) {
 
     $row = mysqli_fetch_assoc($result);
-
-}else{
-    die('No Profile Found');    
+} else {
+    die('No Profile Found');
 }
 
 
@@ -50,19 +49,19 @@ if(mysqli_num_rows($result)>0){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?=$row['page_title'] ?></title>
-    <meta name="description" content="<?=$row['meta_description'] ?>" />
+    <title><?= $row['page_title'] ?></title>
+    <meta name="description" content="<?= $row['meta_description'] ?>" />
     <link rel="canonical" href="https://ctchicks.com/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?=$row['page_title'] ?>" />
-    <meta property="og:description" content="<?=$row['meta_description'] ?>" />
-    <meta property="og:url" content="https://ctchicks.com/<?=$cat. '/'. $_GET['cities'].'/'.$_GET['areas']. '/'.$id.'/' ?>" />
+    <meta property="og:title" content="<?= $row['page_title'] ?>" />
+    <meta property="og:description" content="<?= $row['meta_description'] ?>" />
+    <meta property="og:url" content="https://ctchicks.com/<?= $cat . '/' . $_GET['cities'] . '/' . $_GET['areas'] . '/' . $id . '/' ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="<?=$row['page_title'] ?>" />
-    <meta name="twitter:description" content="<?=$row['meta_description'] ?>" />
+    <meta name="twitter:title" content="<?= $row['page_title'] ?>" />
+    <meta name="twitter:description" content="<?= $row['meta_description'] ?>" />
     <?= $page_css ?>
 
     <style>
@@ -222,19 +221,20 @@ if(mysqli_num_rows($result)>0){
             text-align: center;
         }
 
-        .image-preview{
+        .image-preview {
             width: 100%;
             height: 100%;
             position: fixed;
             inset: 0;
-            background-color: rgba(0,0,0,.7);
+            background-color: rgba(0, 0, 0, .7);
             z-index: 99;
             display: none;
             transition: .5s;
             place-items: center;
 
         }
-        .image-preview-box{
+
+        .image-preview-box {
             overflow: hidden;
             box-shadow: 0 0 20px #000;
             border: 1px solid white;
@@ -251,24 +251,25 @@ if(mysqli_num_rows($result)>0){
         <!--  -->
         <div class="profile-section">
             <div class="profile-section-col about-profile-section">
-                <h2>About <span style="text-transform:capitalize;"><?=$row['profile_name'] ?></span></h2>
-                <p><?=$row['content'] ?></p>
-                <p><i class="ri-radio-button-line"></i><span style="text-transform:capitalize;"><?=$row['cities'] ?></span>, India</p>
-                <p>Contact <?=$row['profile_name'] ?> to given number for more information. </p>
+                <h2>About <span style="text-transform:capitalize;"><?= $row['profile_name'] ?></span></h2>
+                <p><?= $row['content'] ?></p>
+                <p><i class="ri-radio-button-line"></i><span style="text-transform:capitalize;"><?= $row['cities'] ?></span>, India</p>
+                <p>Contact <?= $row['profile_name'] ?> to given number for more information. </p>
                 <button id="change-to-number">CONTACT</button>
 
                 <div class="profile-image-grid">
-                    
-                    <?php $a = json_decode($row['image_'], true); $alt = json_decode($row['image_alt_'], true);
-                            for ($j = 0; $j < count($a); $j++) { 
-                            ?>
-                        <div class="profile-image-grid-col"><img src="https://cdn.ctchicks.com/profiles/<?= $a[$j] ?>" alt="<?=$alt[$j] ?>" width="100%" height="100%"></div>
-                    <?php  } 
+
+                    <?php $a = json_decode($row['image_'], true);
+                    $alt = json_decode($row['image_alt_'], true);
+                    for ($j = 0; $j < count($a); $j++) {
+                    ?>
+                        <div class="profile-image-grid-col"><img src="https://cdn.ctchicks.com/profiles/<?= $a[$j] ?>" alt="<?= $alt[$j] ?>" width="100%" height="100%"></div>
+                    <?php  }
                     ?>
                 </div>
             </div>
             <div class="profile-section-col profile-section-information">
-                <p>Information of <span style="text-transform:capitalize;"><?=$row['profile_name'] ?></span></p>
+                <p>Information of <span style="text-transform:capitalize;"><?= $row['profile_name'] ?></span></p>
                 <!-- Tab links -->
                 <div class="tab">
                     <button class="tablinks" onclick="openCity(event, 'General')" id="defaultOpen">General</button>
@@ -281,35 +282,49 @@ if(mysqli_num_rows($result)>0){
                     <table style="width: 100%; border-collapse: collapse;margin-top:2%">
                         <tr>
                             <td> Name:</td>
-                            <td><span style="text-transform:capitalize;"><?=$row['profile_name'] ?></span></td>
+                            <td><span style="text-transform:capitalize;"><?= $row['profile_name'] ?></span></td>
                         </tr>
                         <tr>
                             <td> Age:</td>
-                            <td><?=$row['profile_age'] ?></td>
+                            <td><?= $row['profile_age'] ?></td>
                         </tr>
                         <tr>
                             <td>Height:</td>
-                            <td><?=$row['profile_height'] ?></td>
+                            <td><?= $row['profile_height'] ?></td>
                         </tr>
                         <tr>
                             <td> Location:</td>
-                            <td><?=$area .', '.$city .', India' ?></td>
+                            <td><?= $area . ', ' . $city . ', India' ?></td>
                         </tr>
                         <tr>
                             <td> Language:</td>
-                            <td><?=$row['profile_language'] ?></td>
+                            <td><?= $row['profile_language'] ?></td>
                         </tr>
                         <tr>
                             <td> Nationality:</td>
-                            <td><?=$row['profile_nationality'] ?></td>
+                            <td><?= $row['profile_nationality'] ?></td>
                         </tr>
                         <tr>
                             <td> Profile Type:</td>
-                            <td style="text-transform:capitalize;"><?=$row['cat_'] ?></td>
+                            <td style="text-transform:capitalize;">
+                            <?php 
+                                $cat_2 = json_decode($row['cat_']);
+                                    $cat = '';
+                                foreach($cat_2 as $i => $cats){
+                                    if($i == count($cat_2)){
+                                        $cat = $cats;
+                                    }else{
+                                        $cat = $cats.', ';
+                                    }
+                                }
+                                ucwords($cat);
+
+                            ?>
+                            </td>
                         </tr>
                         <tr>
                             <td> Bust-Waist-Hip:</td>
-                            <td><?=$row['profile_body_shape'] ?></td>
+                            <td><?= $row['profile_body_shape'] ?></td>
                         </tr>
                     </table>
                 </div>
