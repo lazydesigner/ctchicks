@@ -310,14 +310,14 @@ if (mysqli_num_rows($result) > 0) {
                             <?php 
                                 $cat_2 = json_decode($row['cat_'],true);
                                     $cat = '';
-                                foreach($cat_2 as $i => $cats){
-                                    if($i == count($cat_2)){
-                                        $cat = $cats;
+                                foreach($cat_2 as $i1 => $cats){
+                                    if($i1 == count($cat_2)){
+                                        $cat .= $cats;
                                     }else{
-                                        $cat = $cats.', ';
+                                        $cat .= $cats.', ';
                                     }
                                 }
-                                ucwords($cat);
+                                echo ucwords($cat);
 
                             ?>
                             </td>
