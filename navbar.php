@@ -1,0 +1,110 @@
+
+<?php  
+
+$h1 = '';
+if(isset($city)){
+    $h1 = 'Elite '.ucwords($city).' Escorts With Genuine Photo And Phone Numbers'; 
+}else{
+    $h1 = "Find Elite Escorts In Your City";
+}
+if(isset($area)){
+    $h1 = 'Call girls in '.ucwords($city).' '.ucwords($area).' with WhatsApp number'; 
+}
+if(isset($profile)){
+    $h1 = 'Ready To Meet '.ucwords($city).' '.ucwords($area).' Call Girls With No Advance';
+}
+
+
+
+
+
+
+?>
+
+<header>
+        <nav>
+            <div class="main-ul">
+                <div class="brand"><a href="">CtChicks</a>
+                </div>
+                <ul class="nav-ul">
+                    <li><a href="<?= get_url() ?>">Home</a></li>
+                    <li><a href="<?= get_url() ?>">Contact Us</a></li>
+                    <li><a href="<?= get_url() ?>">Login</a></li>
+                    <li><a href="<?= get_url() ?>">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="post-btn">
+            <!-- <i class="ri-menu-line"></i> -->
+            <span class="search-girl" onclick="showSearch()"><i class="ri-search-2-line"></i></span>               
+            </div>
+        </nav>
+    </header>
+
+    <div class="container search-bar">
+        <form action="" method="get">
+            <div class="form-container">
+                <div class="form-box">
+                    <select name="category" id="category">
+                        <option value="call-girls">Call Girls</option>
+                        <option value="escorts">Escorts</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    <input type="text" autocomplete="off" placeholder="Select City" name="city" id="city">
+                </div>
+                <div class="form-box">
+                    <select name="locality" id="locality">
+                        <option value="">All Location</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    <select name="gender" id="gender">
+                        <option value="">All Gender</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    <select name="age" id="age">
+                        <option value="">Age Group (Any)</option>
+                        <option value="18-22">18 - 22 Years</option>
+                        <option value="27-30">27 - 30 Years</option>
+                        <option value="35">35+ Years</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    <select name="short" id="short">
+                        <option value="">Short By</option>
+                        <option value="new-first">New First</option>
+                        <option value="old-first">Old First</option>
+                        <option value="most-viewed">Most Viewed</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="page-detail-and-information">
+        <div id="breadcrumbs">
+            <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Ctchicks" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1">
+                </li>
+
+                <?php if(isset($city)){ ?>
+                    <li class="crumb"><b><i class="ri-arrow-right-s-line"></i></b></li>
+                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Ctchicks" class="crumb" href="<?= get_url().$cat.'/'.$city.'/' ?>"><span itemprop="name"><?=ucwords($city) ?></span></a>
+                    <meta itemprop="position" content="2">
+                </li>
+                <?php } ?>
+                <?php if(isset($area)){ ?>
+                    <li class="crumb"><b><i class="ri-arrow-right-s-line"></i></b></li>
+                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Ctchicks" class="crumb" href="<?= get_url().$cat.'/'.$city.'/'.$area.'/' ?>"><span itemprop="name"><?=ucwords($area) ?></span></a>
+                    <meta itemprop="position" content="3">
+                </li>
+                <?php } ?>
+            </ol>
+        </div>
+        <h1 style="font-size: 1.2rem;font-weight: 500;margin:0"><?=$h1 ?></h1>
+    </div>
