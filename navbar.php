@@ -10,6 +10,7 @@ if(isset($city)){
 if(isset($area)){
     $h1 = 'Call girls in '.ucwords($city).' '.ucwords($area).' with WhatsApp number'; 
 }
+
 if(isset($profile)){
     $h1 = 'Ready To Meet '.ucwords($city).' '.ucwords($area).' Call Girls With No Advance';
 }
@@ -106,5 +107,5 @@ if(isset($profile)){
                 <?php } ?>
             </ol>
         </div>
-        <h1 style="font-size: 1.2rem;font-weight: 500;margin:0"><?=$h1 ?></h1>
+        <h1 style="font-size: 1.2rem;font-weight: 500;margin:0"> <?php if(empty($row['page_h1'])){echo $h1 ;}else{echo $row['page_h1'] ;} ?></h1>
     </div>
