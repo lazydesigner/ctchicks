@@ -324,7 +324,21 @@ if (mysqli_num_rows($result) > 0) {
                         </tr>
                         <tr>
                             <td> Bust-Waist-Hip:</td>
-                            <td><?= $row['profile_body_shape'] ?></td>
+                            <td>
+                                
+                            <?php 
+                                $body = json_decode($row['profile_body_shape'],true);
+                                    $fig = '';
+                                foreach($body as $i1 => $shape){
+                                    if($i1 == count($body)){
+                                        $fig .= $shape;
+                                    }else{
+                                        $fig .= $shape.'-';
+                                    }
+                                }
+                                echo $fig;
+
+                            ?></td>
                         </tr>
                     </table>
                 </div>
