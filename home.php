@@ -76,7 +76,7 @@ if (!$city_result) {
             while ($c_row = mysqli_fetch_assoc($city_result)) {
                 $city_in_lower = strtolower($c_row['city_name']);
             ?>
-                <div><a href="<?= get_url() ?>call-girls/"><?= ucwords($c_row['city_name']) ?>(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = '$city_in_lower'";
+                <div><a href="<?= get_url() ?>call-girls/<?=$city_in_lower ?>/"><?= ucwords($c_row['city_name']) ?>(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = '$city_in_lower'";
                                                                                                 $res = mysqli_query($con, $sql);
                                                                                                 $row = mysqli_fetch_array($res);
                                                                                                 echo $row['a'] ?>)</a></div>
@@ -100,7 +100,7 @@ if (!$city_result) {
             while ($e_row = mysqli_fetch_assoc($city_result2)) {
                 $city_in_lower2 = strtolower($e_row['city_name']);
             ?>
-                <div><a href="<?= get_url() ?>escorts/"><?= ucwords($e_row['city_name']) ?>(<?php $sqle = "SELECT COUNT(*) as aa FROM profiles WHERE callgirl_escort = 'escorts' && cities = '$city_in_lower2'";
+                <div><a href="<?= get_url() ?>escorts/<?=$city_in_lower2 ?>/"><?= ucwords($e_row['city_name']) ?>(<?php $sqle = "SELECT COUNT(*) as aa FROM profiles WHERE callgirl_escort = 'escorts' && cities = '$city_in_lower2'";
                                                                                             $rese = mysqli_query($con, $sqle);
                                                                                             $rowe = mysqli_fetch_array($rese);
                                                                                             echo $rowe['aa'] ?>)</a></div>
@@ -112,22 +112,23 @@ if (!$city_result) {
     </div>
 
     <div class="container">
-    
- 
- <p>Ctchicks is a destination for the top-rated call girls in India. It is the most recommended Indian escort directory. Thousands of independent call girls post advertisements about their services, interests, photos, etc. Our platform caters to VIP escorts, divorced females, newly married ladies, college call girls, Russian escorts, etc. Our Ctchicks web portal caters to the most genuine and trusted escort service providers or independent call girls with their phone numbers.</p>
-  
- <h1>Girls for friendship or dating near me</h1>
-  
-            </p>You can easily find girls near you on Ctchicks.com. You can easily find not only straight girls but also male escorts, shemales, lesbians, and other LGBTQA+ communities. Recently, we have collaborated with the most trusted and famous escort agencies in India and published almost 1200 new profiles to cater to genuine service. Nowadays, it's quite difficult to find genuine girls for dating as most of the dating apps are fake to earn money on the name of subscriptions. We don’t charge any subscription fees to our visitors. Yes, girls may ask for money, but we are not responsible for any transactions between clients and girls. So please make sure that you contact only verified profiles or numbers on our platform. Otherwise, avoid any advance payment.</p>
-  
- <h2>Why trust only Ctchicks.com for adult entertainment?</h2>
 
- <p>As this industry gets more vulnerable day by day. As we used to get news regarding frauds by pimps, brokers, or sometimes independent models, They used to take advance money and never provide any service. Girls used to leave a room or place immediately after taking payment, and clients left with disappointment and loss. To tackle such trust issues in major cities like Jaipur, Lucknow, Goa, etc., we introduce safety features on our website.</p>
-  
- <p>Our platform used to put the mobile numbers of our trusted and genuine brokers from any specific city apart from their profiles. Get in touch with a trusted person for your private needs and desires. We don’t have any connection with any illegal businesses, as we are just an advertising platform. But we used to serve our visitors with some genuine links. So we request that our visitors connect with brokers or independent models whose numbers are specifically listed on our website. So we make sure that any cutting or monetary fraud will not happen to you. If you have any payment or fraud-related issues, you can contact us at our email address with payment history proof. We make sure that we get a 100% refund in such cases. But we also suggest that our online visitors avoid any advance payment before any physical meeting. Otherwise, you can contact our verified profiles or numbers with full trust.</p>
- <h3>Seeking Genuine Call girls in your room despite visiting any red light area.</h3>
-  
- <p>We all know that visiting any red light area or brothel may be risky. Despite putting yourself in any kind of danger, You can take erotic genuine service from the Ctchicks classified platform. On the other hand, if any independent model needs to post any classified ad without any hassle to get genuine clients, then Ctchicks will be your first choice. Girls can post ads as per their city with all the details without any fees. We don’t charge a single penny to post an ad. But we recommend using genuine photos and other details. We are here to profile a trustworthy intimate partner in any corner of India and other serving countries. So get ready to get a real bang with naughty models in your city within your budget.</p>
+
+        <p><a href="https://ctchicks.com/">Ctchicks</a> is a destination for the top-rated call girls in India. It is the most recommended Indian escort directory. Thousands of independent call girls post advertisements about their services, interests, photos, etc. Our platform caters to VIP escorts, divorced females, newly married ladies, college call girls, Russian escorts, etc. Our Ctchicks web portal caters to the most genuine and trusted escort service providers or independent call girls with their phone numbers.</p>
+
+        <h1>Girls for friendship or dating near me</h1>
+
+        </p>You can easily find girls near you on <a href="https://ctchicks.com/">Ctchicks.com</a>. You can easily find not only straight girls but also male escorts, shemales, lesbians, and other LGBTQA+ communities. Recently, we have collaborated with the most trusted and famous escort agencies in India and published almost 1200 new profiles to cater to genuine service. Nowadays, it's quite difficult to find genuine girls for dating as most of the dating apps are fake to earn money on the name of subscriptions. We don’t charge any subscription fees to our visitors. Yes, girls may ask for money, but we are not responsible for any transactions between clients and girls. So please make sure that you contact only verified profiles or numbers on our platform. Otherwise, avoid any advance payment.</p>
+
+        <h2>Why trust only Ctchicks.com for adult entertainment?</h2>
+
+        <p>As this industry gets more vulnerable day by day. As we used to get news regarding frauds by pimps, brokers, or sometimes independent models, They used to take advance money and never provide any service. Girls used to leave a room or place immediately after taking payment, and clients left with disappointment and loss. To tackle such trust issues in major cities like Jaipur, Lucknow, Goa, etc., we introduce safety features on our website.</p>
+
+        <p>Our platform used to put the mobile numbers of our trusted and genuine brokers from any specific city apart from their profiles. Get in touch with a trusted person for your private needs and desires. We don’t have any connection with any illegal businesses, as we are just an advertising platform. But we used to serve our visitors with some genuine links. So we request that our visitors connect with brokers or independent models whose numbers are specifically listed on our website. So we make sure that any cutting or monetary fraud will not happen to you. If you have any payment or fraud-related issues, you can contact us at our email address with payment history proof. We make sure that we get a 100% refund in such cases. But we also suggest that our online visitors avoid any advance payment before any physical meeting. Otherwise, you can contact our verified profiles or numbers with full trust.</p>
+
+        <h3>Seeking Genuine Call girls in your room despite visiting any red light area.</h3>
+
+        <p>We all know that visiting any red light area or brothel may be risky. Despite putting yourself in any kind of danger, You can take erotic genuine service from the Ctchicks classified platform. On the other hand, if any independent model needs to post any classified ad without any hassle to get genuine clients, then Ctchicks will be your first choice. Girls can post ads as per their city with all the details without any fees. We don’t charge a single penny to post an ad. But we recommend using genuine photos and other details. We are here to profile a trustworthy intimate partner in any corner of India and other serving countries. So get ready to get a real bang with naughty models in your city within your budget.</p>
     </div>
 
 
