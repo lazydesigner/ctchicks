@@ -308,7 +308,7 @@ if (mysqli_num_rows($result) > 0) {
                             <td> Profile Type:</td>
                             <td style="text-transform:capitalize;">
                             <?php 
-                                $cat_2 = json_decode($row['cat_']);
+                                $cat_2 = json_decode($row['cat_'],true);
                                     $cat = '';
                                 foreach($cat_2 as $i => $cats){
                                     if($i == count($cat_2)){
