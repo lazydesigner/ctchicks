@@ -51,7 +51,7 @@ if(isset($profile)){
                     </select>
                 </div>
                 <div class="form-box">
-                    <input type="text" autocomplete="off" placeholder="Select City" name="city" id="city">
+                    <input type="text" autocomplete="off" placeholder="Select City" value="<?php if(isset($_GET['city'])){echo ucwords(trim($city));} ?>" name="city" id="city">
                 </div>
                 <div class="form-box">
                     <select name="locality" id="locality">

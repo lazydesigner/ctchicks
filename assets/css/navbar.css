@@ -269,10 +269,13 @@ footer {
 
     .search-bar {
         width: 95%;
-        margin-top: 35px;
+        margin-top: 20px;
         overflow: hidden;
         height: 0;
         transition: .25s;
+    }
+    .form-container{
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
     }
 
     .search-bar-show {
@@ -288,6 +291,9 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    .form-container{
+        grid-template-columns: repeat(1, minmax(100%, 1fr));
+    }
   
 }
 
@@ -306,3 +312,4 @@ footer {
 #search-for-cities-in-row {
     margin: 1% 0;
 }
+

@@ -53,6 +53,12 @@ if (!$city_result) {
         .list-of-cities>div {
             margin: 3% 0;
         }
+        
+        @media screen and (max-width:500px) {
+            .list-of-cities{
+                grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+            }
+        }
     </style>
 </head>
 
@@ -76,10 +82,10 @@ if (!$city_result) {
             while ($c_row = mysqli_fetch_assoc($city_result)) {
                 $city_in_lower = strtolower($c_row['city_name']);
             ?>
-                <div><a href="<?= get_url() ?>call-girls/<?=$city_in_lower ?>/"><?= ucwords($c_row['city_name']) ?>(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = '$city_in_lower'";
-                                                                                                $res = mysqli_query($con, $sql);
-                                                                                                $row = mysqli_fetch_array($res);
-                                                                                                echo $row['a'] ?>)</a></div>
+                <div><a href="<?= get_url() ?>call-girls/<?= $city_in_lower ?>/"><?= ucwords($c_row['city_name']) ?>(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = '$city_in_lower'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</a></div>
             <?php } ?>
 
         </div>
@@ -100,10 +106,10 @@ if (!$city_result) {
             while ($e_row = mysqli_fetch_assoc($city_result2)) {
                 $city_in_lower2 = strtolower($e_row['city_name']);
             ?>
-                <div><a href="<?= get_url() ?>escorts/<?=$city_in_lower2 ?>/"><?= ucwords($e_row['city_name']) ?>(<?php $sqle = "SELECT COUNT(*) as aa FROM profiles WHERE callgirl_escort = 'escorts' && cities = '$city_in_lower2'";
-                                                                                            $rese = mysqli_query($con, $sqle);
-                                                                                            $rowe = mysqli_fetch_array($rese);
-                                                                                            echo $rowe['aa'] ?>)</a></div>
+                <div><a href="<?= get_url() ?>escorts/<?= $city_in_lower2 ?>/"><?= ucwords($e_row['city_name']) ?>(<?php $sqle = "SELECT COUNT(*) as aa FROM profiles WHERE callgirl_escort = 'escorts' && cities = '$city_in_lower2'";
+                                                                                                                    $rese = mysqli_query($con, $sqle);
+                                                                                                                    $rowe = mysqli_fetch_array($rese);
+                                                                                                                    echo $rowe['aa'] ?>)</a></div>
             <?php } ?>
 
         </div>
@@ -112,8 +118,6 @@ if (!$city_result) {
     </div>
 
     <div class="container">
-
-
         <p><a href="https://ctchicks.com/">Ctchicks</a> is a destination for the top-rated call girls in India. It is the most recommended Indian escort directory. Thousands of independent call girls post advertisements about their services, interests, photos, etc. Our platform caters to VIP escorts, divorced females, newly married ladies, college call girls, Russian escorts, etc. Our Ctchicks web portal caters to the most genuine and trusted escort service providers or independent call girls with their phone numbers.</p>
 
         <h1>Girls for friendship or dating near me</h1>
@@ -133,6 +137,23 @@ if (!$city_result) {
 
 
     <?php include './footer2.php' ?>
+
+    <script>
+        document.getElementById('search-for-cities-in-row').addEventListener('keyup', (e) => {
+            text_ = e.target.value.toLowerCase();
+            search_para = document.querySelectorAll('.list-of-cities')
+            for (i = 0; i < search_para.length; i++) {
+                for (j = 0; j < search_para[i].children.length; j++) {
+                    if(search_para[i].children[j].children[0].textContent.toLowerCase().includes(text_)){
+                        search_para[i].children[j].style.display='block'
+                    }else{
+                        search_para[i].children[j].style.display='none'
+                    }
+                }
+                
+            }
+        })
+    </script>
 
 </body>
 

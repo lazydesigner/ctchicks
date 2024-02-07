@@ -13,6 +13,23 @@ foreach($c as $i=>$ct){
         $city .= strtolower(trim($ct)).' ';
     }
 }
+$looking_for_city = "SELECT * FROM city WHERE city_name = '{$_GET['city']}'";
+$looking_for_city_result = mysqli_query($con, $looking_for_city);
+if(!mysqli_num_rows($looking_for_city_result)) {
+    header("Location: https://ctchicks.com/404"); 
+} else {
+    $profile_query = "SELECT * FROM profiles WHERE  cities LIKE '%".$_GET['city']."%' AND callgirl_escort='".$cat."'";
+    $profile_query_result = mysqli_query($con, $profile_query);
+    if(mysqli_num_rows( $profile_query_result ) < 1) {}
+}
+
+
+
+
+
+
+
+
 
 ?>
 <!DOCTYPE html>
@@ -35,13 +52,144 @@ foreach($c as $i=>$ct){
     <meta name="twitter:title" content="The Best Escort Services In India | CtChicks" />
     <meta name="twitter:description" content="If you are looking for a call girl who can give you a satisfying service, CtChicks is one of the top escort platforms that can provide you with many call girls." />
     <?= $page_css ?>
+    <style>
+        .just-two-line{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            /* start showing ellipsis when 3rd line is reached */
+            white-space: pre-wrap;
+            /* let the text wrap preserving spaces */
+        }
+        /* City CSS */
+.long-profile{
+    width: 100%;
+    height: 160px;
+    border: 2px solid rgb(173, 173, 173);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1% 0;
+}
+.long-profile-image{
+    width: 160px;
+    height: 100%;
+    background-color: rgb(233, 233, 233);
+    position: relative;
+}
+.long-profile-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+.image-count{
+    width: 40px;
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    bottom: 1%;
+    left: 1%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.628);
+}
+.favourite{
+    width: 30px;
+    color: white;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+.long-profile-detail{
+    width: calc(100% - 160px);
+    height: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.long-profile-detail h3{margin: 0;padding: 0;}
+.long-btn-action{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 2%;
+}
+.long-profile-detail p{padding: 0;margin:1% 0;}
+.long-btn-action button{
+    width: 100px;
+    height: 40px;
+    border: 0;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+.last-step h4{font-size: 1.4rem;}
+.top-cities-of-india{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+    gap: 3%;
+}
+.top-cities-of-india button{
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: var(--secondary);
+    border: 0;
+    margin:5% 1%;
+    cursor: pointer;
+    /* padding: 42%; */
+}
+/* City CSS */
+    </style>
 </head>
 
 <body>
 
     <?php include './navbar.php' ?>
 
-    <div class="container">
+    <div class="container" style="border: 0;padding:0;background:transparent">
+
+
+    <?php 
+    while($row = mysqli_fetch_assoc($profile_query_result)){  
+    
+        $image_count = json_decode($row['image_'],true);
+        
+        $create_url = 'https://ctchicks.com/'.$row['callgirl_escort'].'/'.$row['cities'].'/';
+        if(strtolower($row['areas']) == 'all'){
+            $create_url.= $row['identity_cat'].'/';
+        }else{
+            $create_url.= $row['areas'].'/'.$row['identity_cat'].'/';
+        }
+
+    
+    ?>
+
+<div class="long-profile">
+        <div class="long-profile-image">           
+        <a href="<?=$create_url ?>"><img src="<?=$cdn_url ?>profiles/<?=$image_count[0]?>" alt="Call Girl Image" width="100%" loading="lazy" height="100%"/></a>
+            <span class="favourite" id="favourite"><?=$heart ?></span>
+            <span class="image-count"><?=$camera ?><?=count($image_count) ?></span>
+        </div>
+        <div class="long-profile-detail">
+            <a href="<?=$create_url ?>"><h3><?=$row['page_h1'] ?></h3></a>
+            <p class="just-two-line"><?=$row['content'] ?></p>
+            <div class="long-btn-action">
+            <a href="https://api.whatsapp.com/send?phone=910000000000&text=Hi%20Kiara,%20I%20want%20a%20service%20in%20Goa%20found%20you%20on%20Ctchicks"><button style="background-color: green;color:white">WhatsApp</button></a>
+            <a href="tel:+910000000000"><button style="background-color:#0075DA;color:white">Contact</button></a>
+            </div>
+        </div>
+    </div>
+
+    <?php } ?>
+
+
+
 
     </div>
 
@@ -77,6 +225,27 @@ foreach($c as $i=>$ct){
         <p>
             When hiring a Hooker in <?= ucwords($city) ?> for your deepest and darkest secrets, the cost of hiring an escort depends on the service and the period for which you want the escort. When you want a call girl for an hour there are more affordable options than hiring her for the whole night. They will charge less if you want to spend private time in your home or hotel or charge more if you want to go out to events or parties. To get the best female <a href="<?=get_url().$city.'/' ?>">call girls in <?= ucwords($city) ?></a>, it is important to discuss the services and specify what you want and need before booking your dream girl in <?= ucwords($city) ?>.
         </p>
+
+    </div>
+
+    <div class="container last-step">
+        <h4>Top Cities Of India</h4>
+        <div class="top-cities-of-india">
+            <a href="https://ctchicks/<?=$cat ?>/chennai/"><button>Chennai</button></a>
+            <a href="https://ctchicks/<?=$cat ?>/ahmedabad/"><button>Ahmedabad</button></a>
+            <a href="https://ctchicks/<?=$cat ?>/delhi/"><button>Delhi</button></a>
+            <a href="https://ctchicks/<?=$cat ?>/indore/"><button>Indore</button></a>
+            <a href="https://ctchicks/<?=$cat ?>/bangalore/"><button>Bangalore</button></a>
+            <a href="https://ctchicks/<?=$cat ?>/pune/"><button>Pune</button></a>
+            <a href="https://ctchicks/<?=$cat ?>/jaipur/"><button>Jaipur</button></a>
+            <a href="https://ctchicks/<?=$cat ?>/gurgaon/"><button>Gurgaon</button></a>
+            <a href="https://ctchicks/<?=$cat ?>/hyderabad/"><button>Hyderabad</button></a>
+            <a href="https://ctchicks/<?=$cat ?>/kochi/"><button>Kochi</button></a>
+        </div>
+        <h4>Areas Of <?=$city ?></h4>
+        <div class="top-cities-of-india"  id="areasOfCity"></div>
+            <a href="https://ctchicks/<?=$cat ?>/chennai/"><button>Chennai</button></a>
+        </div>
 
     </div>
 
