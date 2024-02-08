@@ -28,9 +28,8 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     if (mysqli_num_rows($profile_query_result) < 1) {
     }
 
-    // print_r(mysqli_fetch_assoc($profile_query_result));
+    print_r(mysqli_fetch_assoc($profile_query_result));
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
