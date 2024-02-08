@@ -76,7 +76,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         .long-profile-image img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
             object-position: top;
         }
 
