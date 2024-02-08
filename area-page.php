@@ -64,9 +64,6 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
             font-weight: 500;
-            /* start showing ellipsis when 3rd line is reached */
-            white-space: pre-wrap;
-            /* let the text wrap preserving spaces */
         }
 
         /* City CSS */
