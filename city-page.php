@@ -1,10 +1,5 @@
 <?php include './inc.php' ?>
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
 $cat = $uri[2];
@@ -23,7 +18,7 @@ $looking_for_city_result = mysqli_query($con, $looking_for_city);
 if (!mysqli_num_rows($looking_for_city_result)) {
     header("Location: https://ctchicks.com/404");
 } else {
-    $profile_query = "SELECT * FROM profiles WHERE  cities = '{$_GET['city']}'  AND callgirl_escort= ' $cat ' ";
+    $profile_query = "SELECT * FROM profiles WHERE  cities = '{$_GET['city']}'  AND callgirl_escort = '". trim($cat) ."' ";
     $profile_query_result = mysqli_query($con, $profile_query);
     if (mysqli_num_rows($profile_query_result) < 1) {
     }
