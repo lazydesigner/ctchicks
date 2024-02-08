@@ -2,7 +2,7 @@
 <?php
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
-$cat =  trim($uri[2]);
+$cat =  trim($uri[1]);
 $city = '';
 
 $c = explode('-', $_GET['city']);
@@ -24,8 +24,6 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     }
 
     print_r(mysqli_fetch_assoc($profile_query_result));
-    echo $profile_query;
-    echo $cat;
 }
 ?>
 <!DOCTYPE html>
