@@ -195,7 +195,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                     <a href="<?= $create_url ?>">
                         <h3><?= $row['page_h1'] ?></h3>
                     </a>
-                    <div class="just-two-line"><?= $row['content'] ?></div>
+                    <p class="just-two-line"><?= $row['meta_description'] ?></p>
                     <div class="long-btn-action">
                         <a href="https://api.whatsapp.com/send?phone=910000000000&text=Hi%20Kiara,%20I%20want%20a%20service%20in%20Goa%20found%20you%20on%20Ctchicks"><button style="background-color: green;color:white">WhatsApp</button></a>
                         <a href="tel:+910000000000"><button style="background-color:#0075DA;color:white">Contact</button></a>
