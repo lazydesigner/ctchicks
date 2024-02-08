@@ -2,7 +2,7 @@
 <?php
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
-$cat = $uri[2];
+$cat = trim($uri[1]);
 $city = '';
 $area = '';
 
@@ -20,6 +20,18 @@ foreach($a as $j=>$ar){
         $area .= strtolower(trim($ar));
     }else{
         $area .= strtolower(trim($ar)).' ';
+    }
+}
+
+
+$looking_for_city_area = "SELECT * FROM area WHERE area_city_name = '{$_GET['city']}' and area_name = '{$_GET['area']}'";
+$looking_for_city_area_result = mysqli_query($con, $looking_for_city_area);
+if (!mysqli_num_rows($looking_for_city_area_result)) {
+    header("Location: https://ctchicks.com/404");
+} else {
+    $profile_query = "SELECT * FROM profiles WHERE  cities = '{$_GET['city']}' AND areas = '{$_GET['area']}' AND callgirl_escort = '$cat' ";
+    $profile_query_result = mysqli_query($con, $profile_query);
+    if (mysqli_num_rows($profile_query_result) < 1) {
     }
 }
 
@@ -52,7 +64,54 @@ foreach($a as $j=>$ar){
     <?php include './navbar.php' ?>
 
     <div class="container">
+
     </div>
+
+
+    <div class="container" style="border: 0;padding:0;background:transparent">
+
+
+<?php
+while ($row = mysqli_fetch_assoc($profile_query_result)) {
+
+    $image_count = json_decode($row['image_'], true);
+
+    $create_url = 'https://ctchicks.com/' . $row['callgirl_escort'] . '/' . $row['cities'] . '/';
+    if (strtolower($row['areas']) == 'all') {
+        $create_url .= $row['identity_cat'] . '/';
+    } else {
+        $create_url .= $row['areas'] . '/' . $row['identity_cat'] . '/';
+    }
+
+
+?>
+
+    <div class="long-profile">
+        <div class="long-profile-image">
+            <a href="<?= $create_url ?>"><img src="<?= $cdn_url ?>profiles/<?= $image_count[0] ?>" alt="Call Girl Image" width="100%" loading="lazy" height="100%" /></a>
+            <span class="favourite" id="favourite"><?= $heart ?></span>
+            <span class="image-count"><?= $camera ?><?= count($image_count) ?></span>
+        </div>
+        <div class="long-profile-detail">
+            <a href="<?= $create_url ?>">
+                <h3><?= $row['page_h1'] ?></h3>
+            </a>
+            <div class="just-two-line">
+                <p><?= $row['content'] ?></p>
+            </div>
+            <div class="long-btn-action">
+                <a href="https://api.whatsapp.com/send?phone=910000000000&text=Hi%20Kiara,%20I%20want%20a%20service%20in%20Goa%20found%20you%20on%20Ctchicks"><button style="background-color: green;color:white">WhatsApp</button></a>
+                <a href="tel:+910000000000"><button style="background-color:#0075DA;color:white">Contact</button></a>
+            </div>
+        </div>
+    </div>
+
+<?php } ?>
+
+
+
+
+</div>
 
     <div class="container">
 
