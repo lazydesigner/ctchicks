@@ -22,8 +22,6 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     $profile_query_result = mysqli_query($con, $profile_query);
     if (mysqli_num_rows($profile_query_result) < 1) {
     }
-
-    print_r(mysqli_fetch_assoc($profile_query_result));
 }
 ?>
 <!DOCTYPE html>
@@ -52,6 +50,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
+            font-weight: 500;
             /* start showing ellipsis when 3rd line is reached */
             white-space: pre-wrap;
             /* let the text wrap preserving spaces */
