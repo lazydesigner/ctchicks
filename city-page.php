@@ -196,7 +196,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                         <h3><?= $row['page_h1'] ?></h3>
                     </a>
                     <div class="just-two-line">
-                        <p><?= $row['content'] ?></p>
+                        <p><?= trim($row['content']) ?></p>
                     </div>
                     <div class="long-btn-action">
                         <a href="https://api.whatsapp.com/send?phone=910000000000&text=Hi%20Kiara,%20I%20want%20a%20service%20in%20Goa%20found%20you%20on%20Ctchicks"><button style="background-color: green;color:white">WhatsApp</button></a>
