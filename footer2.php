@@ -68,7 +68,7 @@
             formData.append('name', cityName);
             formData.append('finding', 'cityName');
             formData.append('cat', document.getElementById('category').value);
-            fetch('<?=get_url() ?>search_for_city_or_area.php', {
+            fetch('<?=get_url() ?>home/search_for_city_or_area.php', {
                     method: 'POST',
                     body: formData
                 }).then(res => res.json())
@@ -105,7 +105,7 @@
             formData.append('area', '<?php if(isset($area)){echo $_GET['area'];} ?>');
             formData.append('finding', 'areaName');
             formData.append('cat', document.getElementById('category').value);
-            fetch('<?=get_url() ?>search_for_city_or_area.php', {
+            fetch('<?=get_url() ?>home/search_for_city_or_area.php', {
                     method: 'POST',
                     body: formData
                 }).then(res => res.json())
