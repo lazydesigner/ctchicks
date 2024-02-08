@@ -31,18 +31,18 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?= $noindex ?>
-    <title>The Best Escort Services In India | CtChicks</title>
-    <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, CtChicks is one of the top escort platforms that can provide you with many call girls." />
-    <link rel="canonical" href="https://ctchicks.com/" />
+    <title>Call Girls in <?=$city ?>: Free Delivery 24x7 at Your Doorstep</title>
+    <meta name="description" content="Being one of the top <?=$city ?> call girls directory we provide fast delivery in 20 mins. All our call girls in <?=$city ?> are available 24/7 in Cash on delivery." />
+    <link rel="canonical" href="https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/' ?>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="The Best Escort Services In India | CtChicks" />
-    <meta property="og:description" content="If you are looking for a call girl who can give you a satisfying service, CtChicks is one of the top escort platforms that can provide you with many call girls." />
-    <meta property="og:url" content="https://ctchicks.com/" />
+    <meta property="og:title" content="Call Girls in <?=$city ?>: Free Delivery 24x7 at Your Doorstep" />
+    <meta property="og:description" content="Being one of the top <?=$city ?> call girls directory we provide fast delivery in 20 mins. All our call girls in <?=$city ?> are available 24/7 in Cash on delivery." />
+    <meta property="og:url" content="https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/' ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="The Best Escort Services In India | CtChicks" />
-    <meta name="twitter:description" content="If you are looking for a call girl who can give you a satisfying service, CtChicks is one of the top escort platforms that can provide you with many call girls." />
+    <meta name="twitter:title" content="Call Girls in <?=$city ?>: Free Delivery 24x7 at Your Doorstep" />
+    <meta name="twitter:description" content="Being one of the top <?=$city ?> call girls directory we provide fast delivery in 20 mins. All our call girls in <?=$city ?> are available 24/7 in Cash on delivery." />
     <?= $page_css ?>
     <style>
         .just-two-line {
@@ -164,6 +164,12 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
     <?php include './navbar.php' ?>
 
+    <div class="container">
+    <p>On Ctchicks, you can browse a meticulously crafted collection of call girls in <?=$city ?>. Discover thousands of independent <?=$city ?> call girls ad options that suit your needs. Our website offers a diverse epitome of elegance and experience. Our website provides a seamless and transparent environment for a better browsing experience. So that you pursue through our extensive listings or portfolios that include comprehensive biographies. This portfolio also includes providing service details with figures, complexions, and images of the model.</p><p>
+Ctchicks works more than a repository of profiles because we are your trusted partner in the world of call girls. Join us on a Journey where beauty knows no boundaries and endless possibilities.</p>
+
+    </div>
+
     <div class="container" style="border: 0;padding:0;background:transparent">
 
 
@@ -260,7 +266,6 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         </div>
         <h4>Areas Of <?= $city ?></h4>
         <div class="top-cities-of-india" id="areasOfCity"></div>
-        <a href="https://ctchicks/<?= $cat ?>/chennai/"><button>Chennai</button></a>
     </div>
 
     </div>

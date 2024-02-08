@@ -14,12 +14,6 @@ if(isset($area)){
 if(isset($profile)){
     $h1 = 'Ready To Meet '.ucwords($city).' '.ucwords($area).' Call Girls With No Advance';
 }
-
-
-
-
-
-
 ?>
 
 <header>
@@ -52,6 +46,10 @@ if(isset($profile)){
                 </div>
                 <div class="form-box">
                     <input type="text" autocomplete="off" placeholder="Select City" value="<?php if(isset($_GET['city'])){echo ucwords(trim($city));} ?>" name="city" id="city">
+                    <div id="all-list-of-cities" class="all-list-of-cities">
+                        <table id="table"></table>
+                    </div>
+                
                 </div>
                 <div class="form-box">
                     <select name="locality" id="locality">
@@ -95,13 +93,13 @@ if(isset($profile)){
 
                 <?php if(isset($city)){ ?>
                     <li class="crumb"><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Ctchicks" class="crumb" href="<?= get_url().$cat.'/'.$city.'/' ?>"><span itemprop="name"><?=ucwords($city) ?></span></a>
+                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Ctchicks" class="crumb" href="<?= get_url().$cat.'/'.$_GET['city'].'/' ?>"><span itemprop="name"><?=ucwords($city) ?></span></a>
                     <meta itemprop="position" content="2">
                 </li>
                 <?php } ?>
                 <?php if(isset($area)){ ?>
                     <li class="crumb"><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Ctchicks" class="crumb" href="<?= get_url().$cat.'/'.$city.'/'.$area.'/' ?>"><span itemprop="name"><?=ucwords($area) ?></span></a>
+                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Ctchicks" class="crumb" href="<?= get_url().$cat.'/'.$_GET['city'].'/'.$_GET['area'].'/' ?>"><span itemprop="name"><?=ucwords($area) ?></span></a>
                     <meta itemprop="position" content="3">
                 </li>
                 <?php } ?>

@@ -44,18 +44,20 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?= $noindex ?>
-    <title>The Best Escort Services In India | CtChicks</title>
-    <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, CtChicks is one of the top escort platforms that can provide you with many call girls." />
-    <link rel="canonical" href="https://ctchicks.com/" />
+    <title> Call girls in <?=$area ?> (<?=$city ?>) with Real Phone Number</title>
+    <meta name="description" content="Hey! I am independent call girl near <?=$area ?> in <?=$city ?>, I offer services at low prices. I'm offering you these services at your home or hotel room." />
+    <link rel="canonical" href="https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/'.$_GET['area'].'/' ?>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="The Best Escort Services In India | CtChicks" />
-    <meta property="og:description" content="If you are looking for a call girl who can give you a satisfying service, CtChicks is one of the top escort platforms that can provide you with many call girls." />
-    <meta property="og:url" content="https://ctchicks.com/" />
+    <meta property="og:title" content=" Call girls in <?=$area ?> (<?=$city ?>) with Real Phone Number
+" />
+    <meta property="og:description" content="Hey! I am independent call girl near <?=$area ?> in <?=$city ?>, I offer services at low prices. I'm offering you these services at your home or hotel room." />
+    <meta property="og:url" content="https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/'.$_GET['area'].'/' ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="The Best Escort Services In India | CtChicks" />
-    <meta name="twitter:description" content="If you are looking for a call girl who can give you a satisfying service, CtChicks is one of the top escort platforms that can provide you with many call girls." />
+    <meta name="twitter:title" content=" Call girls in <?=$area ?> (<?=$city ?>) with Real Phone Number
+" />
+    <meta name="twitter:description" content="Hey! I am independent call girl near <?=$area ?> in <?=$city ?>, I offer services at low prices. I'm offering you these services at your home or hotel room." />
     <?= $page_css ?>
     <style>
         .just-two-line {
@@ -177,14 +179,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
 
     <?php include './navbar.php' ?>
 
-    <div class="container">
-
-    </div>
-
-
     <div class="container" style="border: 0;padding:0;background:transparent">
-
-
         <?php
         while ($row = mysqli_fetch_assoc($profile_query_result)) {
 
@@ -228,7 +223,17 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
     </div>
 
     <div class="container">
+    <h1>Are you looking for young call girls in the <?=ucwords($city) ?> for friendship?</h1>
+<p>On our <a href="<?=get_url() ?>">Ctchicks website</a>, you will find hundreds of classified profiles of <a href="<?=get_url().$_GET['city'].'/' ?>"><?=ucwords($city) ?> call girls</a>. All Call girls near <?=ucwords($city) ?> profiles are 100% genuine and verified from our end through video calls. These hot and charming models can be contacted easily through our website. All our <?=ucwords($city) ?> female models are curvy, passionate, experienced, harmonious, and sexually excited.</p>
+<p>You can easily find phone numbers of independent call girls in the <?=ucwords($city) ?> on Ctchicks. These females are readily available anywhere in the <?=ucwords($city) ?>. These girls can come to your place or hotel room without any advance. You need to pay only after they arrive at your location. You can find call girls in the <?=ucwords($city) ?> as per your particular taste 24x7 in <?=ucwords($city) ?>.</p> 
 
+<h2>Mature ladies and housewives call girls near me in the <?=ucwords($city) ?>.</h2>
+
+<p>Apart from thousands of young college girls, you can find hot and juicy mature milfs in the <?=ucwords($city) ?>. Many newly married or divorced ladies are available near you in the <?=ucwords($city) ?>. These adult females are chubby and experienced in erotic desires. Most of them are well experienced to satisfy the urge of your inner desires.</p> 
+
+<p>Ctchicks.com allows our visitors to find a suitable partner for them. Our visitors can browse all the available profiles and communicate with them without fees or charges. You can date these call girls or get them for sexual encounters without any commitment. Many YouTube models, Facebook girls, and Instagram sensations post their ads for some extra income or fun.</p>
+
+<p><a href="<?=get_url() ?>">Ctchicks.com</a> is not an escort service agency; we are just any classified ad platform. We work as a communication medium between visitors and models. We are not reliable for any financial activity between them.</p>
     </div>
     <div class="container last-step">
         <h4>Top Cities Of India</h4>
@@ -246,7 +251,6 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
         </div>
         <h4>Areas Of <?= $city ?></h4>
         <div class="top-cities-of-india" id="areasOfCity"></div>
-        <a href="https://ctchicks/<?= $cat ?>/chennai/"><button>Chennai</button></a>
     </div>
 
     <?php include './footer2.php' ?>

@@ -120,6 +120,7 @@ form {
     width: 100%;
     height: 100%;
     padding: 2%;
+    position: relative;
 }
 
 select,
@@ -287,20 +288,37 @@ footer {
 }
 
 @media screen and (max-width: 530px) {
+
+    .just-two-line{display: none;}
   
 }
 
 @media screen and (max-width: 500px) {
     .form-container{
         grid-template-columns: repeat(1, minmax(100%, 1fr));
-    }
+    }    
+
   
 }
 
-@media screen and (max-width: 350px) {
-   
-
+@media screen and (max-width: 430px) {
+    .long-profile-image{width: 90px;}
+.long-profile-detail {width: calc(100% - 90px);}
 }
+
+.all-list-of-cities{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    display: none;
+    left: 0;
+    z-index: 1;
+    background-color: lightgray;
+}
+table{width: 100%;padding: 2% 10%;}
+table td{padding: 3%;border-bottom: 1px solid black;}
+
 
 /* Css */
 /* Footer  */
