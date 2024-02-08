@@ -171,6 +171,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 @media screen and (max-width: 430px) {
 .long-profile-image{width: 90px;}
 .long-profile-detail {width: calc(100% - 90px);}
+.top-cities-of-india button{width: 90px;}
 }
 
         /* City CSS */
@@ -182,8 +183,8 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     <?php include './navbar.php' ?>
 
     <div class="container">
-    <p>On Ctchicks, you can browse a meticulously crafted collection of call girls in <?=$city ?>. Discover thousands of independent <?=$city ?> call girls ad options that suit your needs. Our website offers a diverse epitome of elegance and experience. Our website provides a seamless and transparent environment for a better browsing experience. So that you pursue through our extensive listings or portfolios that include comprehensive biographies. This portfolio also includes providing service details with figures, complexions, and images of the model.</p><p>
-Ctchicks works more than a repository of profiles because we are your trusted partner in the world of call girls. Join us on a Journey where beauty knows no boundaries and endless possibilities.</p>
+    <p>On <strong>Ctchicks</strong>, you can browse a meticulously crafted collection of call girls in <?=ucwords($city) ?>. Discover thousands of independent <?=ucwords($city) ?> call girls and select that suit your needs. Our website offers a diverse epitome of elegance and experience. Our website provides a seamless and transparent environment for a better browsing experience. So that you pursue through our extensive listings or portfolios that include comprehensive biographies. This portfolio also includes providing service,body figure details, complexions, and images of the model.</p><p>
+<b>Ctchicks</b> works more than a repository of profiles because we are your trusted partner in the world of call girls. Join us on a Journey where beauty knows no boundaries and possibilities are endless.</p>
 
     </div>
 

@@ -122,7 +122,7 @@ if (!$city_result) {
 
         <h1>Girls for friendship or dating near me</h1>
 
-        </p>You can easily find girls near you on <a href="https://ctchicks.com/">Ctchicks.com</a>. You can easily find not only straight girls but also male escorts, shemales, lesbians, and other LGBTQA+ communities. Recently, we have collaborated with the most trusted and famous escort agencies in India and published almost 1200 new profiles to cater to genuine service. Nowadays, it's quite difficult to find genuine girls for dating as most of the dating apps are fake to earn money on the name of subscriptions. We don’t charge any subscription fees to our visitors. Yes, girls may ask for money, but we are not responsible for any transactions between clients and girls. So please make sure that you contact only verified profiles or numbers on our platform. Otherwise, avoid any advance payment.</p>
+        </p>You can easily find girls near you on <a href="https://ctchicks.com/">Ctchicks.com</a>. You can easily find not only straight girls but also male escorts, shemales, lesbians, and other LGBTQA+ communities. Recently, we have collaborated with the most trusted and famous escort agencies in India and published almost 1200+ new profiles to cater to genuine service. Nowadays, it's quite difficult to find genuine girls for dating as most of the dating apps are fake to earn money on the name of subscriptions. We don’t charge any subscription fees to our visitors. Yes, girls may ask for money, but we are not responsible for any transactions between clients and girls. So please make sure that you contact only verified profiles or numbers on our platform. Otherwise, avoid any advance payment.</p>
 
         <h2>Why trust only Ctchicks.com for adult entertainment?</h2>
 
@@ -132,7 +132,7 @@ if (!$city_result) {
 
         <h3>Seeking Genuine Call girls in your room despite visiting any red light area.</h3>
 
-        <p>We all know that visiting any red light area or brothel may be risky. Despite putting yourself in any kind of danger, You can take erotic genuine service from the Ctchicks classified platform. On the other hand, if any independent model needs to post any classified ad without any hassle to get genuine clients, then Ctchicks will be your first choice. Girls can post ads as per their city with all the details without any fees. We don’t charge a single penny to post an ad. But we recommend using genuine photos and other details. We are here to profile a trustworthy intimate partner in any corner of India and other serving countries. So get ready to get a real bang with naughty models in your city within your budget.</p>
+        <p>We all know that visiting any red light area or brothel may be risky. Despite putting yourself in any kind of danger, You can take erotic genuine service from the Ctchicks classified platform. On the other hand, if any independent model needs to post any classified ad without any hassle to get genuine clients, then Ctchicks will be your first choice. Girls can post ads as per their city with all the details without any fees. We don’t charge a single penny to post an ad. But we recommend using genuine photos and other details. We are here to provide a trustworthy intimate partner in any corner of India and other serving countries. So get ready to get a real bang with naughty models in your city within your budget.</p>
     </div>
 
 

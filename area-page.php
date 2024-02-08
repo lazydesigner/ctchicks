@@ -186,6 +186,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
 @media screen and (max-width: 430px) {
 .long-profile-image{width: 90px;}
 .long-profile-detail {width: calc(100% - 90px);}
+.top-cities-of-india button{width: 90px;}
 }
         /* City CSS */
     </style>
@@ -274,3 +275,33 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
 </body>
 
 </html>
+<!-- 
+Q: Can We Bring Call Girls To Hotel In Awas Vikas Colony? 
+A: Yes! Awas Vikas Colony is a beautiful city and one that has even its air laden with love. To clear your doubts, simply reach out to our team of dedicated staff, and we will point you in the direction of hotels that are warm and luxurious.
+
+Q: Is The Photo Of The Awas Vikas Colony Call Girl Genuine?
+A: As we offer cheap call girl service in Awas Vikas Colony, we do well to make sure that all our girls are properly vetted and their photos genuine, so you have nothing to worry about. Just sit back and relax.
+
+Q: What Benefits Of Choosing Call Girls At Fookkat.com
+A: We guarantee you maximum enjoyment when you choose Fookkat.com. Also, your identity is safe with us. Only the girl and you will know you used our service. We also guarantee you your value for your money due to our pocket-friendly rates for premium service and many more.
+ =========================
+Q: What is price of call girl in Gurgaon
+A: Low to High-priced sex workers call girls in Gurgaon charge anywhere from 10,000 ( 10k ) to 50,000 (50k) rupees for an hour, but some charge many times more. Also Available for budget clints.
+
+Q: How do I book a call girl in Gurgaon?
+A: If you want to Hire a call girl in Gurgaon then follow these simple steps:
+                    <br>•	Make a list of all genuine call girls service provider agencies by searching “Call Girls Near Me in Gurgaon” on the Internet.
+                    <br>•	Visit skokr.com websites in Gurgaon city one by one and read all things carefully.
+                    <br>•	Select your desired Gurgaon  call girls, and provide your identity details for verification.
+                    <br>•	Get a Gurgaon  call girl’s Number and fix your meeting date and time.
+                    <br>•	Take the Gurgaon  call girls service and pay the amount to the call girls in Gurgaon.
+
+
+Q: Is There a Refund Policy Available?
+A: No, once you pay our call girl in <?=$city ?>, we cannot refund the money.
+
+
+
+
+
+ -->

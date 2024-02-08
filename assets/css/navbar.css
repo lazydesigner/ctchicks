@@ -91,7 +91,7 @@ nav {
     width: 75%;
     margin: 1.5% auto;
     height: auto;
-    padding: 1%;
+    padding:.5% 1%;
     border-top: 5px solid var(--primary);
     background-color: var(--secondaryC);
 }
