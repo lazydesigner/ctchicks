@@ -171,7 +171,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 @media screen and (max-width: 430px) {
 .long-profile-image{width: 90px;}
 .long-profile-detail {width: calc(100% - 90px);}
-.top-cities-of-india button{width: 90px;}
+.long-btn-action button{width: 90px;}
 }
 
         /* City CSS */
