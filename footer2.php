@@ -8,7 +8,7 @@
 
     <div class="footer-container">
         <!-- <p>Ctchicks</p> -->
-        <div style="width: 100px;"><img src="<?=get_url() ?>assets/images/logo.webp" width="100%"
+        <div style="width: 100px;"><img src="<?=get_url() ?>home/assets/images/logo.webp" width="100%"
         height="100%" alt=""></div>
         <ul>
             <li>Home</li>
