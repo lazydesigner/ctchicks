@@ -296,9 +296,7 @@ footer {
 @media screen and (max-width: 500px) {
     .form-container{
         grid-template-columns: repeat(1, minmax(100%, 1fr));
-    }    
-
-  
+    }  
 }
 
 @media screen and (max-width: 430px) {

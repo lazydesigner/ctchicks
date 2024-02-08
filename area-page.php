@@ -171,6 +171,22 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
             /* padding: 42%; */
         }
 
+        @media screen and (max-width: 530px) {
+
+.just-two-line{display: none;}
+
+}
+
+@media screen and (max-width: 500px) {
+.form-container{
+    grid-template-columns: repeat(1, minmax(100%, 1fr));
+}  
+}
+
+@media screen and (max-width: 430px) {
+.long-profile-image{width: 90px;}
+.long-profile-detail {width: calc(100% - 90px);}
+}
         /* City CSS */
     </style>
 </head>
