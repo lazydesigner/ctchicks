@@ -142,21 +142,43 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             </div>
 
             <?php while ($row = mysqli_fetch_assoc($res)) {
-                $ax = json_decode($row['profile_images'], true);
-            ?>
-                <div class="profile-section-box">
-                    <div class="profile-section-box-image">
-                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+               if(!empty($row['image_']) && $row['image_'] != null ){
+                $image_count = json_decode($row['image_'], true);
+            }
+
+            $create_url = 'https://ctchicks.com/' . $row['callgirl_escort'] . '/' . $row['cities'] . '/';
+            if (strtolower($row['areas']) == 'all') {
+                $create_url .= $row['identity_cat'] . '/';
+            } else {
+                $create_url .= $row['areas'] . '/' . $row['identity_cat'] . '/';
+            }
+
+
+        ?>
+
+            <div class="long-profile">
+                <div class="long-profile-image">
+                    <a href="<?= $create_url ?>">
+                    <?php if(isset($image_count)){ ?>
+                    <img src="<?= $cdn_url ?>profiles/<?= $image_count[0] ?>" alt="Call Girl Image" width="100%" loading="lazy" height="100%" />
+                    <?php } ?>
+                    </a>
+                    <span class="favourite" id="favourite"><?= $heart ?></span>
+                    <span class="image-count"><?= $camera ?><?php if(isset($image_count)){ echo count($image_count); } ?></span>
+                </div>
+                <div class="long-profile-detail">
+                    <a href="<?= $create_url ?>">
+                        <h3><?= $row['page_h1'] ?></h3>
+                    </a>
+                    <div class="just-two-line">
+                        <p><?= $row['content'] ?></p>
                     </div>
-                    <div class="profile-section-box-detail">
-                        <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
-                        <div class="multiline-ellipsis" style="margin-bottom: 2%;"><?= $row['content'] ?></div>
-                        <div class="profile-section-button-detail">
-                            <button><i class="ri-whatsapp-fill"></i> WhatsApp</button>
-                            <button><i class="ri-phone-fill"></i> Contact</button>
-                        </div>
+                    <div class="long-btn-action">
+                        <a href="https://api.whatsapp.com/send?phone=910000000000&text=Hi%20Kiara,%20I%20want%20a%20service%20in%20Goa%20found%20you%20on%20Ctchicks"><button style="background-color: green;color:white">WhatsApp</button></a>
+                        <a href="tel:+910000000000"><button style="background-color:#0075DA;color:white">Contact</button></a>
                     </div>
                 </div>
+            </div>
             <?php } ?>
 
             <div class="list-of-profile">
