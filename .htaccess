@@ -6,11 +6,11 @@ Options -Indexes
 
 
 RewriteRule ^$ home.php [NC,L]
-
+ErrorDocument 404 https://ctchicks.com/404
 
 #NEW URL PATTERN
 
-#ReWriteRule ^contact-us([/]?)$ contact-us.php [NC,L]
+ReWriteRule ^contact-us([/]?)$ contact.php [NC,L]
 #ReWriteRule ^call-girls([/]?)$ call-girls.php [NC,L]
 ##ReWriteRule ^faqs([/]?)$ faq.php [NC,L]
 #ReWriteRule ^terms-and-conditions([/]?)$ terms-and-condition.php [NC,L]
@@ -18,7 +18,8 @@ RewriteRule ^$ home.php [NC,L]
 ##ReWriteRule ^login([/]?)$ login.php [NC,L]
 #ReWriteRule ^register([/]?)$ login.php [NC,L]
 #ReWriteRule ^about-us([/]?)$ about-us.php [NC,L]
-#ReWriteRule ^search([/]?)$ search.php [NC,L]
+ReWriteRule ^search([/]?)$ search.php [NC,L]
+ReWriteRule ^404([/]?)$ error.php [NC,L]
 
 #FOR CALL GIRLS
 ReWriteRule ^call-girls/([A-Za-z\-]+)([/]?)$ city-page.php?city=$1 [NC,L]

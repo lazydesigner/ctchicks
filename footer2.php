@@ -9,7 +9,7 @@
     <div class="footer-container">
         <!-- <p>Ctchicks</p> -->
         <div style="width: 100px;"><img src="<?=get_url() ?>home/assets/images/logo.webp" width="100%"
-        height="100%" alt=""></div>
+        height="100%" alt="ctckicks escort service  logo" loading="lazy"></div>
         <ul>
             <li>Home</li>
             <li>Contact Us</li>
@@ -131,6 +131,11 @@
            window.location.href='<?=get_url()?>'+cat+'/'+city.toLowerCase()+'/'+area+'/';
 
         })
-
+        const questions = document.querySelectorAll(' .question');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            question.classList.toggle('active');
+        });
+    });
 
 </script>

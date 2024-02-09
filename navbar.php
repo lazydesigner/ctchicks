@@ -14,16 +14,21 @@ if(isset($area)){
 if(isset($profile)){
     $h1 = 'Ready To Meet '.ucwords($city).' '.ucwords($area).' Call Girls With No Advance';
 }
+
+if(isset($error_cat)){
+    $h1 = '404 - Page Not Found :(';
+}
+
 ?>
 
 <header>
         <nav>
             <div class="main-ul">
-                <div class="brand"><a href="">CtChicks</a>
+                <div class="brand"><a href="<?= get_url() ?>">CtChicks</a>
                 </div>
                 <ul class="nav-ul">
                     <li><a href="<?= get_url() ?>">Home</a></li>
-                    <li><a href="<?= get_url() ?>">Contact Us</a></li>
+                    <li><a href="<?= get_url() ?>contact-us/">Contact Us</a></li>
                     <li><a href="<?= get_url() ?>">Login</a></li>
                     <li><a href="<?= get_url() ?>">Sign up</a></li>
                 </ul>
@@ -36,7 +41,7 @@ if(isset($profile)){
     </header>
 
     <div class="container search-bar">
-        <form action="" method="get">
+        <form action="<?=get_url() ?>search" method="get">
             <div class="form-container">
                 <div class="form-box">
                     <select name="category" id="category">
@@ -97,9 +102,15 @@ if(isset($profile)){
                     <meta itemprop="position" content="2">
                 </li>
                 <?php } ?>
-                <?php if(isset($area)){ ?>
+                <?php if(isset($area)){ if(!empty($area)){ ?>
                     <li class="crumb"><b><i class="ri-arrow-right-s-line"></i></b></li>
                 <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Ctchicks" class="crumb" href="<?= get_url().$cat.'/'.$_GET['city'].'/'.$_GET['area'].'/' ?>"><span itemprop="name"><?=ucwords($area) ?></span></a>
+                    <meta itemprop="position" content="3">
+                </li>
+                <?php } } ?>
+                <?php if(isset($error_cat)){ ?>
+                    <li class="crumb"><b><i class="ri-arrow-right-s-line"></i></b></li>
+                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Ctchicks" class="crumb" href="<?= get_url() ?>404/"><span itemprop="name">404</span></a>
                     <meta itemprop="position" content="3">
                 </li>
                 <?php } ?>

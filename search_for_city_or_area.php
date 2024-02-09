@@ -58,7 +58,7 @@ if ($_POST['finding'] == 'cityName') {
 
             
             
-            $areaX .= "<a href='".get_url().$_POST['cat']."/".$row['area_city_name']."/".$area."/'><button>". ucwords(strtolower($a)) ."</button></a>";
+            $areaX .= "<a href='".get_url().$_POST['cat']."/".$row['area_city_name']."/".strtolower($area)."/'><button>". ucwords(strtolower($a)) ."</button></a>";
         }
     }
     echo json_encode(['area'=>$output,'arealist'=>$areaX,'status'=>200]);
