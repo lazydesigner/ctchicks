@@ -248,9 +248,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Poojamahajan",
-            "url": "https://poojamahajan.com",
-            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+            "name": "Ctchicks",
+            "url": "https://ctchicks.com",
+            "logo": ""
         }
     </script>
 </head>

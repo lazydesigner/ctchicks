@@ -29,8 +29,8 @@ if(isset($error_cat)){
                 <ul class="nav-ul">
                     <li><a href="<?= get_url() ?>">Home</a></li>
                     <li><a href="<?= get_url() ?>contact-us/">Contact Us</a></li>
-                    <li><a href="<?= get_url() ?>">Login</a></li>
-                    <li><a href="<?= get_url() ?>">Sign up</a></li>
+                    <li><a href="<?= get_url() ?>login/">Login</a></li>
+                    <li><a href="<?= get_url() ?>sign-up/">Sign up</a></li>
                 </ul>
             </div>
             <div class="post-btn">
