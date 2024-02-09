@@ -167,7 +167,7 @@
                 <a href="<?= get_url() ?>login/">already have an account</a>
             </div>
             <div class="contact-form-group" style="padding: 1% 1%;">
-                <button onclick="alert('Something Went Wrong! Please Try Later :(')">Signup</button>
+                <button onclick="alert('Something Went Wrong! Please Try Later 😔 ')">Signup</button>
             </div>
         </form>
 
