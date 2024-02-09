@@ -229,6 +229,7 @@ footer {
     nav {
         width: 95%;
     }
+    .container{width: 100%;}
 
     .main-ul {
         width: 70%;
