@@ -352,7 +352,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
                 </p>
             </div>
             <div class="question"><h4>Is There a Refund Policy Available</h4></div>
-            <div class="answer">pNo, once you pay our call girl in <?=  ucwords($area) ?>, <?=  ucwords($city) ?>, we cannot refund the money.</div>
+            <div class="answer">No, once you pay our call girl in <?=  ucwords($area) ?>, <?=  ucwords($city) ?>, we cannot refund the money.</div>
         </div>
     </div>
     <div class="container last-step">
