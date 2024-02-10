@@ -30,10 +30,9 @@ $profile_query = "SELECT * FROM profiles WHERE identity_cat = '$id'";
 $result = mysqli_query($con, $profile_query);
 
 if (mysqli_num_rows($result) > 0) {
-
     $row = mysqli_fetch_assoc($result);
 } else {
-    die('No Profile Found');
+    header("Location: https://ctchicks.com/404");
 }
 
 
@@ -204,7 +203,8 @@ if (mysqli_num_rows($result) > 0) {
             height: 150px;
             background-color: lightgrey;
         }
-        .sub-profile-image img{
+
+        .sub-profile-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -254,13 +254,22 @@ if (mysqli_num_rows($result) > 0) {
             box-shadow: 0 0 20px #000;
             border: 1px solid white;
         }
+
         @media screen and (max-width:1000px) {
-            .profile-section-col{
+            .profile-section-col {
                 flex: 100%;
             }
-        .profile-section {
-            flex-wrap: wrap;
+
+            .profile-section {
+                flex-wrap: wrap;
+            }
         }
+
+        @media screen and (max-width:380px) {
+            .sub-profile{
+                width: 155px;
+                margin: auto;
+            }
         }
     </style>
 </head>
@@ -449,7 +458,47 @@ if (mysqli_num_rows($result) > 0) {
                                     <a href="<?= $create_url ?>">
                                         <div class="sub-profile-image">
                                             <?php if (isset($all_img)) { ?>
-                                                <img src="<?= $cdn_url ?>profiles/<?= $all_img[0] ?>" alt="<?=$all_img_alt[0] ?>" width="100%" loading="lazy" height="100%" />
+                                                <img src="<?= $cdn_url ?>profiles/<?= $all_img[0] ?>" alt="<?= $all_img_alt[0] ?>" width="100%" loading="lazy" height="100%" />
+                                            <?php } ?>
+                                        </div>
+                                    </a>
+                                    <div class="sub-profile-detail">
+                                        <a href="<?= $create_url ?>" style="color:white">
+                                            <p class="just-two-line"><?= $all_row['page_h1'] ?></p>
+                                        </a>
+                                    </div>
+                                    <div class="sub-profile-information">
+                                        <span><?= $all_row['cities'] ?></span>
+                                        <span><?= $all_row['profile_age'] ?> Years</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sub-profile">
+                                    <a href="<?= $create_url ?>">
+                                        <div class="sub-profile-image">
+                                            <?php if (isset($all_img)) { ?>
+                                                <img src="<?= $cdn_url ?>profiles/<?= $all_img[0] ?>" alt="<?= $all_img_alt[0] ?>" width="100%" loading="lazy" height="100%" />
+                                            <?php } ?>
+                                        </div>
+                                    </a>
+                                    <div class="sub-profile-detail">
+                                        <a href="<?= $create_url ?>" style="color:white">
+                                            <p class="just-two-line"><?= $all_row['page_h1'] ?></p>
+                                        </a>
+                                    </div>
+                                    <div class="sub-profile-information">
+                                        <span><?= $all_row['cities'] ?></span>
+                                        <span><?= $all_row['profile_age'] ?> Years</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sub-profile">
+                                    <a href="<?= $create_url ?>">
+                                        <div class="sub-profile-image">
+                                            <?php if (isset($all_img)) { ?>
+                                                <img src="<?= $cdn_url ?>profiles/<?= $all_img[0] ?>" alt="<?= $all_img_alt[0] ?>" width="100%" loading="lazy" height="100%" />
                                             <?php } ?>
                                         </div>
                                     </a>
@@ -494,7 +543,7 @@ if (mysqli_num_rows($result) > 0) {
             breakpoints: {
                 // when window width is >= 320px
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 10,
                 },
                 // when window width is >= 480px
@@ -502,12 +551,12 @@ if (mysqli_num_rows($result) > 0) {
                     slidesPerView: 2
                 },
                 // when window width is >= 640px
-                640: {
+                600: {
                     slidesPerView: 3
                 },
                 780: {
                     slidesPerView: 5,
-                    spaceBetween: 60,
+                    spaceBetween: 30,
                 }
             },
             pagination: {
