@@ -71,7 +71,7 @@ if (!$city_result) {
     </div>
 
     <div class="container">
-        <strong>Indian Call Girls(<?php $sql = "SELECT COUNT(*) as a FROM `profiles` WHERE `callgirl_escort` = 'call-girls'";
+        <strong>Indian Call Girls(<?php $sql = "SELECT COUNT(profile_id) as a FROM `profiles` WHERE `callgirl_escort` = 'call-girls'";
                                     $res = mysqli_query($con, $sql);
                                     $row = mysqli_fetch_array($res);
                                     echo $row['a'] ?>)</strong>
@@ -82,7 +82,7 @@ if (!$city_result) {
             while ($c_row = mysqli_fetch_assoc($city_result)) {
                 $city_in_lower = strtolower($c_row['city_name']);
             ?>
-                <div><a href="<?= get_url() ?>call-girls/<?= $city_in_lower ?>/"><?= ucwords($c_row['city_name']) ?>(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = '$city_in_lower'";
+                <div><a href="<?= get_url() ?>call-girls/<?= $city_in_lower ?>/"><?= ucwords($c_row['city_name']) ?>(<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = '$city_in_lower'";
                                                                                                                         $res = mysqli_query($con, $sql);
                                                                                                                         $row = mysqli_fetch_array($res);
                                                                                                                         echo $row['a'] ?>)</a></div>
@@ -94,7 +94,7 @@ if (!$city_result) {
 
     </div>
     <div class="container">
-        <strong>Indian Escorts(<?php $sql2 = "SELECT COUNT(*) as aa FROM `profiles` WHERE `callgirl_escort` = 'escorts'";
+        <strong>Indian Escorts(<?php $sql2 = "SELECT COUNT(profile_id) as aa FROM `profiles` WHERE `callgirl_escort` = 'escorts'";
                                 $res2 = mysqli_query($con, $sql2);
                                 $row2 = mysqli_fetch_array($res2);
                                 echo $row2['aa'] ?>)</strong>
@@ -106,7 +106,7 @@ if (!$city_result) {
             while ($e_row = mysqli_fetch_assoc($city_result2)) {
                 $city_in_lower2 = strtolower($e_row['city_name']);
             ?>
-                <div><a href="<?= get_url() ?>escorts/<?= $city_in_lower2 ?>/"><?= ucwords($e_row['city_name']) ?>(<?php $sqle = "SELECT COUNT(*) as aa FROM profiles WHERE callgirl_escort = 'escorts' && cities = '$city_in_lower2'";
+                <div><a href="<?= get_url() ?>escorts/<?= $city_in_lower2 ?>/"><?= ucwords($e_row['city_name']) ?>(<?php $sqle = "SELECT COUNT(profile_id) as aa FROM profiles WHERE callgirl_escort = 'escorts' && cities = '$city_in_lower2'";
                                                                                                                     $rese = mysqli_query($con, $sqle);
                                                                                                                     $rowe = mysqli_fetch_array($rese);
                                                                                                                     echo $rowe['aa'] ?>)</a></div>
