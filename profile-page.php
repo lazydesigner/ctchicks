@@ -2,7 +2,7 @@
 <?php
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
-$cat = $uri[2];
+$cat = $uri[1];
 $city = '';
 $area = '';
 $id = $_GET['id'];
@@ -203,6 +203,12 @@ if (mysqli_num_rows($result) > 0) {
             width: 100%;
             height: 150px;
             background-color: lightgrey;
+        }
+        .sub-profile-image img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
         }
 
         .sub-profile-detail {
