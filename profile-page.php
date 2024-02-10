@@ -490,6 +490,7 @@ if (mysqli_num_rows($result) > 0) {
             <img src="" alt="Call Girls Available 24X7 At Your Place" id="image-preview-box" width="100%" height="100%">
         </div>
     </div>
+    <div id="areasOfCity" style="display: none;"></div>
 
     <?php include './footer2.php' ?>
 
