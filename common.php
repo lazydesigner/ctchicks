@@ -21,7 +21,52 @@ $noindex = '<meta name="robots" content="noindex, nofollow, max-snippet:-1, max-
     ';
 $page_css = ' 
 <link rel="stylesheet" href="'.get_url().'assets/css/navbar.css">
-<link rel="stylesheet" href="'.get_url().'assets/fonts/remixicon.css">';
+<link rel="stylesheet" href="'.get_url().'assets/fonts/remixicon.css">
+
+<script>
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    let user = getCookie("confirm_ctchick");
+    if (user != "") {
+        var remove_agree_terms = document.getElementById("confirm-18");
+        remove_agree_terms.style.display = "none";
+    }
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == " ") {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    let user = getCookie("confirm_ctchick");
+    if (user != "") {
+        var remove_agree_terms = document.getElementById("confirm-18");
+        remove_agree_terms.style.display = "none";
+    } else {
+        var remove_agree_terms = document.getElementById("confirm-18");
+        remove_agree_terms.style.display = "block";
+    }
+}
+</script>
+
+
+
+';
 
 
 ?>

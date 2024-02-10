@@ -255,7 +255,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     </script>
 </head>
 
-<body>
+<body onload="checkCookie()">
     <?php include './navbar.php' ?>
     <div class="container">
         <?php if (isset($data)) { ?>

@@ -62,7 +62,7 @@ if (!$city_result) {
     </style>
 </head>
 
-<body>
+<body  onload="checkCookie()">
 
     <?php include './navbar.php' ?>
 

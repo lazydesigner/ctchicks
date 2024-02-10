@@ -249,7 +249,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
     </style>
 </head>
 
-<body>
+<body onload="checkCookie()">
 
     <?php include './navbar.php' ?>
 

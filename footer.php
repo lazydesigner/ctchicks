@@ -5,6 +5,33 @@
   <?=$whatsapp ?>
 </div></a>
 
+
+<div class="confirm-18" id="confirm-18">
+        <div class="confirm-18-body" style="text-align: center;">
+            <p style="font-size: x-large;font-weight:bolder;margin-bottom:2%"><strong>Important Notice: Please Review Before Proceeding</strong></p>
+            <p><b>I hereby confirm that I am 18 years of age or older.</b></p>
+            <p>
+
+                The display of any advertisements claiming to provide sexual services in exchange for money is strictly prohibited.</p>
+            <p>
+
+                Furthermore, the publication of explicit material featuring genital organs is not allowed.</p>
+            <p>
+
+                Any such advertisements will be promptly reported to the appropriate authorities, and the responsible party will be held accountable for any legal consequences.
+            </p>
+            <p>
+                By submitting an advertisement on Poojamahajan, advertisers assert that they possess full rights to the content and acknowledge that they are aged 18 years or older. They also affirm that the advertised content is approved for publication on Poojamahajan.</p>
+            <p>
+
+                By clicking the <b>"confirm"</b> button, users certify that they are over 18 years old and release the service providers, owners, and creators of Poojamahajan.com from any responsibility regarding the content and use of this service.</p>
+            <div style="margin-top: 2%;"><button class="btn1" onclick="setCookie('confirm_ctchick', 'accepted_ctchick', 30)">Confirm</button>
+                <a href="<?= get_url() ?>"><button class="btn2">Reject</button></a>
+            </div>
+        </div>
+    </div>
+
+
 <footer>
         <div class="new-footer-row">
           <div class="new-footer-col">

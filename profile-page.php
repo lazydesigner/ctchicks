@@ -276,7 +276,7 @@ if (mysqli_num_rows($result) > 0) {
     </style>
 </head>
 
-<body>
+<body onload="checkCookie()">
 
     <?php include './navbar.php' ?>
 
