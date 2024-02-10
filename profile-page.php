@@ -269,7 +269,9 @@ if (mysqli_num_rows($result) > 0) {
             .sub-profile{
                 width: 155px;
                 margin: auto;
+                
             }
+            .container{width: 100%;}
         }
     </style>
 </head>
