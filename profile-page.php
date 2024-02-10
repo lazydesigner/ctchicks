@@ -414,13 +414,14 @@ if (mysqli_num_rows($result) > 0) {
                             if (!empty($all_row['image_']) && $all_row['image_'] != null) {
 
                                 $all_img = json_decode($all_row['image_'], true);
+                                $all_img_alt = json_decode($row['image_alt_'], true);
                             }
 
-                            $create_url = 'https://ctchicks.com/' . $row['callgirl_escort'] . '/' . $row['cities'] . '/';
-                            if (strtolower($row['areas']) == 'all') {
-                                $create_url .= $row['identity_cat'] . '/';
+                            $create_url = 'https://ctchicks.com/' . $all_row['callgirl_escort'] . '/' . $all_row['cities'] . '/';
+                            if (strtolower($all_row['areas']) == 'all') {
+                                $create_url .= $all_row['identity_cat'] . '/';
                             } else {
-                                $create_url .= $row['areas'] . '/' . $row['identity_cat'] . '/';
+                                $create_url .= $all_row['areas'] . '/' . $all_row['identity_cat'] . '/';
                             }
 
                     ?>
@@ -429,19 +430,19 @@ if (mysqli_num_rows($result) > 0) {
                                 <div class="sub-profile">
                                     <a href="<?= $create_url ?>">
                                         <div class="sub-profile-image">
-                                            <?php if (isset($image_count)) { ?>
-                                                <img src="<?= $cdn_url ?>profiles/<?= $image_count[0] ?>" alt="Call Girl Image" width="100%" loading="lazy" height="100%" />
+                                            <?php if (isset($all_img)) { ?>
+                                                <img src="<?= $cdn_url ?>profiles/<?= $all_img[0] ?>" alt="<?=$all_img_alt[0] ?>" width="100%" loading="lazy" height="100%" />
                                             <?php } ?>
                                         </div>
                                     </a>
                                     <div class="sub-profile-detail">
                                         <a href="<?= $create_url ?>" style="color:white">
-                                            <p class="just-two-line"><?= $all_result['page_h1'] ?></p>
+                                            <p class="just-two-line"><?= $all_row['page_h1'] ?></p>
                                         </a>
                                     </div>
                                     <div class="sub-profile-information">
-                                        <span><?= $all_result['cities'] ?></span>
-                                        <span><?= $all_result['profile_age'] ?> Years</span>
+                                        <span><?= $all_row['cities'] ?></span>
+                                        <span><?= $all_row['profile_age'] ?> Years</span>
                                     </div>
                                 </div>
                             </div>

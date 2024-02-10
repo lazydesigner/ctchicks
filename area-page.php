@@ -259,6 +259,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
 
             if(!empty($row['image_']) && $row['image_'] != null ){
                 $image_count = json_decode($row['image_'], true);
+                $image_count_alt = json_decode($row['image_alt_'], true);
             }
 
             $create_url = 'https://ctchicks.com/' . $row['callgirl_escort'] . '/' . $row['cities'] . '/';
@@ -275,7 +276,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
                 <div class="long-profile-image">
                     <a href="<?= $create_url ?>">
                     <?php if(isset($image_count)){ ?>
-                    <img src="<?= $cdn_url ?>profiles/<?= $image_count[0] ?>" alt="Call Girl Image" width="100%" loading="lazy" height="100%" />
+                    <img src="<?= $cdn_url ?>profiles/<?= $image_count[0] ?>" alt="<?=$image_count_alt[0] ?>" width="100%" loading="lazy" height="100%" />
                     <?php } ?>
                     </a>
                     <span class="favourite" id="favourite"><?= $heart ?></span>
