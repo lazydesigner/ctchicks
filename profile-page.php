@@ -475,46 +475,6 @@ if (mysqli_num_rows($result) > 0) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="sub-profile">
-                                    <a href="<?= $create_url ?>">
-                                        <div class="sub-profile-image">
-                                            <?php if (isset($all_img)) { ?>
-                                                <img src="<?= $cdn_url ?>profiles/<?= $all_img[0] ?>" alt="<?= $all_img_alt[0] ?>" width="100%" loading="lazy" height="100%" />
-                                            <?php } ?>
-                                        </div>
-                                    </a>
-                                    <div class="sub-profile-detail">
-                                        <a href="<?= $create_url ?>" style="color:white">
-                                            <p class="just-two-line"><?= $all_row['page_h1'] ?></p>
-                                        </a>
-                                    </div>
-                                    <div class="sub-profile-information">
-                                        <span><?= $all_row['cities'] ?></span>
-                                        <span><?= $all_row['profile_age'] ?> Years</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="sub-profile">
-                                    <a href="<?= $create_url ?>">
-                                        <div class="sub-profile-image">
-                                            <?php if (isset($all_img)) { ?>
-                                                <img src="<?= $cdn_url ?>profiles/<?= $all_img[0] ?>" alt="<?= $all_img_alt[0] ?>" width="100%" loading="lazy" height="100%" />
-                                            <?php } ?>
-                                        </div>
-                                    </a>
-                                    <div class="sub-profile-detail">
-                                        <a href="<?= $create_url ?>" style="color:white">
-                                            <p class="just-two-line"><?= $all_row['page_h1'] ?></p>
-                                        </a>
-                                    </div>
-                                    <div class="sub-profile-information">
-                                        <span><?= $all_row['cities'] ?></span>
-                                        <span><?= $all_row['profile_age'] ?> Years</span>
-                                    </div>
-                                </div>
-                            </div>
                     <?php  }
                     } ?>
                     <!-- Loop -->
