@@ -254,7 +254,7 @@ if (mysqli_num_rows($result) > 0) {
             box-shadow: 0 0 20px #000;
             border: 1px solid white;
         }
-        @media screen and (max-width:900px) {
+        @media screen and (max-width:1000px) {
             .profile-section-col{
                 flex: 100%;
             }
