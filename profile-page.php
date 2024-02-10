@@ -406,6 +406,22 @@ if (mysqli_num_rows($result) > 0) {
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="sub-profile">
+                            <div class="sub-profile-image">
+                                <img src="" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="">
+                            </div>
+                            <div class="sub-profile-detail">
+                                <a href="<?= get_url() ?>" style="color:white">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </a>
+                            </div>
+                            <div class="sub-profile-information">
+                                <span>Kanpur</span>
+                                <span>22 Years</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-pagination" style="display: none;"></div>
             </div>

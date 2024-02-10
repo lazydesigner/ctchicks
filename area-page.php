@@ -369,7 +369,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
             <a href="https://ctchicks/<?= $cat ?>/hyderabad/"><button>Hyderabad</button></a>
             <a href="https://ctchicks/<?= $cat ?>/kochi/"><button>Kochi</button></a>
         </div>
-        <h4>Areas Of <?= $city ?></h4>
+        <h4>Areas Of <?= ucwords($city) ?></h4>
         <div class="top-cities-of-india" id="areasOfCity"></div>
     </div>
 
