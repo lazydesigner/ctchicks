@@ -49,7 +49,7 @@ if (mysqli_num_rows($result) > 0) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?=$noindex ?>
+    <?= $noindex ?>
     <title><?= $row['page_title'] ?></title>
     <meta name="description" content="<?= $row['meta_description'] ?>" />
     <link rel="canonical" href="https://ctchicks.com/" />
@@ -66,6 +66,14 @@ if (mysqli_num_rows($result) > 0) {
     <?= $page_css ?>
 
     <style>
+        .just-two-line {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            font-weight: 500;
+        }
+
         .profile-section {
             width: 100%;
             height: auto;
@@ -259,14 +267,16 @@ if (mysqli_num_rows($result) > 0) {
                 <button id="change-to-number">CONTACT</button>
 
                 <div class="profile-image-grid">
+                    <?php
+                    if (!empty($row['image_']) && $row['image_'] != null) {
 
-                    <?php $a = json_decode($row['image_'], true);
-                    $alt = json_decode($row['image_alt_'], true);
-                    for ($j = 0; $j < count($a); $j++) {
+                        $a = json_decode($row['image_'], true);
+                        $alt = json_decode($row['image_alt_'], true);
+                        for ($j = 0; $j < count($a); $j++) {
                     ?>
-                        <div class="profile-image-grid-col"><img src="https://cdn.ctchicks.com/profiles/<?= $a[$j] ?>" alt="<?= $alt[$j] ?>" width="100%" height="100%"></div>
+                            <div class="profile-image-grid-col"><img src="https://cdn.ctchicks.com/profiles/<?= $a[$j] ?>" alt="<?= $alt[$j] ?>" width="100%" height="100%"></div>
                     <?php  }
-                    ?>
+                    } ?>
                 </div>
             </div>
             <div class="profile-section-col profile-section-information">
@@ -308,38 +318,38 @@ if (mysqli_num_rows($result) > 0) {
                         <tr>
                             <td> Profile Type:</td>
                             <td style="text-transform:capitalize;">
-                            <?php 
-                                $cat_2 = json_decode($row['cat_'],true);
-                                    $cat = '';
-                                foreach($cat_2 as $i1 => $cats){
-                                    if($i1 == (count($cat_2)-1)){
+                                <?php
+                                $cat_2 = json_decode($row['cat_'], true);
+                                $cat = '';
+                                foreach ($cat_2 as $i1 => $cats) {
+                                    if ($i1 == (count($cat_2) - 1)) {
                                         $cat .= $cats;
-                                    }else{
-                                        $cat .= $cats.', ';
+                                    } else {
+                                        $cat .= $cats . ', ';
                                     }
                                 }
                                 echo ucwords($cat);
 
-                            ?>
+                                ?>
                             </td>
                         </tr>
                         <tr>
                             <td> Bust-Waist-Hip:</td>
                             <td>
-                                
-                            <?php 
-                                $body = json_decode($row['profile_body_shape'],true);
-                                    $fig = '';
-                                foreach($body as $i1 => $shape){
-                                    if($i1 == (count($body)-1)){
+
+                                <?php
+                                $body = json_decode($row['profile_body_shape'], true);
+                                $fig = '';
+                                foreach ($body as $i1 => $shape) {
+                                    if ($i1 == (count($body) - 1)) {
                                         $fig .= $shape;
-                                    }else{
-                                        $fig .= $shape.'-';
+                                    } else {
+                                        $fig .= $shape . '-';
                                     }
                                 }
                                 echo $fig;
 
-                            ?></td>
+                                ?></td>
                         </tr>
                     </table>
                 </div>
@@ -390,38 +400,55 @@ if (mysqli_num_rows($result) > 0) {
             <h2>Profiles from same Place</h2>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="sub-profile">
-                            <div class="sub-profile-image">
-                                <img src="" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="">
+                    <!-- LOOP -->
+
+                    <?php
+                    $all_profile_query = "SELECT * FROM profiles WHERE cities = '{$_GET['city']}'";
+
+                    $all_result = mysqli_query($con, $all_profile_query);
+
+                    if (mysqli_num_rows($all_result) > 0) {
+
+                        while ($all_row = mysqli_fetch_assoc($all_result)) {
+
+                            if (!empty($all_row['image_']) && $all_row['image_'] != null) {
+
+                                $all_img = json_decode($all_row['image_'], true);
+                            }
+
+                            $create_url = 'https://ctchicks.com/' . $row['callgirl_escort'] . '/' . $row['cities'] . '/';
+                            if (strtolower($row['areas']) == 'all') {
+                                $create_url .= $row['identity_cat'] . '/';
+                            } else {
+                                $create_url .= $row['areas'] . '/' . $row['identity_cat'] . '/';
+                            }
+
+                    ?>
+
+                            <div class="swiper-slide">
+                                <div class="sub-profile">
+                                    <a href="<?= $create_url ?>">
+                                        <div class="sub-profile-image">
+                                            <?php if (isset($image_count)) { ?>
+                                                <img src="<?= $cdn_url ?>profiles/<?= $image_count[0] ?>" alt="Call Girl Image" width="100%" loading="lazy" height="100%" />
+                                            <?php } ?>
+                                        </div>
+                                    </a>
+                                    <div class="sub-profile-detail">
+                                        <a href="<?= $create_url ?>" style="color:white">
+                                            <p class="just-two-line"><?= $all_result['page_h1'] ?></p>
+                                        </a>
+                                    </div>
+                                    <div class="sub-profile-information">
+                                        <span><?= $all_result['cities'] ?></span>
+                                        <span><?= $all_result['profile_age'] ?> Years</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="sub-profile-detail">
-                                <a href="<?= get_url() ?>" style="color:white">
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                </a>
-                            </div>
-                            <div class="sub-profile-information">
-                                <span>Kanpur</span>
-                                <span>22 Years</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sub-profile">
-                            <div class="sub-profile-image">
-                                <img src="" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="">
-                            </div>
-                            <div class="sub-profile-detail">
-                                <a href="<?= get_url() ?>" style="color:white">
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                </a>
-                            </div>
-                            <div class="sub-profile-information">
-                                <span>Kanpur</span>
-                                <span>22 Years</span>
-                            </div>
-                        </div>
-                    </div>
+                    <?php  }
+                    } ?>
+                    <!-- Loop -->
+
                 </div>
                 <div class="swiper-pagination" style="display: none;"></div>
             </div>
@@ -511,7 +538,7 @@ if (mysqli_num_rows($result) > 0) {
             })
         }
 
-        document.getElementById('image-preview').addEventListener('click',()=>{
+        document.getElementById('image-preview').addEventListener('click', () => {
             document.getElementById('image-preview').style.display = 'none'
             document.getElementById('image-preview-box').src = '';
         })
