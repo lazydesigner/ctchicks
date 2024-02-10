@@ -254,6 +254,14 @@ if (mysqli_num_rows($result) > 0) {
             box-shadow: 0 0 20px #000;
             border: 1px solid white;
         }
+        @media screen and (max-width:900px) {
+            .profile-section-col{
+                flex: 100%;
+            }
+        .profile-section {
+            flex-wrap: wrap;
+        }
+        }
     </style>
 </head>
 
@@ -302,16 +310,20 @@ if (mysqli_num_rows($result) > 0) {
                             <td><span style="text-transform:capitalize;"><?= $row['profile_name'] ?></span></td>
                         </tr>
                         <tr>
+                            <td> Gender:</td>
+                            <td>Female</td>
+                        </tr>
+                        <tr>
                             <td> Age:</td>
                             <td><?= $row['profile_age'] ?></td>
                         </tr>
                         <tr>
                             <td>Height:</td>
-                            <td><?= $row['profile_height'] ?></td>
+                            <td><?= $row['profile_height'] ?>ft</td>
                         </tr>
                         <tr>
                             <td> Location:</td>
-                            <td><?= $area . ', ' . $city . ', India' ?></td>
+                            <td><?= ucwords($area) . ', ' . ucwords($city) . ', India' ?></td>
                         </tr>
                         <tr>
                             <td> Language:</td>
