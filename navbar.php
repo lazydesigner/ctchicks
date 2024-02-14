@@ -24,7 +24,8 @@ if(isset($error_cat)){
 <header>
         <nav>
             <div class="main-ul">
-                <div class="brand"><a href="<?= get_url() ?>">CtChicks</a>
+                <div class="brand"><a href="<?= get_url() ?>"><img src="<?=get_url() ?>home/assets/images/logo.webp" width="100%"
+        height="100%" alt="ctckicks escort service  logo" loading="lazy"></a>
                 </div>
                 <ul class="nav-ul">
                     <li><a href="<?= get_url() ?>">Home</a></li>

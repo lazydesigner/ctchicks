@@ -5,6 +5,9 @@
 $city_query = "SELECT * FROM city";
 $city_result = mysqli_query($con, $city_query);
 $city_result2 = mysqli_query($con, $city_query);
+
+$cat = 'call-girls'; 
+
 if (!$city_result) {
 }
 
