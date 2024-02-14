@@ -42,7 +42,7 @@ if(isset($error_cat)){
     </header>
 
     <div class="container search-bar">
-        <form action="<?=get_url() ?>search" method="get">
+        <form action="<?=get_url() ?>search/" method="get">
             <div class="form-container">
                 <div class="form-box">
 
