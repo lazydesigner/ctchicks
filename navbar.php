@@ -44,10 +44,20 @@ if(isset($error_cat)){
         <form action="<?=get_url() ?>search" method="get">
             <div class="form-container">
                 <div class="form-box">
-                    <select name="category" id="category">
-                        <option value="call-girls">Call Girls</option>
+
+                    <?php if($cat == 'call-girls'){ ?>
+                        <select name="category" id="category">
+                        <option value="call-girls" selected>Call Girls</option>
                         <option value="escorts">Escorts</option>
                     </select>
+                    <?php }else{ ?>
+                        <select name="category" id="category">
+                        <option value="call-girls">Call Girls</option>
+                        <option value="escorts" selected>Escorts</option>
+                    </select>
+                    <?php } ?>
+
+                    
                 </div>
                 <div class="form-box">
                     <input type="text" autocomplete="off" placeholder="Select City" value="<?php if(isset($_GET['city'])){echo ucwords(trim($city));} ?>" name="city" id="city">
