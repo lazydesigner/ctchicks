@@ -266,7 +266,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
 <body onload="checkCookie()">
     <?php include './navbar.php' ?>
-    <p><strong><?=$a ?> Results for <?=$_GET['category'] ?> <?php if(!empty($_GET['city'])){echo 'in '.$_GET['city'] ; } ?></strong></p>
+    <div class="container" style="border: 0;background:transparent">
+    <p><strong><?=$count_result['a']  ?> Results for <?=$cat ?> <?php if(!empty($_GET['city'])){echo 'in '.$_GET['city'] ; } ?></strong></p>
+    </div>
     <div class="container">
         <?php if (isset($data)) { ?>
 
