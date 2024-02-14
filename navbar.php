@@ -46,7 +46,7 @@ if(isset($error_cat)){
             <div class="form-container">
                 <div class="form-box">
 
-                    <?php if($cat == 'call-girls'){ ?>
+                    <?php if($cat == 'call-girls' || $cat == 'call girls'){ ?>
                         <select name="category" id="category">
                         <option value="call-girls" selected>Call Girls</option>
                         <option value="escorts">Escorts</option>
