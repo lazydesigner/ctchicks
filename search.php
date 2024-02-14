@@ -266,6 +266,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
 <body onload="checkCookie()">
     <?php include './navbar.php' ?>
+    <p><strong><?=$count ?> Results for <?=$_GET['category'] ?> <?php if(!empty($_GET['city'])){echo 'in '.$_GET['city'] ; } ?></strong></p>
     <div class="container">
         <?php if (isset($data)) { ?>
 
@@ -283,7 +284,6 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 if (!empty($row['image_']) && $row['image_'] != null) {
                     $image_count = json_decode($row['image_'], true);
                 }
-
                 $create_url = 'https://ctchicks.com/' . $row['callgirl_escort'] . '/' . $row['cities'] . '/';
                 if (strtolower($row['areas']) == 'all') {
                     $create_url .= $row['identity_cat'] . '/';
