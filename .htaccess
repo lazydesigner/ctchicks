@@ -27,11 +27,11 @@ ReWriteRule ^call-girls/([A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ p
 
 #FOR ESCORTS
 
-ReWriteRule ^escorts/([0-9A-Za-z\-]+)([/]?)$ city-page.php?city=$1 [NC,L]
-ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ area-page.php?city=$1&area=$2 [NC,L]
-ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ profile-page.php?city=$1&area=$2&id=$3 [NC,L]
+#ReWriteRule ^escorts/([0-9A-Za-z\-]+)([/]?)$ city-page.php?city=$1 [NC,L]
+#ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ area-page.php?city=$1&area=$2 [NC,L]
+#ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ profile-page.php?city=$1&area=$2&id=$3 [NC,L]
 
 
 
-RewriteRule ^sitemap\.xml/?$ sitemap.xml [NC,L]
+#RewriteRule ^sitemap\.xml/?$ sitemap.xml [NC,L]
 ReWriteRule ^404([/]?)$ error.php [NC,L]
