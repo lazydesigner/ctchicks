@@ -20,6 +20,7 @@ $noindex = '<meta name="robots" content="noindex, nofollow, max-snippet:-1, max-
     <link rel="shortcut icon" type="image/x-icon" href="'.$cdn_url.'icon/favicon.png" />
     ';
 $page_css = ' 
+<meta name="google-site-verification" content="OJnuULYZypg92ZykxEaJRmcvnjS75k4YNcGSLziVQ_Y" />
 <link rel="stylesheet" href="'.get_url().'assets/css/navbar.css">
 <link rel="stylesheet" href="'.get_url().'assets/fonts/remixicon.css">
 
