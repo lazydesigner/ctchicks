@@ -33,5 +33,5 @@ ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ p
 
 
 
-RewriteRule ^sitemap\.xml/?$ sitemap.xml
+RewriteRule ^sitemap\.xml/?$ sitemap.xml [NC,L]
 ReWriteRule ^404([/]?)$ error.php [NC,L]
