@@ -55,7 +55,7 @@ foreach($type as $t){
                     $xml .= "\t\t<loc>$url</loc>\n";
                     $xml .= "\t\t<lastmod>2024-03-01T06:13:31+05:30</lastmod>\n";
                     $xml .= "\t\t<changefreq>weekly</changefreq>\n";
-                    $xml .= "\t\t<priority>0.7</priority>\n";
+                    $xml .= "\t\t<priority>0.8</priority>\n";
                     $xml .= "\t</url>\n";
                 }
             }
