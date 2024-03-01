@@ -65,7 +65,15 @@ function checkCookie() {
 }
 </script>
 
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ctchicks call girls provider",
+  "url": "https://ctchicks.com/",
+  "logo": "https://ctchicks.com/home/assets/images/logo.webp"
+}
+</script>
 
 ';
 
