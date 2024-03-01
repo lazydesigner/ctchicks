@@ -28,6 +28,10 @@ ReWriteRule ^call-girls/([A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ p
 
 #FOR ESCORTS
 
-#ReWriteRule ^escorts/([0-9A-Za-z\-]+)([/]?)$ location.php?city=$1 [NC,L]
-#ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ area.php?city=$1&area=$2 [NC,L]
-#ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ profile_index.php?city=$1&area=$2&id=$3 [NC,L]
+ReWriteRule ^escorts/([0-9A-Za-z\-]+)([/]?)$ location.php?city=$1 [NC,L]
+ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ area.php?city=$1&area=$2 [NC,L]
+ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ profile_index.php?city=$1&area=$2&id=$3 [NC,L]
+
+
+
+RewriteRule ^sitemap\.xml/?$ sitemap.xml
