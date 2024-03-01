@@ -19,7 +19,6 @@ ReWriteRule ^login([/]?)$ login.php [NC,L]
 ReWriteRule ^sign-up([/]?)$ sign-up.php [NC,L]
 #ReWriteRule ^about-us([/]?)$ about-us.php [NC,L]
 ReWriteRule ^search([/]?)$ search.php [NC,L]
-ReWriteRule ^404([/]?)$ error.php [NC,L]
 
 #FOR CALL GIRLS
 ReWriteRule ^call-girls/([A-Za-z\-]+)([/]?)$ city-page.php?city=$1 [NC,L]
@@ -35,3 +34,4 @@ ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ p
 
 
 RewriteRule ^sitemap\.xml/?$ sitemap.xml
+ReWriteRule ^404([/]?)$ error.php [NC,L]
