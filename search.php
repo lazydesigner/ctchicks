@@ -84,7 +84,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <?= $noindex ?>
     <title>Ctchicks - Search your Escort</title>
-    <link rel="canonical" href="<?= $fullURL ?>/" />
+    <link rel="canonical" href="https://ctchicks/search/" />
     <meta name="description" content="Being one of the top <?= $city ?> call girls directory we provide fast delivery in 20 mins. All our call girls in <?= $city ?> are available 24/7 in Cash on delivery." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -266,22 +266,11 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
 <body onload="checkCookie()">
     <?php include './navbar.php' ?>
-    <div class="container" style="border: 0;background:transparent">
+    <div class="container" style="border: 0;background:transparent;padding:0;margin:0">
     <p><strong><?=$count_result['a']  ?> Results for <?=$cat ?> <?php if(!empty($_GET['city'])){echo 'in '.$_GET['city'] ; } ?></strong></p>
     </div>
     <div class="container">
         <?php if (isset($data)) { ?>
-
-            <div class="list-of-profile">
-                <h2>Are you looking for call girls in <?= $area ?> for friendship?</h2>
-                <p>On our website, <a href="https://ctchicks.com">ctchicks</a> Escort Portal, you can find multiple ads for <a href="<?php if(isset($area_url)){echo $area_url ;}elseif(isset($city_url)){echo $city_url;} ?>"><?= $area ?> call girls</a> who offer the best erotic services in this locality. If you're tired of searching for reliable call girls here and there, now search ctchicks.com with <?= $area ?> name and with just a few clicks, you can see gorgeous call girls near you.</p>
-                <p>During their visit to the <?= $city ?>, a charming model escort is with our clients. You can book tempting call girls for your personal needs on any occasion. Our escorts are both elite and polite. A sultry figure call girl without a sense of manners or speech will ruin your mood if you reserve one. So we prefer passionate and curvy-calling girls of our plateform with dressing sense.</p>
-                <p>Our <a href="<?php if(isset($area_url)){echo $area_url ;}elseif(isset($city_url)){echo $city_url;} ?>">escort service in <?= $area ?> </a> all our escorts wisely so they will not spoil your mood. We guarantee that if our <?= $area ?> call girls do not compromise and behave well, we will try to refund the full amount. Contact these models now and get a luxurious girlfriend experience at any private party or celebration. You can easily find online girls with numbers and see their real pictures, which helps save time. ctchicks also offers other different types of <?= $area ?> call girls, on the basis of age, color, body type, etc., who offer 24/7 services with no travel charges for nearby hotels or private property bunglows or rooms.</p>
-                <p>We do not interfere between the ad publisher and clients. You can negotiate the price and discuss the payment mode. You will easily find high-profile and cheap call girls for short-term or long-term relationships with contact details.</p>
-                <h3>Mature escorts and housewife call girls near me in <?= $area ?></h3>
-                <p>How would you find a juicy and genuine mature bursty housewives call girls near you in <?= $area ?>? The answer to this statement is ctchicks.com, which allows you to navigate thousands of high-profile married escorts or divorced housewives to select the one that suits you best as per your taste. You can book any partner at any time near you in <?= $area ?> of the listed models on our web portal for various sexual or emotional needs. Your reach is not limited to housewife escorts; you can also browse thousands of other profiles of Models call girls, Air hostess call girls, Actress call girls, Facebook call girls, Instagram celebrities, punjabi call girls, and Russian call girls on your single visit to our <a href="https://ctchicks.com">ctchicks.com</a></p>
-            </div>
-
             <?php while ($row = mysqli_fetch_assoc($res)) {
                 if (!empty($row['image_']) && $row['image_'] != null) {
                     $image_count = json_decode($row['image_'], true);
@@ -323,6 +312,8 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 </div>
             <?php } ?>
 
+            <button value=10  class='loadmore' id="loadmore">Load More</button>
+
             <div class="list-of-profile">
                 <h2>FAQ</h2>
                 <h3>What things do I need to take care of while booking a call girl in <?= ucwords($area) ?>?</h3>
@@ -343,6 +334,39 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
     </div>
     <?php include './footer2.php' ?>
+
+
+    <script>
+        document.getElementById('loadmore').addEventListener('click',(e)=>{
+            let count = e.target.value
+
+            searchsql = "<?=$sql ?>"
+
+            phraseToRemove  = "LIMIT 0, 10"
+
+            var words = searchsql.split(" ");
+
+  // Find the starting index of the three-word phrase
+  var startIndex = words.indexOf(phraseToRemove.split(" ")[0]);
+
+  // Remove the three words from the array
+  if (startIndex !== -1) {
+    words.splice(startIndex, 3); // Remove 3 words starting from startIndex
+  }
+
+  // Join the remaining words back into a string
+  var updatedParagraph = words.join(" ");
+            console.log(updatedParagraph+'LIMIT 10, 20' )
+
+
+            // let Loadmore = new FormData()
+            // Loadmore.append('count', count)
+            // fetch('<?=get_url() ?>getmoreresult/',{
+
+            // })
+
+        })
+    </script>
 
 
 </body>
