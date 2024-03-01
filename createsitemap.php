@@ -47,7 +47,7 @@ foreach($type as $t){
                     $xml .= "\t\t<loc>$url</loc>\n";
                     $xml .= "\t\t<lastmod>2024-03-01T13:23:31+05:30</lastmod>\n";
                     $xml .= "\t\t<changefreq>weekly</changefreq>\n";
-                    $xml .= "\t\t<priority>0.8</priority>\n";
+                    $xml .= "\t\t<priority>0.9</priority>\n";
                     $xml .= "\t</url>\n";
                 }elseif($page == 'area'){
                     $url = htmlspecialchars('https://ctchicks.com/'.$t.'/'.strtolower($row['area_city_name']).'/'.strtolower($row['area_name']).'/');
