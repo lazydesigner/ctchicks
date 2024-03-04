@@ -161,7 +161,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"A"</span></h3>
                 <a href="https://ctchicks.com/call-girls/agra/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Agra</p>
                         </div>
@@ -169,7 +169,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/call-girls/ahmedabad/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Ahmedabad</p>
                         </div>
@@ -177,7 +177,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/call-girls/ajmer/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Ajmer</p>
                         </div>
@@ -185,7 +185,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/call-girls/allahabad/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Allahabad</p>
                         </div>
@@ -193,7 +193,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/call-girls/ambala/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Ambala</p>
                         </div>
@@ -201,7 +201,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/call-girls/amritsar/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>
                                 Amritsar</p>
@@ -213,7 +213,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"B"</span></h3>
                 <a href="https://ctchicks.com/call-girls/bangalore/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Bangalore</p>
                         </div>
@@ -221,7 +221,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/call-girls/bhopal/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Bhopal</p>
                         </div>
@@ -229,7 +229,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/call-girls/bhubaneswar/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Bhubaneswar</p>
                         </div>
@@ -241,7 +241,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"C"</span></h3>
                 <a href="https://ctchicks.com/call-girls/chennai/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Chennai</p>
                         </div>
@@ -252,7 +252,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"D"</span></h3>
                 <a href="https://ctchicks.com/call-girls/dehradun/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Dehradun</p>
                         </div>
@@ -260,7 +260,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/call-girls/delhi/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Delhi</p>
                         </div>
@@ -271,7 +271,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"F"</span></h3>
                 <a href="https://ctchicks.com/call-girls/faridabad/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Faridabad</p>
                         </div>
@@ -282,7 +282,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"G"</span></h3>
                 <a href="https://ctchicks.com/call-girls/goa/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Goa</p>
                         </div>
@@ -290,7 +290,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/call-girls/gurgaon/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Gurgaon</p>
                         </div>
@@ -301,7 +301,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"L"</span></h3>
                 <a href="https://ctchicks.com/call-girls/lucknow/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Lucknow</p>
                         </div>
@@ -324,7 +324,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"A"</span></h3>
                 <a href="https://ctchicks.com/escorts/ahmedabad/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Ahmedabad</p>
                         </div>
@@ -332,7 +332,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/escorts/ajmer/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Ajmer</p>
                         </div>
@@ -340,7 +340,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/escorts/allahabad/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Allahabad</p>
                         </div>
@@ -348,7 +348,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/escorts/ambala/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Ambala</p>
                         </div>
@@ -356,7 +356,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/escorts/amritsar/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>
                                 Amritsar</p>
@@ -368,7 +368,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"B"</span></h3>
                 <a href="https://ctchicks.com/escorts/bangalore/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Bangalore</p>
                         </div>
@@ -376,7 +376,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/escorts/bhubaneswar/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Bhubaneswar</p>
                         </div>
@@ -388,7 +388,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"C"</span></h3>
                 <a href="https://ctchicks.com/escorts/chennai/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Chennai</p>
                         </div>
@@ -399,7 +399,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"D"</span></h3>
                 <a href="https://ctchicks.com/escorts/dehradun/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Dehradun</p>
                         </div>
@@ -407,7 +407,7 @@ if (!$city_result) {
                 </a>
                 <a href="https://ctchicks.com/escorts/delhi/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Delhi</p>
                         </div>
@@ -418,7 +418,7 @@ if (!$city_result) {
                 <h3>Best Call girl in City <span>"F"</span></h3>
                 <a href="https://ctchicks.com/escorts/faridabad/">
                     <div class="item-city-name">
-                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Faridabad</p>
                         </div>
