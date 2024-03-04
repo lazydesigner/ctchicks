@@ -321,7 +321,7 @@ if (!$city_result) {
 
 <div class="city-grid">
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"A"</span></h3>
+                <h3>Best Escorts in City <span>"A"</span></h3>
                 <a href="https://ctchicks.com/escorts/ahmedabad/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -365,7 +365,7 @@ if (!$city_result) {
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"B"</span></h3>
+                <h3>Best Escorts in City <span>"B"</span></h3>
                 <a href="https://ctchicks.com/escorts/bangalore/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -385,7 +385,7 @@ if (!$city_result) {
             </div>
             <div class="grid-items">
 
-                <h3>Best Call girl in City <span>"C"</span></h3>
+                <h3>Best Escorts in City <span>"C"</span></h3>
                 <a href="https://ctchicks.com/escorts/chennai/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -396,7 +396,7 @@ if (!$city_result) {
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"D"</span></h3>
+                <h3>Best Escorts in City <span>"D"</span></h3>
                 <a href="https://ctchicks.com/escorts/dehradun/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -415,7 +415,7 @@ if (!$city_result) {
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"F"</span></h3>
+                <h3>Best Escorts in City <span>"F"</span></h3>
                 <a href="https://ctchicks.com/escorts/faridabad/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
