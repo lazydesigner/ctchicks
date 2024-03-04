@@ -6,7 +6,7 @@ $city_query = "SELECT * FROM city";
 $city_result = mysqli_query($con, $city_query);
 $city_result2 = mysqli_query($con, $city_query);
 
-$cat = 'call-girls'; 
+$cat = 'call-girls';
 
 if (!$city_result) {
 }
@@ -56,22 +56,99 @@ if (!$city_result) {
         .list-of-cities>div {
             margin: 3% 0;
         }
-        
+
+        .city-grid {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+            grid-template-rows: auto;
+
+        }
+
+        .grid-items {
+            width: 90%;
+            min-height: 300px;
+            box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.7);
+            margin: 6% 4%;
+            border-radius: 5%;
+            background-color: white;
+        }
+
+        .grid-items h3 {
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        .grid-items h3 span {
+            color: tomato;
+            position: relative;
+        }
+
+        .item-city-name {
+            margin: 15px auto;
+            display: flex;
+            gap: 10px;
+            width: 90%;
+        }
+
+        .item-city-name p {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .location-logo {
+            width: 20px;
+            height: 20px;
+            align-self: center;
+        }
+
+        .grid-items h3 span::after {
+            contain: '';
+            width: 20px;
+            height: 5px;
+            background-color: tomato;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        @media (max-width:800px) {
+            .city-grid {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+                grid-template-rows: auto;
+            }
+        }
+
+        @media (max-width:600px) {
+            .city-grid {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+                grid-template-rows: auto;
+            }
+        }
+
         @media screen and (max-width:500px) {
-            .list-of-cities{
+            .list-of-cities {
                 grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
             }
         }
     </style>
 </head>
 
-<body  onload="checkCookie()">
+<body onload="checkCookie()">
 
     <?php include './navbar.php' ?>
 
-    <div class="container">
+    <!-- <div class="container">
         <input type="text" name="" id="search-for-cities-in-row" placeholder="Search For Cities...">
-    </div>
+    </div> -->
 
     <div class="container">
         <strong>Indian Call Girls(<?php $sql = "SELECT COUNT(profile_id) as a FROM `profiles` WHERE `callgirl_escort` = 'call-girls'";
@@ -79,21 +156,158 @@ if (!$city_result) {
                                     $row = mysqli_fetch_array($res);
                                     echo $row['a'] ?>)</strong>
 
-        <div class="list-of-cities">
+        <div class="city-grid">
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"A"</span></h3>
+                <a href="https://ctchicks.com/call-girls/agra/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Agra</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/call-girls/ahmedabad/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Ahmedabad</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/call-girls/ajmer/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Ajmer</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/call-girls/allahabad/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Allahabad</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/call-girls/ambala/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Ambala</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/call-girls/amritsar/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>
+                                Amritsar</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"B"</span></h3>
+                <a href="https://ctchicks.com/call-girls/bangalore/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Bangalore</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/call-girls/bhopal/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Bhopal</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/call-girls/bhubaneswar/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Bhubaneswar</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
 
-            <?php
-            while ($c_row = mysqli_fetch_assoc($city_result)) {
-                $city_in_lower = strtolower($c_row['city_name']);
-            ?>
-                <?php $sqla = "SELECT COUNT(profile_id) as caa FROM profiles WHERE callgirl_escort = 'call-girls' && cities = '$city_in_lower'";
-                                                                                                                        $resa = mysqli_query($con, $sqla);
-                                                                                                                        $rowa = mysqli_fetch_array($resa);
-                                                                                                                        if($rowa['caa'] != 0 ){ ?><div><a href="<?= get_url() ?>call-girls/<?= $city_in_lower ?>/"><?= ucwords($c_row['city_name']) ?>(<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = '$city_in_lower'";
-                                                                                                                        $res = mysqli_query($con, $sql);
-                                                                                                                        $row = mysqli_fetch_array($res);
-                                                                                                                        echo $row['a'] ?>)</a></div><?php } ?>
-            <?php } ?>
-
+                <h3>Best Call girl in City <span>"C"</span></h3>
+                <a href="https://ctchicks.com/call-girls/chennai/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Chennai</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"D"</span></h3>
+                <a href="https://ctchicks.com/call-girls/dehradun/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Dehradun</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/call-girls/delhi/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Delhi</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"F"</span></h3>
+                <a href="https://ctchicks.com/call-girls/faridabad/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Faridabad</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"G"</span></h3>
+                <a href="https://ctchicks.com/call-girls/goa/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Goa</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/call-girls/gurgaon/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Gurgaon</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"L"</span></h3>
+                <a href="https://ctchicks.com/call-girls/lucknow/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Lucknow</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
 
@@ -105,23 +319,114 @@ if (!$city_result) {
                                 $row2 = mysqli_fetch_array($res2);
                                 echo $row2['aa'] ?>)</strong>
 
+<div class="city-grid">
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"A"</span></h3>
+                <a href="https://ctchicks.com/escorts/ahmedabad/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Ahmedabad</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/escorts/ajmer/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Ajmer</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/escorts/allahabad/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Allahabad</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/escorts/ambala/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Ambala</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/escorts/amritsar/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>
+                                Amritsar</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"B"</span></h3>
+                <a href="https://ctchicks.com/escorts/bangalore/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Bangalore</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/escorts/bhubaneswar/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Bhubaneswar</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
 
-        <div class="list-of-cities">
-
-            <?php
-            while ($e_row = mysqli_fetch_assoc($city_result2)) {
-                $city_in_lower2 = strtolower($e_row['city_name']);
-            ?>
-                <?php $sqle = "SELECT COUNT(profile_id) as eaa FROM profiles WHERE callgirl_escort = 'escorts' && cities = '$city_in_lower2'";
-                                                                                                                    $rese = mysqli_query($con, $sqle);
-                                                                                                                    $rowe = mysqli_fetch_array($rese);
-                                                                                                                    if($rowe['eaa'] !=0 ){ ?> <div><a href="<?= get_url() ?>escorts/<?= $city_in_lower2 ?>/"><?= ucwords($e_row['city_name']) ?>(<?php $sqle = "SELECT COUNT(profile_id) as aa FROM profiles WHERE callgirl_escort = 'escorts' && cities = '$city_in_lower2'";
-                                                                                                                    $rese = mysqli_query($con, $sqle);
-                                                                                                                    $rowe = mysqli_fetch_array($rese);
-                                                                                                                    echo $rowe['aa'] ?>)</a></div><?php } ?>
-            <?php } ?>
-
+                <h3>Best Call girl in City <span>"C"</span></h3>
+                <a href="https://ctchicks.com/escorts/chennai/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Chennai</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"D"</span></h3>
+                <a href="https://ctchicks.com/escorts/dehradun/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Dehradun</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/escorts/delhi/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Delhi</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"F"</span></h3>
+                <a href="https://ctchicks.com/escorts/faridabad/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="./assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Faridabad</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
+
 
 
     </div>
@@ -153,13 +458,13 @@ if (!$city_result) {
             search_para = document.querySelectorAll('.list-of-cities')
             for (i = 0; i < search_para.length; i++) {
                 for (j = 0; j < search_para[i].children.length; j++) {
-                    if(search_para[i].children[j].children[0].textContent.toLowerCase().includes(text_)){
-                        search_para[i].children[j].style.display='block'
-                    }else{
-                        search_para[i].children[j].style.display='none'
+                    if (search_para[i].children[j].children[0].textContent.toLowerCase().includes(text_)) {
+                        search_para[i].children[j].style.display = 'block'
+                    } else {
+                        search_para[i].children[j].style.display = 'none'
                     }
                 }
-                
+
             }
         })
     </script>
