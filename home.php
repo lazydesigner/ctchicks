@@ -75,7 +75,43 @@ if (!$city_result) {
             background-color: white;
         }
 
-        .grid-items h3 {
+        .grid-items h3{
+            text-align: center;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            gap: 2%;
+        }
+        .grid-items h3 span{
+            color: tomato;
+            display: block;
+            position: relative;
+        }
+
+        .grid-items h3 span::after{
+            content: '';
+            width: 0%;
+            height: 25px;
+            background-color: red;
+            clip-path: polygon(50% 0%, 76% 1%, 93% 8%, 100% 15%, 68% 7%, 47% 6%, 23% 13%, 0 30%, 7% 18%, 24% 5%);
+            position: absolute;
+            bottom: -25px;
+            border-radius: 50px;
+            left: 0;
+            animation: slide  10s infinite alternate linear;
+            animation-direction:normal;
+        }
+
+        @keyframes slide {
+            0%{
+                width: 0%;
+            }
+            2%{width: 100%;}
+            100%{
+                width: 100%;
+            }
+        }
+.grid-items h3 {
             text-align: center;
             font-size: 1.3rem;
         }
@@ -104,15 +140,6 @@ if (!$city_result) {
             align-self: center;
         }
 
-        .grid-items h3 span::after {
-            contain: '';
-            width: 20px;
-            height: 5px;
-            background-color: tomato;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-        }
 
         @media (max-width:800px) {
             .city-grid {
@@ -151,7 +178,7 @@ if (!$city_result) {
     </div> -->
 
     <div class="container">
-        <strong>Indian Call Girls(<?php $sql = "SELECT COUNT(profile_id) as a FROM `profiles` WHERE `callgirl_escort` = 'call-girls'";
+        <strong style="display: none;">Indian Call Girls(<?php $sql = "SELECT COUNT(profile_id) as a FROM `profiles` WHERE `callgirl_escort` = 'call-girls'";
                                     $res = mysqli_query($con, $sql);
                                     $row = mysqli_fetch_array($res);
                                     echo $row['a'] ?>)</strong>
@@ -314,7 +341,7 @@ if (!$city_result) {
 
     </div>
     <div class="container">
-        <strong>Indian Escorts(<?php $sql2 = "SELECT COUNT(profile_id) as aa FROM `profiles` WHERE `callgirl_escort` = 'escorts'";
+        <strong style="display: none;">Indian Escorts(<?php $sql2 = "SELECT COUNT(profile_id) as aa FROM `profiles` WHERE `callgirl_escort` = 'escorts'";
                                 $res2 = mysqli_query($con, $sql2);
                                 $row2 = mysqli_fetch_array($res2);
                                 echo $row2['aa'] ?>)</strong>

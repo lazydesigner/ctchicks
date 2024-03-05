@@ -30,10 +30,42 @@
         .grid-items h3{
             text-align: center;
             font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            gap: 2%;
         }
         .grid-items h3 span{
             color: tomato;
+            display: block;
+            position: relative;
         }
+
+        .grid-items h3 span::after{
+            content: '';
+            width: 0%;
+            height: 25px;
+            background-color: red;
+            clip-path: polygon(50% 0%, 76% 1%, 93% 8%, 100% 15%, 68% 7%, 47% 6%, 23% 13%, 0 30%, 7% 18%, 24% 5%);
+            position: absolute;
+            bottom: -25px;
+            border-radius: 50px;
+            left: 0;
+            animation: slide  10s infinite alternate linear;
+            animation-direction:normal;
+        }
+
+        @keyframes slide {
+            0%{
+                width: 0%;
+            }
+            2%{width: 100%;}
+            100%{
+                width: 100%;
+            }
+        }
+
+
+        
         .item-city-name{
             margin: 20px auto;
             display: flex;
@@ -46,6 +78,8 @@
             font-weight: 600;
         }
         .location-logo{width: 20px;height: 20px;align-self: center;}
+
+
 
         @media (max-width:800px){
             .city-grid{
