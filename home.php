@@ -323,6 +323,22 @@ if (!$city_result) {
                         </div>
                     </div>
                 </a>
+                <a href="https://ctchicks.com/call-girls/ghaziabad/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Ghaziabad</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ctchicks.com/call-girls/guwahati/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Guwahati	</p>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="grid-items">
                 <h3>Best Call girl in City <span>"L"</span></h3>
@@ -437,6 +453,17 @@ if (!$city_result) {
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Delhi</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
+                <h3>Best Escorts in City <span>"G"</span></h3>
+                <a href="https://ctchicks.com/escorts/guwahati/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Guwahati</p>
                         </div>
                     </div>
                 </a>
