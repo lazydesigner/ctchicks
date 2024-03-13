@@ -51,7 +51,7 @@ if (mysqli_num_rows($result) > 0) {
     <?= $noindex ?>
     <title><?= $row['page_title'] ?></title>
     <meta name="description" content="<?= $row['meta_description'] ?>" />
-    <link rel="canonical" href="https://ctchicks.com/" />
+    <link rel="canonical" href="https://ctchicks.com/<?= $cat . '/' . $_GET['city'] . '/' . $_GET['area'] . '/' . $id . '/' ?>" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
