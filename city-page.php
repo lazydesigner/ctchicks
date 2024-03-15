@@ -280,16 +280,16 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     <div class="container last-step">
         <h4>Top Cities Of India</h4>
         <div class="top-cities-of-india">
-            <a href="https://ctchicks/<?= $cat ?>/chennai/"><button>Chennai</button></a>
-            <a href="https://ctchicks/<?= $cat ?>/ahmedabad/"><button>Ahmedabad</button></a>
-            <a href="https://ctchicks/<?= $cat ?>/delhi/"><button>Delhi</button></a>
-            <a href="https://ctchicks/<?= $cat ?>/indore/"><button>Indore</button></a>
-            <a href="https://ctchicks/<?= $cat ?>/bangalore/"><button>Bangalore</button></a>
-            <a href="https://ctchicks/<?= $cat ?>/pune/"><button>Pune</button></a>
-            <a href="https://ctchicks/<?= $cat ?>/jaipur/"><button>Jaipur</button></a>
-            <a href="https://ctchicks/<?= $cat ?>/gurgaon/"><button>Gurgaon</button></a>
-            <a href="https://ctchicks/<?= $cat ?>/hyderabad/"><button>Hyderabad</button></a>
-            <a href="https://ctchicks/<?= $cat ?>/kochi/"><button>Kochi</button></a>
+            <a href="https://ctchicks.com/<?= $cat ?>/chennai/"><button>Chennai</button></a>
+            <a href="https://ctchicks.com/<?= $cat ?>/ahmedabad/"><button>Ahmedabad</button></a>
+            <a href="https://ctchicks.com/<?= $cat ?>/delhi/"><button>Delhi</button></a>
+            <a href="https://ctchicks.com/<?= $cat ?>/indore/"><button>Indore</button></a>
+            <a href="https://ctchicks.com/<?= $cat ?>/bangalore/"><button>Bangalore</button></a>
+            <a href="https://ctchicks.com/<?= $cat ?>/pune/"><button>Pune</button></a>
+            <a href="https://ctchicks.com/<?= $cat ?>/jaipur/"><button>Jaipur</button></a>
+            <a href="https://ctchicks.com/<?= $cat ?>/gurgaon/"><button>Gurgaon</button></a>
+            <a href="https://ctchicks.com/<?= $cat ?>/hyderabad/"><button>Hyderabad</button></a>
+            <a href="https://ctchicks.com/<?= $cat ?>/kochi/"><button>Kochi</button></a>
         </div>
         <h4>Areas Of <?= ucwords($city) ?></h4>
         <div class="top-cities-of-india" id="areasOfCity">
