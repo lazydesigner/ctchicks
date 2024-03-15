@@ -371,7 +371,29 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
             <a href="https://ctchicks/<?= $cat ?>/kochi/"><button>Kochi</button></a>
         </div>
         <h4>Areas Of <?= ucwords($city) ?></h4>
-        <div class="top-cities-of-india" id="areasOfCity"></div>
+        <div class="top-cities-of-india" id="areasOfCity">
+        <?php
+
+$cityX = strtolower($_GET['city']);
+$areaX = '';
+
+$area_list = "SELECT * FROM area2 WHERE area_city_name = '$cityX'";
+$res = mysqli_query($con, $area_list);
+if (mysqli_num_rows($res) > 0) {
+    $row = mysqli_fetch_assoc($res);
+    $areas = json_decode($row['area_name'], true);
+    foreach ($areas as $area) {
+        $a = '';
+        foreach (explode('-', $area) as $c) {
+            $a .= $c . ' ';
+        }
+        $areaX .= "<a href='" . get_url() . $cat . "/" . $row['area_city_name'] . "/" . strtolower($area) . "/'><button>" . ucwords(strtolower($a)) . "</button></a>";
+    }
+}
+echo $areaX;
+
+?>
+        </div>
     </div>
 
     <?php include './footer2.php' ?>

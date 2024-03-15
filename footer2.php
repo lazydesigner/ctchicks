@@ -138,7 +138,7 @@
                 .then(data => {
                     if (data['status'] == 200) {
                         document.getElementById('locality').innerHTML = data['area']
-                        document.getElementById('areasOfCity').innerHTML = data['arealist']
+                        // document.getElementById('areasOfCity').innerHTML = data['arealist']
                         console.log(data)
                     }
                 })
