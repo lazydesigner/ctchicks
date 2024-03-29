@@ -190,7 +190,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Agra</p>
+                            <p>Agra (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'agra'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -198,7 +201,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Ahmedabad</p>
+                            <p>Ahmedabad (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'ahmedabad'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -206,7 +212,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Ajmer</p>
+                            <p>Ajmer (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'ajmer'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -214,7 +223,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Allahabad</p>
+                            <p>Allahabad (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'allahabad'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -222,7 +234,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Ambala</p>
+                            <p>Ambala (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'ambala'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -231,7 +246,10 @@ if (!$city_result) {
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>
-                                Amritsar</p>
+                                Amritsar (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'amritsar'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -242,7 +260,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Bangalore</p>
+                            <p>Bangalore (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'bangalore'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -250,7 +271,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Bhopal</p>
+                            <p>Bhopal (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'bhopal'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -258,7 +282,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Bhubaneswar</p>
+                            <p>Bhubaneswar (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'bhubaneswar'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -270,7 +297,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Chennai</p>
+                            <p>Chennai (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'chennai'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -281,7 +311,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Dehradun</p>
+                            <p>Dehradun (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'dehradun'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -289,7 +322,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Delhi</p>
+                            <p>Delhi (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'delhi'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -300,7 +336,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Faridabad</p>
+                            <p>Faridabad (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'faridabad'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -311,7 +350,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Goa</p>
+                            <p>Goa (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'goa'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -319,7 +361,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Gurgaon</p>
+                            <p>Gurgaon (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'gurgaon'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -327,7 +372,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Ghaziabad</p>
+                            <p>Ghaziabad (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'ghaziabad'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -335,7 +383,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Guwahati	</p>
+                            <p>Guwahati (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'guwahati'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -346,7 +397,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Lucknow</p>
+                            <p>Lucknow (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'lucknow'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -369,7 +423,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Ahmedabad</p>
+                            <p>Ahmedabad (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'ahmedabad'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -377,7 +434,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Ajmer</p>
+                            <p>Ajmer (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'ajmer'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -385,7 +445,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Allahabad</p>
+                            <p>Allahabad (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'allahabad'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -393,7 +456,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Ambala</p>
+                            <p>Ambala (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'ambala'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -402,7 +468,10 @@ if (!$city_result) {
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>
-                                Amritsar</p>
+                                Amritsar (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'amritsar'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -413,7 +482,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Bangalore</p>
+                            <p>Bangalore (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'bangalore'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -421,7 +493,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Bhubaneswar</p>
+                            <p>Bhubaneswar (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'bhubaneswar'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -433,7 +508,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Chennai</p>
+                            <p>Chennai (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'chennai'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -444,7 +522,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Dehradun</p>
+                            <p>Dehradun (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'dehradun'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -452,7 +533,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Delhi</p>
+                            <p>Delhi (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'delhi'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -463,7 +547,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Guwahati</p>
+                            <p>Guwahati (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'guwahati'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
@@ -474,7 +561,10 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Faridabad</p>
+                            <p>Faridabad (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'faridabad'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
