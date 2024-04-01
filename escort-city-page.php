@@ -184,7 +184,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
     <div class="container">
     <p>Do not impose any limitations as you have to sustain the real charm of your life. Which hot spirit is ready to follow your sensation urge while dwelling in <?= ucwords($city) ?> for a short time?  If you have the sure addiction to make the love sense. Then knocking on the bell of the brother agency is not a bad deal for you. At this destination, you can find the broad coverage of the Independent <?= ucwords($city) ?> escort.  Engaging in the fantasy flavor is not a new act, but their biography attachment describes well how they can provide you the long-lasting service.</p>
-
+    <p>The main mission and vision of our escort agency is not to let you tired more, and to let you relax through doing a heartwarming massage to the concerned person. So, you never thought that taking the escort service was a bad decision for you. After spending some time with the beautiful girls, you can feel happy, and energetic.  So, you do not depress more and select the jovial escort to bring new hope into your life. The in-birth erotic vibes hold the full stamina to do something well in your life.</p>
     </div>
 
     <div class="container" style="border: 0;padding:0;background:transparent">
@@ -240,7 +240,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     </div>
 
     <div class="container">
-        <p>The main mission and vision of our escort agency is not to let you tired more, and to let you relax through doing a heartwarming massage to the concerned person. So, you never thought that taking the escort service was a bad decision for you. After spending some time with the beautiful girls, you can feel happy, and energetic.  So, you do not depress more and select the jovial escort to bring new hope into your life. The in-birth erotic vibes hold the full stamina to do something well in your life.</p>
+        
         <p>The alluring style of the escorts in <?= ucwords($city) ?> does not let you be silent. By the way, the adult entertainment passion inspires her to make stunning nights. Do not take the escort hiring process for your amusement only, but also she fulfill their sexual appetite.  Our <?= ucwords($city) ?> escort has a proven record of providing a seamless fetish game.</p>
 
         <h2>How can you interact with the flawless <?= ucwords($city) ?> escort service? </h2>
