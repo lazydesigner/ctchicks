@@ -9,7 +9,7 @@ if(isset($city)){
         $h1 = 'Elite '.ucwords($city).' Escorts With Genuine Photo And Phone Numbers';
     }
 }else{
-    $h1 = "Find Elite Escorts In Your City";
+    $h1 = "Find Elite Call girls In Your City";
 }
 if(isset($area)){
     $h1 = 'Call girls in '.ucwords($city).' '.ucwords($area).' with WhatsApp number'; 
