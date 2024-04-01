@@ -3,7 +3,11 @@
 
 $h1 = '';
 if(isset($city)){
-    $h1 = 'Elite '.ucwords($city).' Escorts With Genuine Photo And Phone Numbers'; 
+    if($cat == 'escorts'){
+        $h1 = 'Live your erotic vibes in the confluence of <?= ucwords($city) ?> escorts';
+    }else{
+        $h1 = 'Elite '.ucwords($city).' Escorts With Genuine Photo And Phone Numbers';
+    }
 }else{
     $h1 = "Find Elite Escorts In Your City";
 }
