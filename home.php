@@ -422,7 +422,7 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Lucknow (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'kanpur'";
+                            <p>Kanpur (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'kanpur'";
                                                                                                                         $res = mysqli_query($con, $sql);
                                                                                                                         $row = mysqli_fetch_array($res);
                                                                                                                         echo $row['a'] ?>)</p>
@@ -654,7 +654,7 @@ if (!$city_result) {
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Lucknow (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'kanpur'";
+                            <p>Kanpur (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'escorts' && cities = 'kanpur'";
                                                                                                                         $res = mysqli_query($con, $sql);
                                                                                                                         $row = mysqli_fetch_array($res);
                                                                                                                         echo $row['a'] ?>)</p>
