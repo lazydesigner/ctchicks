@@ -28,7 +28,7 @@ foreach ($a as $j => $ar) {
 }
 
 
-$profile_query = "SELECT * FROM profiles WHERE identity_cat = '$id' AND cities = '{$_GET['city']}' AND areas = {$_GET['area']}";
+$profile_query = "SELECT * FROM profiles WHERE identity_cat = '$id' AND cities = '{$_GET['city']}' AND areas = '{$_GET['area']}'";
 
 $result = mysqli_query($con, $profile_query);
 
