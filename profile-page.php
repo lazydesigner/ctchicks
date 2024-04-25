@@ -9,6 +9,9 @@ $id = $_GET['id'];
 
 $c = explode('-', $_GET['city']);
 $a = explode('-', $_GET['area']);
+
+
+
 foreach ($c as $i => $ct) {
     if ($i == count($c)) {
         $city .= strtolower(trim($ct));
@@ -25,7 +28,7 @@ foreach ($a as $j => $ar) {
 }
 
 
-$profile_query = "SELECT * FROM profiles WHERE identity_cat = '$id'";
+$profile_query = "SELECT * FROM profiles WHERE identity_cat = '$id' AND cities = $c AND areas = $a";
 
 $result = mysqli_query($con, $profile_query);
 
