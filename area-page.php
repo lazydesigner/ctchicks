@@ -304,7 +304,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
     </div>
 
     <div class="container">
-        <h1>Are you looking for young call girls in the <?= ucwords($city) ?> for friendship?</h1>
+        <h2>Are you looking for young call girls in the <?= ucwords($city) ?> for friendship?</h2>
         <p>On our <a href="<?= get_url() ?>">Ctchicks website</a>, you will find hundreds of classified profiles of <a href="<?= get_url() . $cat . '/' . $_GET['city'] . '/' ?>"><?= ucwords($city) ?> call girls</a>. All Call girls near <?= ucwords($city) ?> profiles are 100% genuine and verified from our end through video calls. These hot and charming models can be contacted easily through our website. All our <?= ucwords($city) ?> female models are curvy, passionate, experienced, harmonious, and sexually excited.</p>
         <p>You can easily find phone numbers of independent call girls in the <?= ucwords($city) ?> on Ctchicks. These females are readily available anywhere in the <?= ucwords($city) ?>. These girls can come to your place or hotel room without any advance. You need to pay only after they arrive at your location. You can find call girls in the <?= ucwords($city) ?> as per your particular taste 24x7 in <?= ucwords($city) ?>.</p>
 
