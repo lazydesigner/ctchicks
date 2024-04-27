@@ -1,2 +1,4 @@
 User-Agent: *
 Allow: /
+
+Sitemap: https://ctchicks.com/sitemap.xml
