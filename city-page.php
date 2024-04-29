@@ -18,7 +18,7 @@ $looking_for_city_result = mysqli_query($con, $looking_for_city);
 if (!mysqli_num_rows($looking_for_city_result)) {
     header("Location: https://ctchicks.com/404");
 } else {
-    $profile_query = "(SELECT * FROM profiles WHERE  cities = '{$_GET['city']}'  AND callgirl_escort = '$cat' ORDER BY RAND() LIMIT 3) UNION (SELECT * FROM profiles WHERE  cities = '{$_GET['city']}'  AND callgirl_escort = '$cat' AND profile_id NOT IN (SELECT profile_id FROM profiles WHERE  cities = '{$_GET['city']}'  AND callgirl_escort = '$cat')   )";
+    $profile_query = "(SELECT profile_id, * FROM profiles WHERE  cities = '{$_GET['city']}'  AND callgirl_escort = '$cat' ORDER BY RAND() LIMIT 3) UNION (SELECT profile_id, * FROM profiles WHERE  cities = '{$_GET['city']}'  AND callgirl_escort = '$cat' AND profile_id NOT IN (SELECT profile_id FROM profiles WHERE  cities = '{$_GET['city']}'  AND callgirl_escort = '$cat')   )";
     $profile_query_result = mysqli_query($con, $profile_query);
     if (mysqli_num_rows($profile_query_result) < 1) {
     }
