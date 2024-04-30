@@ -238,8 +238,8 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                     $key .= 'till_date';
                     $value .= '"{$formattedDateTime}"';
                     $in = "INSERT INTO new_profiles($key) VALUES ($value)";
-                    $r = mysqli_query($con, $in);
-                if($r){ echo '';}
+                    $rx = mysqli_query($con, $in);
+                if($rx){ echo '';}
                 }
 
             if(!empty($row['image_']) && $row['image_'] != null ){
