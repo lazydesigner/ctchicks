@@ -232,11 +232,11 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                     $key = '';
                     $value = '';
                 foreach($row as $r=>$v){
-                    $key .= "$r,";
-                    $value .= "'{$v}',";
+                    $key .= '$r,';
+                    $value .= '"{$v}",';
                 }
                     $key .= 'till_date';
-                    $value .= "'{$formattedDateTime}'";
+                    $value .= '"{$formattedDateTime}"';
                     $in = "INSERT INTO new_profiles($key) VALUES ($value)";
                     $r = mysqli_query($con, $in);
                 if($r){ echo '';}
