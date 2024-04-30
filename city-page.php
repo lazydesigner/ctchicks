@@ -232,14 +232,15 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                     $key = '';
                     $value = '';
                 foreach($row as $r=>$v){
-                    $key .= '$r,';
-                    $value .= '"{$v}",';
+                    $key .= "$r,";
+                    $vv = addslashes($v);
+                    $value .= "'{$vv}',";
                 }
                     $key .= 'till_date';
-                    $value .= '"{$formattedDateTime}"';
+                    $value .= "'{$formattedDateTime}'";
                     $in = "INSERT INTO new_profiles($key) VALUES ($value)";
-                    $rx = mysqli_query($con, $in);
-                if($rx){ echo '';}
+                    $r = mysqli_query($con, $in);
+                if($r){ echo '';}
                 }
 
             if(!empty($row['image_']) && $row['image_'] != null ){
