@@ -2,8 +2,25 @@
 <?php
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
-$cat =  trim($uri[1]);
+$cat =  trim($uri[2]);
 $city = '';
+
+// Get current date and time
+$currentDateTime = new DateTime();
+$currentDateTime2 = new DateTime();
+
+// Add 5 days to the current date and time
+$currentDateTime->modify('+5 days');
+
+// Format the modified date and time
+$formattedDateTime = $currentDateTime->format('Y-m-d');
+$formattedDateTime2 = $currentDateTime2->format('Y-m-d');
+
+$del = "DELETE FROM new_profiles WHERE cities = '{$_GET['city']}' AND till_date < '$formattedDateTime2'";
+
+$del_r = mysqli_query($con, $del);
+if($del){}
+
 
 $c = explode('-', $_GET['city']);
 foreach ($c as $i => $ct) {
@@ -18,14 +35,24 @@ $looking_for_city_result = mysqli_query($con, $looking_for_city);
 if (!mysqli_num_rows($looking_for_city_result)) {
     header("Location: https://ctchicks.com/404");
 } else {
-    $profile_query = "
+
+    $profile_query2 = "
+        SELECT * 
+        FROM new_profiles 
+        WHERE cities = '{$_GET['city']}' AND callgirl_escort = '$cat' ";
+    $profile_query_result = mysqli_query($con, $profile_query2);
+
+    if (mysqli_num_rows($profile_query_result) < 1) {
+        $pre = 'notpresent';    
+        $profile_query = "
         SELECT * 
         FROM profiles 
         WHERE cities = '{$_GET['city']}' AND callgirl_escort = '$cat' 
         ORDER BY RAND() ";
-    $profile_query_result = mysqli_query($con, $profile_query);
-    if (mysqli_num_rows($profile_query_result) < 1) {
-    }
+        $profile_query_result = mysqli_query($con, $profile_query);
+        if (mysqli_num_rows($profile_query_result) < 1) {
+        }
+    }    
 }
 ?>
 <!DOCTYPE html>
@@ -198,6 +225,19 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         <?php
         while ($row = mysqli_fetch_assoc($profile_query_result)) {
 
+                if(isset($pre)){
+                    $key = '';
+                    $value = '';
+                foreach($row as $r=>$v){
+                    $key .= "$r,";
+                    $value .= "'{$v}',";
+                }
+                    $key .= 'till_date';
+                    $value .= "'{$formattedDateTime}'";
+                    $in = "INSERT INTO new_profiles($key) VALUES ($value)";
+                    $r = mysqli_query($con, $in);
+                if($r){ echo '';}
+                }
 
             if(!empty($row['image_']) && $row['image_'] != null ){
                 $image_count = json_decode($row['image_'], true);
