@@ -2,7 +2,7 @@
 <?php
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
-$cat =  trim($uri[2]);
+$cat =  trim($uri[1]);
 $city = '';
 
 // Get current date and time
