@@ -1,5 +1,8 @@
 <?php include './inc.php' ?>
 <?php
+
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 1);
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
 $cat =  trim($uri[1]);
