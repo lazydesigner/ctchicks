@@ -537,7 +537,7 @@ if (mysqli_num_rows($result) > 0) {
     </script>
     <script>
         document.getElementById('change-to-number').addEventListener('click', (e) => {
-            document.getElementById('change-to-number').innerText = "+91 8800925952"
+            document.getElementById('change-to-number').innerText = "+91 <?php if(!empty($row['phone'])){echo $row['phone']; }else{echo '0000000000';} ?>"
         })
 
         function openCity(evt, tabName) {

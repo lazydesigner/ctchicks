@@ -290,7 +290,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
                         <p><?= $row['content'] ?></p>
                     </div>
                     <div class="long-btn-action">
-                        <a href="https://api.whatsapp.com/send?phone=910000000000&text=Hi%20Kiara,%20I%20want%20a%20service%20in%20Goa%20found%20you%20on%20Ctchicks"><button style="background-color: green;color:white">WhatsApp</button></a>
+                        <a href="https://api.whatsapp.com/send?phone=91<?php if(!empty($row['phone'])){echo $row['phone']; }else{echo '0000000000';} ?>&text=Hi%20Kiara,%20I%20want%20a%20service%20in%20Goa%20found%20you%20on%20Ctchicks"><button style="background-color: green;color:white"><i class="ri-whatsapp-line"></i> <?php if(!empty($row['phone'])){echo $row['phone']; }else{echo '0000000000';} ?></button></a>
                         <!-- <a href="tel:+910000000000"><button style="background-color:#0075DA;color:white">Contact</button></a> -->
                     </div>
                 </div>
