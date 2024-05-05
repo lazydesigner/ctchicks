@@ -289,7 +289,7 @@ if (mysqli_num_rows($result) > 0) {
         <div class="profile-section">
             <div class="profile-section-col about-profile-section">
                 <h2>About <span style="text-transform:capitalize;"><?= $row['profile_name'] ?></span></h2>
-                <p><?= $row['content'] ?></p>
+                <p style="user-select: none;"><?= $row['content'] ?></p>
                 <p><i class="ri-radio-button-line"></i><span style="text-transform:capitalize;"><?= $row['cities'] ?></span>, India</p>
                 <p>Contact <?= $row['profile_name'] ?> to given number for more information. </p>
                 <button id="change-to-number">CONTACT</button>
@@ -318,7 +318,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- Tab content -->
                 <div id="General" class="tabcontent">
-                    <table style="width: 100%; border-collapse: collapse;margin-top:2%">
+                    <table style="width: 100%; border-collapse: collapse;margin-top:2%; user-select: none;">
                         <tr>
                             <td> Name:</td>
                             <td><span style="text-transform:capitalize;"><?= $row['profile_name'] ?></span></td>

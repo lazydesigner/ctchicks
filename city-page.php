@@ -216,7 +216,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
     <?php include './navbar.php' ?>
 
-    <div class="container">
+    <div class="container" style="user-select: none;">
     <p>On <strong>Ctchicks</strong>, you can browse a meticulously crafted collection of <a href="<?= get_url() . $cat.'/'.$_GET['city'].'/' ?>">call girls in <?=ucwords($city) ?></a>. Discover thousands of independent <?=ucwords($city) ?> call girls and select that suit your needs. Our website offers a diverse epitome of elegance and experience. Our website provides a seamless and transparent environment for a better browsing experience. So that you pursue through our extensive listings or portfolios that include comprehensive biographies. This portfolio also includes providing service,body figure details, complexions, and images of the model.</p><p>
 <b>Ctchicks</b> works more than a repository of profiles because we are your trusted partner in the world of call girls. Join us on a Journey where beauty knows no boundaries and possibilities are endless.</p>
 
@@ -290,7 +290,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
     </div>
 
-    <div class="container">
+    <div class="container" style="user-select: none;">
         <h2>How to get in touch with call girls in <?= ucwords($city) ?>?</h2>
         <p>
             Stop wasting your time in finding the best partner to satisfy your sexual cravings. Here at Ctchicks, you can easily find the best escorts and call girls in <?= ucwords($city) ?>, without any hassle. Visit our online platform and find the best sex workers in <?= ucwords($city) ?>. On our website <a href="<?= get_url() ?>">Ctchicks.com</a>, you can find hot call girls in <?= ucwords($city) ?> to fulfill any fantasy or desire that you want to fulfill. You can imagine yourself in sex positions like anal sex, threesome, and erotic massage as our platform provides the best interface between you and your dream babe.
