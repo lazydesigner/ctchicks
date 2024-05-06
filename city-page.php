@@ -192,7 +192,11 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         
 @media screen and (max-width: 530px) {
 
-.just-two-line{display: none;}
+.just-two-line {
+    display: block;
+    font-size: small;
+    line-height: 18px;
+}
 
 }
 
@@ -271,7 +275,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                 </div>
                 <div class="long-profile-detail">
                     <a href="<?= $create_url ?>">
-                        <h3><?= $row['page_h1'] ?></h3>
+                        <h3 style=" font-size: 1rem; line-height: 18px;"><?= $row['page_h1'] ?></h3>
                     </a>
                     <div class="just-two-line">
                         <p><?= trim($row['content']) ?></p>
