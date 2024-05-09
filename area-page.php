@@ -339,23 +339,23 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
                 <p>We guarantee you maximum enjoyment when you choose ctchicks.com. Also, your identity is safe with us. Only the girl and you will know you used our service. We also guarantee you your value for your money due to our pocket-friendly rates for premium service and many more.</p>
             </div>
             <div class="question">
-                <h4>What is price of call girl in <?=  ucwords($area) ?>, <?=  ucwords($city) ?></h4>
+                <h4>What is price of call girl in <?=  ucwords($area) ?></h4>
             </div>
             <div class="answer">
-                <p>Low to High-priced sex workers call girls in <?=  ucwords($area) ?>, <?=  ucwords($city) ?> charge anywhere from 10,000 ( 10k ) to 50,000 (50k) rupees for an hour, but some charge many times more. Also Available for budget clints.</p>
+                <p>Low to High-priced sex workers call girls in <?=  ucwords($area) ?> charge anywhere from 10,000 ( 10k ) to 50,000 (50k) rupees for an hour, but some charge many times more. Also Available for budget clints.</p>
             </div>
-            <div class="question">How do I book a call girl in <?=  ucwords($area) ?>, <?=  ucwords($city) ?>?</div>
+            <div class="question">How do I book a call girl in <?=  ucwords($area) ?>?</div>
             <div class="answer">
-                <p>If you want to Hire a call girl in <?=  ucwords($area) ?>, <?=  ucwords($city) ?> then follow these simple steps:</p>
-                <p> <br>• Make a list of all genuine call girls service provider agencies by searching “Call Girls Near Me in <?=  ucwords($area) ?>, <?=  ucwords($city) ?>” on the Internet.
-                    <br>• Visit ctchicks.com websites in <?=  ucwords($area) ?>, <?=  ucwords($city) ?> city one by one and read all things carefully.
-                    <br>• Select your desired <?=  ucwords($area) ?>, <?=  ucwords($city) ?> call girls, and provide your identity details for verification.
-                    <br>• Get a <?=  ucwords($area) ?>, <?=  ucwords($city) ?> call girl’s Number and fix your meeting date and time.
-                    <br>• Take the <?=  ucwords($area) ?>, <?=  ucwords($city) ?> call girls service and pay the amount to the call girls in <?=  ucwords($area) ?>, <?=  ucwords($city) ?>.
+                <p>If you want to Hire a call girl in <?=  ucwords($area) ?> then follow these simple steps:</p>
+                <p> <br>• Make a list of all genuine call girls service provider agencies by searching “Call Girls Near Me in <?=  ucwords($area) ?>” on the Internet.
+                    <br>• Visit ctchicks.com websites in <?=  ucwords($area) ?> city one by one and read all things carefully.
+                    <br>• Select your desired <?=  ucwords($area) ?> call girls, and provide your identity details for verification.
+                    <br>• Get a <?=  ucwords($area) ?> call girl’s Number and fix your meeting date and time.
+                    <br>• Take the <?=  ucwords($area) ?> call girls service and pay the amount to the call girls in <?=  ucwords($area) ?>.
                 </p>
             </div>
             <div class="question"><h4>Is There a Refund Policy Available</h4></div>
-            <div class="answer">No, once you pay our call girl in <?=  ucwords($area) ?>, <?=  ucwords($city) ?>, we cannot refund the money.</div>
+            <div class="answer">No, once you pay our call girl in <?=  ucwords($area) ?>, we cannot refund the money.</div>
         </div>
     </div>
     <div class="container last-step">
