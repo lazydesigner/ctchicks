@@ -321,30 +321,30 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
         <h3 class="third-heading">FAQ</h3>
         <div class="faq">
             <div class="question">
-                <h4><strong>Can We Bring Call Girls To Hotel In <?=  ucwords($area) ?>?</strong></h4>
+                <h4><strong>Can We Bring Call Girls To Hotel In <?=  ucwords($area) ?> ?</strong></h4>
             </div>
             <div class="answer">
                 <p>Yes! <?= $area ?> is a beautiful Area and one that has even its air laden with love. To clear your doubts, simply reach out to our team of dedicated staff, and we will point you in the direction of hotels that are warm and luxurious.</p>
             </div>
             <div class="question">
-                <h4><strong>Is The Photo Of The <?=  ucwords($area) ?> Call Girl Genuine?</strong></h4>
+                <h4><strong>Is The Photo Of The <?=  ucwords($area) ?> Call Girl Genuine ?</strong></h4>
             </div>
             <div class="answer">
                 <p>As we offer cheap call girl service in <?=  ucwords($area) ?>, we do well to make sure that all our girls are properly vetted and their photos genuine, so you have nothing to worry about. Just sit back and relax.</p>
             </div>
             <div class="question">
-                <h4>What Benefits Of Choosing Call Girls At Ctchicks.com</h4>
+                <h4>What Benefits Of Choosing Call Girls At Ctchicks.com ?</h4>
             </div>
             <div class="answer">
                 <p>We guarantee you maximum enjoyment when you choose ctchicks.com. Also, your identity is safe with us. Only the girl and you will know you used our service. We also guarantee you your value for your money due to our pocket-friendly rates for premium service and many more.</p>
             </div>
             <div class="question">
-                <h4>What is price of call girl in <?=  ucwords($area) ?></h4>
+                <h4>What is price of call girl in <?=  ucwords($area) ?> ?</h4>
             </div>
             <div class="answer">
                 <p>Low to High-priced sex workers call girls in <?=  ucwords($area) ?> charge anywhere from 10,000 ( 10k ) to 50,000 (50k) rupees for an hour, but some charge many times more. Also Available for budget clints.</p>
             </div>
-            <div class="question">How do I book a call girl in <?=  ucwords($area) ?>?</div>
+            <div class="question">How do I book a call girl in <?=  ucwords($area) ?> ?</div>
             <div class="answer">
                 <p>If you want to Hire a call girl in <?=  ucwords($area) ?> then follow these simple steps:</p>
                 <p> <br>• Make a list of all genuine call girls service provider agencies by searching “Call Girls Near Me in <?=  ucwords($area) ?>” on the Internet.
