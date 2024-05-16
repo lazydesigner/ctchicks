@@ -69,16 +69,17 @@ $query = "SELECT * FROM  profiles";
     
 $result =  mysqli_query($con,$query);
 // Create the sitemap XML
-if(mysqli_num_rows($result)>0){
-    while ($row = mysqli_fetch_assoc($result)) {
-        $url = htmlspecialchars('https://ctchicks.com/'.$row['callgirl_escort'].'/'.strtolower($row['cities']).'/'.strtolower($row['areas']).'/'.$row['identity_cat'].'/');
-        $xml .= "\t<url>\n";
-        $xml .= "\t\t<loc>$url</loc>\n";
-        $xml .= "\t\t<lastmod>2024-03-01T06:13:31+05:30</lastmod>\n";
-        $xml .= "\t\t<changefreq>weekly</changefreq>\n";
-        $xml .= "\t\t<priority>0.7</priority>\n";
-        $xml .= "\t</url>\n";
-    }}
+
+// if(mysqli_num_rows($result)>0){
+//     while ($row = mysqli_fetch_assoc($result)) {
+//         $url = htmlspecialchars('https://ctchicks.com/'.$row['callgirl_escort'].'/'.strtolower($row['cities']).'/'.strtolower($row['areas']).'/'.$row['identity_cat'].'/');
+//         $xml .= "\t<url>\n";
+//         $xml .= "\t\t<loc>$url</loc>\n";
+//         $xml .= "\t\t<lastmod>2024-03-01T06:13:31+05:30</lastmod>\n";
+//         $xml .= "\t\t<changefreq>weekly</changefreq>\n";
+//         $xml .= "\t\t<priority>0.7</priority>\n";
+//         $xml .= "\t</url>\n";
+//     }}
 
 
 
