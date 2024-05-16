@@ -39,6 +39,24 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 
+// URL of the sitemap
+$sitemap_url = 'https://ctchicks.com/sitemap.xml';
+
+// Fetch the sitemap contents
+$sitemap_content = file_get_contents($sitemap_url);
+
+// Check if the sitemap is successfully fetched
+if ($sitemap_content !== false) {
+    // Search for the specific word or phrase
+
+    if (strpos($sitemap_content, $id) !== false) {
+        $inde = '<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+        <link rel="shortcut icon" type="image/x-icon" href="'.$cdn_url.'icon/favicon.png" />';
+    } else {
+        $inde = '<meta name="robots" content="noindex, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+        <link rel="shortcut icon" type="image/x-icon" href="'.$cdn_url.'icon/favicon.png" />';
+    }
+}
 
 
 
@@ -51,7 +69,7 @@ if (mysqli_num_rows($result) > 0) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?= $noindex ?>
+    <?= $inde ?>
     <title><?= $row['page_title'] ?></title>
     <meta name="description" content="<?= $row['meta_description'] ?>" />
     <link rel="canonical" href="https://ctchicks.com/<?= $cat . '/' . $_GET['city'] . '/' . $_GET['area'] . '/' . $id . '/' ?>" />
