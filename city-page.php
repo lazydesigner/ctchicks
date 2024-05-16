@@ -67,12 +67,12 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     <?= $noindex ?>
     <title>Call Girls in <?=$city ?>: Free Delivery 24x7 at Your Doorstep</title>
     <meta name="description" content="Being one of the top <?=$city ?> call girls directory we provide fast delivery in 20 mins. All our call girls in <?=$city ?> are available 24/7 in Cash on delivery." />
-    <link rel="canonical" href="https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/' ?>" />
+    <link rel="canonical" href="https://ctchicks.com/<?=strtolower($cat).'/'.strtolower($_GET['city']).'/' ?>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Call Girls in <?=$city ?>: Free Delivery 24x7 at Your Doorstep" />
     <meta property="og:description" content="Being one of the top <?=$city ?> call girls directory we provide fast delivery in 20 mins. All our call girls in <?=$city ?> are available 24/7 in Cash on delivery." />
-    <meta property="og:url" content="https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/' ?>" />
+    <meta property="og:url" content="https://ctchicks.com/<?=strtolower($cat).'/'.strtolower($_GET['city']).'/' ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Call Girls in <?=$city ?>: Free Delivery 24x7 at Your Doorstep" />

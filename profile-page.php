@@ -78,7 +78,7 @@ if ($sitemap_content !== false) {
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?= $row['page_title'] ?>" />
     <meta property="og:description" content="<?= $row['meta_description'] ?>" />
-    <meta property="og:url" content="https://ctchicks.com/<?= $cat . '/' . $_GET['city'] . '/' . $_GET['area'] . '/' . $id . '/' ?>" />
+    <meta property="og:url" content="https://ctchicks.com/<?= strtolower($cat) . '/' . strtolower($_GET['city']) . '/' . strtolower($_GET['area']) . '/' . strtolower($id) . '/' ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="<?= $row['page_title'] ?>" />

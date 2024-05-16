@@ -46,7 +46,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
     <?= $noindex ?>
     <title> Call girls in <?= $area ?> (<?= $city ?>) with Real Phone Number</title>
     <meta name="description" content="Hey! I am independent call girl near <?= $area ?> in <?= $city ?>, I offer services at low prices. I'm offering you these services at your home or hotel room." />
-    <link rel="canonical" href="https://ctchicks.com/<?= $cat . '/' . $_GET['city'] . '/' . $_GET['area'] . '/' ?>" />
+    <link rel="canonical" href="https://ctchicks.com/<?= strtolower($cat) . '/' . strtolower($_GET['city']) . '/' . strtolower($_GET['area']) . '/' ?>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content=" Call girls in <?= $area ?> (<?= $city ?>) with Real Phone Number
