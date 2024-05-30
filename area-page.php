@@ -179,6 +179,10 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
             cursor: pointer;
             /* padding: 42%; */
         }
+        .top-cities-of-india a:nth-child(even) button{
+            background-color: #0075da;
+            color: white;
+        }
 
         .faq {
             display: flex;
