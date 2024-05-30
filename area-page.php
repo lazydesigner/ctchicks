@@ -71,16 +71,20 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
         /* City CSS */
         .long-profile {
             width: 100%;
-            height: 160px;
-            border: 2px solid rgb(173, 173, 173);
+            height: 190px;
+            border: 2px solid var(--primary);
             display: flex;
             flex-wrap: wrap;
             margin: 1% 0;
+            border-radius:10px;
+            padding: 1%;
         }
 
         .long-profile-image {
             width: 160px;
             height: 100%;
+            border-radius: 50%;
+            /* overflow: hidden; */
             background-color: rgb(233, 233, 233);
             position: relative;
         }
@@ -90,10 +94,11 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
             height: 100%;
             object-fit: cover;
             object-position: top;
+            border-radius: 50%;
         }
 
         .image-count {
-            width: 40px;
+            width: 30px;
             color: white;
             position: absolute;
             display: flex;
@@ -123,6 +128,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
         }
 
         .long-profile-detail h3 {
+            font-size: 1.3rem;
             margin: 0;
             padding: 0;
         }
@@ -140,15 +146,18 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
         }
 
         .long-btn-action button {
-            width: 100px;
+            /* width: 100px; */
             height: 40px;
             border: 0;
             font-size: 1.05rem;
+            border-radius: 100px;
+            padding: 0 15px;
             cursor: pointer;
         }
 
         .last-step h4 {
             font-size: 1.4rem;
+            text-align: center;
         }
 
         .top-cities-of-india {
@@ -156,7 +165,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
             height: auto;
             display: flex;
             flex-wrap: wrap;
-            justify-content: start;
+            justify-content: center;
             gap: 3%;
         }
 
@@ -217,15 +226,28 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
             border-radius: 0 0 10px 10px;
         }
 
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 580px) {
+    
 
-            .just-two-line {
-    display: block;
-    font-size: small;
-    line-height: 18px;
-}
-
-        }
+    .long-profile-image{border-radius: 0;}  
+    .long-profile-image img{border-radius: 0;}  
+    
+            .long-profile-detail h3 {
+                font-size: 1rem;
+                margin: 0;
+                padding: 0;
+            }
+    /* }
+    @media screen and (max-width: 530px) { */
+    
+    .just-two-line {
+        font-size: small;
+        line-height: 20px;
+                -webkit-line-clamp: 4;
+                margin-top: 3px;
+    }
+    
+    }
 
         @media screen and (max-width: 500px) {
             .form-container {
@@ -242,9 +264,9 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
                 width: calc(100% - 90px);
             }
 
-            .long-btn-action button {
+            /* .long-btn-action button {
                 width: 90px;
-            }
+            } */
         }
 
         /* City CSS */
