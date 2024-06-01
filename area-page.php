@@ -266,7 +266,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
 
         ?>
 
-            <div class="long-profile">
+            <div class="long-profile" style="<?php if($count_pro % 4 == 0 || $count_pro == 1 || $count_pro == 2){ echo 'border: 2px solid pink'; }?>">
             <?php 
                 
                 

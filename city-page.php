@@ -311,7 +311,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
         ?>
 
-            <div class="long-profile">
+            <div class="long-profile" style="<?php if($count_pro % 4 == 0 || $count_pro == 1 || $count_pro == 2){ echo 'border: 2px solid pink'; }?>">
                 <?php 
                 
                     if($count_pro % 3 == 0){
@@ -327,7 +327,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                 
                 ?>
                 
-                <div class="long-profile-image">
+                <div class="long-profile-image" >
                     <a href="<?= $create_url ?>"> 
                 <?php if(isset($image_count)){ ?>
                     <img src="<?= $cdn_url ?>profiles/<?= $image_count[0] ?>" alt="<?=$image_count_alt[0] ?>" width="100%" loading="lazy" height="100%" />
