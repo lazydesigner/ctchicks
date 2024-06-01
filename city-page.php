@@ -315,13 +315,13 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                 <?php 
                 
                     if($count_pro % 3 == 0){
-                        echo '<div class="premium-tag">VIP</div>';
+                        echo '<div class="premium-tag">PRO</div>';
                     }elseif($count_pro % 4 == 0){
-                        echo '<div class="premium-tag">SUPER VIP</div>';
+                        echo '<div class="premium-tag">PRO MAX</div>';
                     }elseif($count_pro == 1){
-                        echo '<div class="premium-tag">SUPER VIP</div>';
+                        echo '<div class="premium-tag">PRO MAX</div>';
                     }elseif($count_pro == 2){
-                        echo '<div class="premium-tag">SUPER VIP</div>';
+                        echo '<div class="premium-tag">PRO MAX</div>';
                     }
                     $count_pro += 1;
                 
