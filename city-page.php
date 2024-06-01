@@ -390,9 +390,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
 <p>When hiring girls in <?= ucwords($city) ?> for your deepest and darkest secrets, the cost of hiring an Independent female depends on the service and the period for which you want the call girls. When you want a call girl for an hour, there are more affordable options than hiring her for the whole night. They will charge less if you spend private time in your home or hotel or more if you want to go out to events or parties. To get the best female <a href="<?= get_url().$cat.'/'.$_GET['city'].'/' ?>">call girls in <?= ucwords($city) ?></a>, discussing the services and specifying what you want and need before booking your dream girl in <?= ucwords($city) ?> is essential. </p>
 
-<h2>Ctchicks.com never intervene between ad publisher and online user</h2>
 
-<p>By accessing our website you confirm all our escort classified ad network’s policy – we do not mediate between ad publisher and online user. Our platform is built to ensure that people who need services are able to get them from providers in a smooth and effective way. We facilitate the two parties communicating with each other without any disruption because we believe it is important for them to engage in open talks and rely upon each other. Therefore, as you go through our listings please note that you can talk with the advertisers directly hence be confident of your choices. We are not responsible for any transaction between user and publisher. Enjoy Browsing!</p>
 
     </div>
 
@@ -436,6 +434,12 @@ echo $areaX;
         </div>
     </div>
 
+    </div>
+
+    <div class="container">
+    <h2>Ctchicks.com never intervene between ad publisher and online user</h2>
+
+<p>By accessing our website you confirm all our escort classified ad network’s policy – we do not mediate between ad publisher and online user. Our platform is built to ensure that people who need services are able to get them from providers in a smooth and effective way. We facilitate the two parties communicating with each other without any disruption because we believe it is important for them to engage in open talks and rely upon each other. Therefore, as you go through our listings please note that you can talk with the advertisers directly hence be confident of your choices. We are not responsible for any transaction between user and publisher. Enjoy Browsing!</p>
     </div>
 
     <?php include './footer2.php' ?>
