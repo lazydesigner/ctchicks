@@ -5,7 +5,7 @@
 // ini_set('display_errors', 1);
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
-$cat =  trim($uri[2]);
+$cat =  trim($uri[1]);
 $city = '';
 
 // Get current date and time
@@ -279,20 +279,20 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         $count_pro = 1;
         while ($row = mysqli_fetch_assoc($profile_query_result)) {
 
-                // if(isset($pre)){
-                //     $key = '';
-                //     $value = '';
-                // foreach($row as $r=>$v){
-                //     $key .= "$r,";
-                //     $vv = addslashes($v);
-                //     $value .= "'{$vv}',";
-                // }
-                //     $key .= 'till_date';
-                //     $value .= "'{$formattedDateTime}'";
-                //     $in = "INSERT INTO new_profiles($key) VALUES ($value)";
-                //     $r = mysqli_query($con, $in);
-                // if($r){ echo '';}
-                // }
+                if(isset($pre)){
+                    $key = '';
+                    $value = '';
+                foreach($row as $r=>$v){
+                    $key .= "$r,";
+                    $vv = addslashes($v);
+                    $value .= "'{$vv}',";
+                }
+                    $key .= 'till_date';
+                    $value .= "'{$formattedDateTime}'";
+                    $in = "INSERT INTO new_profiles($key) VALUES ($value)";
+                    $r = mysqli_query($con, $in);
+                if($r){ echo '';}
+                }
 
             if(!empty($row['image_']) && $row['image_'] != null ){
                 $image_count = json_decode($row['image_'], true);
