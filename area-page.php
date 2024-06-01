@@ -173,10 +173,11 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
             width: 100px;
             height: 40px;
             border-radius: 3px;
-            background-color: var(--secondary);
+            background-color: green;
             border: 0;
             margin: 5% 1%;
             cursor: pointer;
+            color:white;
             /* padding: 42%; */
         }
         .top-cities-of-india a:nth-child(even) button{
