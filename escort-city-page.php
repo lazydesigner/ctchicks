@@ -45,7 +45,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     <meta name="twitter:description" content="Being one of the top <?=$city ?> Escorts directory we provide fast delivery in 20 mins. All our Escorts in <?=$city ?> are available 24/7 in Cash on delivery." />
     <?= $page_css ?>
     <style>
-        .just-two-line {
+              .just-two-line {
             overflow: hidden;
             display: -webkit-box;
             -webkit-box-orient: vertical;
@@ -63,6 +63,19 @@ if (!mysqli_num_rows($looking_for_city_result)) {
             margin: 1% 0;
             border-radius:10px;
             padding: 1%;
+            position: relative;
+        }
+        .premium-tag{
+            position: absolute;
+            top: 2px;
+            right: 5px;
+            padding: 2.5px 10px;
+            border: 1px solid var(--primary);
+            background-color: var(--primary);
+            color:white;
+            font-size: small;
+            border-radius: 15px;
+
         }
 
         .long-profile-image {
@@ -162,105 +175,53 @@ if (!mysqli_num_rows($looking_for_city_result)) {
             border: 0;
             margin: 5% 1%;
             cursor: pointer;
-            color:white;
+            color: white;
             /* padding: 42%; */
         }
+        
         .top-cities-of-india a:nth-child(even) button{
             background-color: #0075da;
             color: white;
         }
-
-        .faq {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .question {
-            background-color: #f6f6f6;
-            cursor: pointer;
-            padding: 10px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 5px;
-            border-radius: 10px;
-            transition: all 0.3s ease-out;
-        }
-
-        .question:hover {
-            background-color: #ebebeb;
-        }
-
-        .answer {
-            display: none;
-            padding: 20px;
-            font-size: 16px;
-            line-height: 1.4;
-            margin: 5px;
-            border-radius: 10px;
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease-out;
-        }
-
-        .question.active {
-            background-color: #edf2f7;
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-            transform: translateY(-10px);
-            border-radius: 10px 10px 0 0;
-        }
-
-        .question.active+.answer {
-            display: block;
-            transform: translateY(0);
-            border: 1px solid #e2e8f0;
-            border-top: none;
-            border-radius: 0 0 10px 10px;
-        }
-
-        @media screen and (max-width: 580px) {
+        
+@media screen and (max-width: 580px) {
     
-
-    .long-profile-image{border-radius: 0;}  
-    .long-profile-image img{border-radius: 0;}  
-    
-            .long-profile-detail h3 {
-                font-size: 1rem;
-                margin: 0;
-                padding: 0;
-            }
-    /* }
-    @media screen and (max-width: 530px) { */
-    
-    .just-two-line {
-        font-size: small;
-        line-height: 20px;
-                -webkit-line-clamp: 4;
-                margin-top: 3px;
-    }
-    
+    .long-profile {
+        height: auto;
+        justify-content: center;
     }
 
-        @media screen and (max-width: 500px) {
-            .form-container {
-                grid-template-columns: repeat(1, minmax(100%, 1fr));
-            }
+        .long-profile-detail h3 {
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
         }
-
-        @media screen and (max-width: 430px) {
-            .long-profile-image {
-                width: 90px;
-            }
-
-            .long-profile-detail {
-                width: calc(100% - 90px);
-            }
-
-            /* .long-btn-action button {
-                width: 90px;
-            } */
+        .long-profile-image{
+            width: 50%;
+            aspect-ratio: 1/1;
         }
+/* }
+@media screen and (max-width: 530px) { */
 
-        /* City CSS */
-        /* City CSS */
+.just-two-line {
+    font-size: small;
+    line-height: 20px;
+            -webkit-line-clamp: 4;
+            margin-top: 3px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+.form-container{
+    grid-template-columns: repeat(1, minmax(100%, 1fr));
+}
+    }
+
+@media screen and (max-width: 430px) {
+/* .long-profile-image{width: 90px;} */
+.long-profile-detail {width: 100%;}
+}
     </style>
 </head>
 
@@ -277,6 +238,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
 
         <?php
+        $count_pro = 1;
         while ($row = mysqli_fetch_assoc($profile_query_result)) {
             if(!empty($row['image_']) && $row['image_'] != null ){
                 $image_count = json_decode($row['image_'], true);
@@ -295,6 +257,20 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         ?>
 
             <div class="long-profile">
+            <?php 
+                
+                if($count_pro % 3 == 0){
+                    echo '<div class="premium-tag">VIP</div>';
+                }elseif($count_pro % 4 == 0){
+                    echo '<div class="premium-tag">SUPER VIP</div>';
+                }elseif($count_pro == 1){
+                    echo '<div class="premium-tag">SUPER VIP</div>';
+                }elseif($count_pro == 2){
+                    echo '<div class="premium-tag">SUPER VIP</div>';
+                }
+                $count_pro += 1;
+            
+            ?>
                 <div class="long-profile-image">
                     <a href="<?= $create_url ?>"> 
                 <?php if(isset($image_count)){ ?>

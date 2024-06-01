@@ -5,7 +5,7 @@
 // ini_set('display_errors', 1);
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
-$cat =  trim($uri[1]);
+$cat =  trim($uri[2]);
 $city = '';
 
 // Get current date and time
@@ -97,6 +97,19 @@ if (!mysqli_num_rows($looking_for_city_result)) {
             margin: 1% 0;
             border-radius:10px;
             padding: 1%;
+            position: relative;
+        }
+        .premium-tag{
+            position: absolute;
+            top: 2px;
+            right: 5px;
+            padding: 2.5px 10px;
+            border: 1px solid var(--primary);
+            background-color: var(--primary);
+            color:white;
+            font-size: small;
+            border-radius: 15px;
+
         }
 
         .long-profile-image {
@@ -207,14 +220,19 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         
 @media screen and (max-width: 580px) {
     
-
-.long-profile-image{border-radius: 0;}  
-.long-profile-image img{border-radius: 0;}  
+    .long-profile {
+        height: auto;
+        justify-content: center;
+    }
 
         .long-profile-detail h3 {
             font-size: 1rem;
             margin: 0;
             padding: 0;
+        }
+        .long-profile-image{
+            width: 50%;
+            aspect-ratio: 1/1;
         }
 /* }
 @media screen and (max-width: 530px) { */
@@ -235,8 +253,8 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     }
 
 @media screen and (max-width: 430px) {
-.long-profile-image{width: 90px;}
-.long-profile-detail {width: calc(100% - 90px);}
+/* .long-profile-image{width: 90px;} */
+.long-profile-detail {width: 100%;}
 }
 
         /* City CSS */
@@ -257,22 +275,24 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
 
         <?php
+        // $count_pro =  count(mysqli_fetch_assoc($profile_query_result));
+        $count_pro = 1;
         while ($row = mysqli_fetch_assoc($profile_query_result)) {
 
-                if(isset($pre)){
-                    $key = '';
-                    $value = '';
-                foreach($row as $r=>$v){
-                    $key .= "$r,";
-                    $vv = addslashes($v);
-                    $value .= "'{$vv}',";
-                }
-                    $key .= 'till_date';
-                    $value .= "'{$formattedDateTime}'";
-                    $in = "INSERT INTO new_profiles($key) VALUES ($value)";
-                    $r = mysqli_query($con, $in);
-                if($r){ echo '';}
-                }
+                // if(isset($pre)){
+                //     $key = '';
+                //     $value = '';
+                // foreach($row as $r=>$v){
+                //     $key .= "$r,";
+                //     $vv = addslashes($v);
+                //     $value .= "'{$vv}',";
+                // }
+                //     $key .= 'till_date';
+                //     $value .= "'{$formattedDateTime}'";
+                //     $in = "INSERT INTO new_profiles($key) VALUES ($value)";
+                //     $r = mysqli_query($con, $in);
+                // if($r){ echo '';}
+                // }
 
             if(!empty($row['image_']) && $row['image_'] != null ){
                 $image_count = json_decode($row['image_'], true);
@@ -287,17 +307,33 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                 $create_url .= $row['areas'] . '/' . $row['identity_cat'] . '/';
             }
 
+            
 
         ?>
 
             <div class="long-profile">
+                <?php 
+                
+                    if($count_pro % 3 == 0){
+                        echo '<div class="premium-tag">VIP</div>';
+                    }elseif($count_pro % 4 == 0){
+                        echo '<div class="premium-tag">SUPER VIP</div>';
+                    }elseif($count_pro == 1){
+                        echo '<div class="premium-tag">SUPER VIP</div>';
+                    }elseif($count_pro == 2){
+                        echo '<div class="premium-tag">SUPER VIP</div>';
+                    }
+                    $count_pro += 1;
+                
+                ?>
+                
                 <div class="long-profile-image">
                     <a href="<?= $create_url ?>"> 
                 <?php if(isset($image_count)){ ?>
                     <img src="<?= $cdn_url ?>profiles/<?= $image_count[0] ?>" alt="<?=$image_count_alt[0] ?>" width="100%" loading="lazy" height="100%" />
                     <?php } ?>
                     </a>
-                    <span class="favourite" id="favourite"><?= $heart ?></span>
+                    <!-- <span class="favourite" id="favourite"><?= $heart ?></span> -->
                     <span class="image-count"><?= $camera ?><?php if(isset($image_count)){ echo count($image_count); } ?></span>
                 </div>
                 <div class="long-profile-detail">
