@@ -226,7 +226,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     }
 
         .long-profile-detail h3 {
-            font-size: 1rem;
+            font-size: 1.2rem;
             margin: 0;
             padding: 0;
         }
@@ -266,6 +266,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     <?php include './navbar.php' ?>
 
     <div class="container" style="user-select: none;">
+    <h2></h2>
     <p>On <strong>Ctchicks</strong>, you can browse a meticulously crafted collection of <a href="<?= get_url() . $cat.'/'.$_GET['city'].'/' ?>">call girls in <?=ucwords($city) ?></a>. Discover thousands of independent <?=ucwords($city) ?> call girls and select that suit your needs. Our website offers a diverse epitome of elegance and experience. Our website provides a seamless and transparent environment for a better browsing experience. So that you pursue through our extensive listings or portfolios that include comprehensive biographies. This portfolio also includes providing service,body figure details, complexions, and images of the model.</p><p>
 <b>Ctchicks</b> works more than a repository of profiles because we are your trusted partner in the world of call girls. Join us on a Journey where beauty knows no boundaries and possibilities are endless.</p>
 
