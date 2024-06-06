@@ -112,6 +112,7 @@ if($cat == 'call-girls'){
             /* overflow: hidden; */
             background-color: rgb(233, 233, 233);
             position: relative;
+            border: 1.5px solid var(--primary);
         }
 
         .long-profile-image img {
