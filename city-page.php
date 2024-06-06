@@ -119,6 +119,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
             /* overflow: hidden; */
             background-color: rgb(233, 233, 233);
             position: relative;
+            border: 1px solid var(--primary);
         }
 
         .long-profile-image img {
@@ -437,10 +438,10 @@ echo $areaX;
 
     </div>
 
-    <div class="container">
-    <h2>Ctchicks.com never intervene between ad publisher and online user</h2>
+    <div class="container" style="background-color: transparent;border:0">
+    <h2 style="font-size: 1.1rem;">Ctchicks.com never intervene between ad publisher and online user</h2>
 
-<p>By accessing our website you confirm all our escort classified ad network’s policy – we do not mediate between ad publisher and online user. Our platform is built to ensure that people who need services are able to get them from providers in a smooth and effective way. We facilitate the two parties communicating with each other without any disruption because we believe it is important for them to engage in open talks and rely upon each other. Therefore, as you go through our listings please note that you can talk with the advertisers directly hence be confident of your choices. We are not responsible for any transaction between user and publisher. Enjoy Browsing!</p>
+<p  style="font-size: 1rem;">By accessing our website you confirm all our escort classified ad network’s policy – we do not mediate between ad publisher and online user. Our platform is built to ensure that people who need services are able to get them from providers in a smooth and effective way. We facilitate the two parties communicating with each other without any disruption because we believe it is important for them to engage in open talks and rely upon each other. Therefore, as you go through our listings please note that you can talk with the advertisers directly hence be confident of your choices. We are not responsible for any transaction between user and publisher. Enjoy Browsing!</p>
     </div>
 
     <?php include './footer2.php' ?>
