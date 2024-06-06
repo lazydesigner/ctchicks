@@ -342,58 +342,58 @@ if($cat == 'call-girls'){
     </div>
 
     <div class="container" style="user-select: none;">
-        <h2>Are you looking for young <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($city) ?> for friendship?</h2>
-        <p>On our <a href="<?= get_url() ?>">Ctchicks website</a>, you will find hundreds of classified profiles of <a href="<?= get_url() . $cat . '/' . $_GET['city'] . '/' ?>"><?= ucwords($city) ?> <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?></a>. All <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> near <?= ucwords($city) ?> profiles are 100% genuine and verified from our end through video calls. These hot and charming models can be contacted easily through our website. All our <?= ucwords($city) ?> female models are curvy, passionate, experienced, harmonious, and sexually excited.</p>
-        <p>You can easily find phone numbers of independent <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($city) ?> on Ctchicks. These females are readily available anywhere in the <?= ucwords($city) ?>. These girls can come to your place or hotel room without any advance. You need to pay only after they arrive at your location. You can find <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($city) ?> as per your particular taste 24x7 in <?= ucwords($city) ?>.</p>
+        <h2>Are you looking for young <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($city) ?> for friendship?</h2>
+        <p>On our <a href="<?= get_url() ?>">Ctchicks website</a>, you will find hundreds of classified profiles of <a href="<?= get_url() . $cat . '/' . $_GET['city'] . '/' ?>"><?= ucwords($city) ?> <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?></a>. All <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> near <?= ucwords($city) ?> profiles are 100% genuine and verified from our end through video calls. These hot and charming models can be contacted easily through our website. All our <?= ucwords($city) ?> female models are curvy, passionate, experienced, harmonious, and sexually excited.</p>
+        <p>You can easily find phone numbers of independent <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($city) ?> on Ctchicks. These females are readily available anywhere in the <?= ucwords($city) ?>. These girls can come to your place or hotel room without any advance. You need to pay only after they arrive at your location. You can find <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($city) ?> as per your particular taste 24x7 in <?= ucwords($city) ?>.</p>
 
-        <h2>Mature ladies and housewives <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> near me in the <?= ucwords($city) ?>.</h2>
+        <h2>Mature ladies and housewives <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> near me in the <?= ucwords($city) ?>.</h2>
 
         <p>Apart from thousands of young college girls, you can find hot and juicy mature milfs in the <?= ucwords($city) ?>. Many newly married or divorced ladies are available near you in the <?= ucwords($city) ?>. These adult females are chubby and experienced in erotic desires. Most of them are well experienced to satisfy the urge of your inner desires.</p>
 
-        <p>Ctchicks.com allows our visitors to find a suitable partner for them. Our visitors can browse all the available profiles and communicate with them without fees or charges. You can date these <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> or get them for sexual encounters without any commitment. Many YouTube models, Facebook girls, and Instagram sensations post their ads for some extra income or fun.</p>
+        <p>Ctchicks.com allows our visitors to find a suitable partner for them. Our visitors can browse all the available profiles and communicate with them without fees or charges. You can date these <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> or get them for sexual encounters without any commitment. Many YouTube models, Facebook girls, and Instagram sensations post their ads for some extra income or fun.</p>
 
         <p><a href="<?= get_url() ?>">Ctchicks.com</a> is not an escort service agency; we are just any classified ad platform. We work as a communication medium between visitors and models. We are not reliable for any financial activity between them.</p>
 
         <h3 class="third-heading">FAQ</h3>
         <div class="faq">
             <div class="question">
-                <h4><strong>Can We Bring <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> To Hotel In <?= ucwords($area) ?> ?</strong></h4>
+                <h4><strong>Can We Bring <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> To Hotel In <?= ucwords($area) ?> ?</strong></h4>
             </div>
             <div class="answer">
                 <p>Yes! <?= $area ?> is a beautiful Area and one that has even its air laden with love. To clear your doubts, simply reach out to our team of dedicated staff, and we will point you in the direction of hotels that are warm and luxurious.</p>
             </div>
             <div class="question">
-                <h4><strong>Is The Photo Of The <?= ucwords($area) ?> <?if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> Genuine ?</strong></h4>
+                <h4><strong>Is The Photo Of The <?= ucwords($area) ?> <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> Genuine ?</strong></h4>
             </div>
             <div class="answer">
-                <p>As we offer cheap <?if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> service in <?= ucwords($area) ?>, we do well to make sure that all our girls are properly vetted and their photos genuine, so you have nothing to worry about. Just sit back and relax.</p>
+                <p>As we offer cheap <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> service in <?= ucwords($area) ?>, we do well to make sure that all our girls are properly vetted and their photos genuine, so you have nothing to worry about. Just sit back and relax.</p>
             </div>
             <div class="question">
-                <h4>What Benefits Of Choosing <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> At Ctchicks.com ?</h4>
+                <h4>What Benefits Of Choosing <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> At Ctchicks.com ?</h4>
             </div>
             <div class="answer">
                 <p>We guarantee you maximum enjoyment when you choose ctchicks.com. Also, your identity is safe with us. Only the girl and you will know you used our service. We also guarantee you your value for your money due to our pocket-friendly rates for premium service and many more.</p>
             </div>
             <div class="question">
-                <h4>What is price of <?if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?> ?</h4>
+                <h4>What is price of <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?> ?</h4>
             </div>
             <div class="answer">
-                <p>Low to High-priced sex workers <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in <?= ucwords($area) ?> charge anywhere from 10,000 ( 10k ) to 50,000 (50k) rupees for an hour, but some charge many times more. Also Available for budget clints.</p>
+                <p>Low to High-priced sex workers <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in <?= ucwords($area) ?> charge anywhere from 10,000 ( 10k ) to 50,000 (50k) rupees for an hour, but some charge many times more. Also Available for budget clints.</p>
             </div>
-            <div class="question">How do I book a <?if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?> ?</div>
+            <div class="question">How do I book a <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?> ?</div>
             <div class="answer">
-                <p>If you want to Hire a <?if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?> then follow these simple steps:</p>
-                <p> <br>• Make a list of all genuine <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> service provider agencies by searching “<?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> Near Me in <?= ucwords($area) ?>” on the Internet.
+                <p>If you want to Hire a <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?> then follow these simple steps:</p>
+                <p> <br>• Make a list of all genuine <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> service provider agencies by searching “<?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> Near Me in <?= ucwords($area) ?>” on the Internet.
                     <br>• Visit ctchicks.com websites in <?= ucwords($area) ?> city one by one and read all things carefully.
-                    <br>• Select your desired <?= ucwords($area) ?> <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?>, and provide your identity details for verification.
+                    <br>• Select your desired <?= ucwords($area) ?> <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?>, and provide your identity details for verification.
                     <br>• Get a <?= ucwords($area) ?> call girl’s Number and fix your meeting date and time.
-                    <br>• Take the <?= ucwords($area) ?> <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> service and pay the amount to the <?if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in <?= ucwords($area) ?>.
+                    <br>• Take the <?= ucwords($area) ?> <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> service and pay the amount to the <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in <?= ucwords($area) ?>.
                 </p>
             </div>
             <div class="question">
                 <h4>Is There a Refund Policy Available</h4>
             </div>
-            <div class="answer">No, once you pay our <?if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?>, we cannot refund the money.</div>
+            <div class="answer">No, once you pay our <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?>, we cannot refund the money.</div>
         </div>
     </div>
     <div class="container last-step">
