@@ -268,8 +268,9 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
     <div class="container" style="user-select: none;">
     <h2></h2>
-    <p>On <strong>Ctchicks</strong>, you can browse a meticulously crafted collection of <a href="<?= get_url() . $cat.'/'.$_GET['city'].'/' ?>">call girls in <?=ucwords($city) ?></a>. Discover thousands of independent <?=ucwords($city) ?> call girls and select that suit your needs. Our website offers a diverse epitome of elegance and experience. Our website provides a seamless and transparent environment for a better browsing experience. So that you pursue through our extensive listings or portfolios that include comprehensive biographies. This portfolio also includes providing service,body figure details, complexions, and images of the model.</p><p>
-<b>Ctchicks</b> works more than a repository of profiles because we are your trusted partner in the world of call girls. Join us on a Journey where beauty knows no boundaries and possibilities are endless.</p>
+
+<p>Check out a collection of hot <a href="<?= get_url() . $cat.'/'.$_GET['city'].'/' ?>"><?=ucwords($city) ?> call girls</a> on Ctchicks. Find thousands of independent call girls in <?=ucwords($city) ?> and pick one that suits your taste. Our website is an embodiment of versatility, style and authenticity too. For an easy surfing experience, our site has been designed as a seamless extension to other similar websites on the web. Hence, you can just flip through the extensive list of profiles we have or portfolios which are inclusive of the full bio as well as information about service areas covered by each girl, body figures, skin tones besides pictures.</p>
+<p><strong>Ctchicks</strong> does more than just provide profiles; it is actually your trusted companion for call girls nationwide. We can say that beauty has no limits and there are endless opportunities to come with us.</p>
 
     </div>
 
