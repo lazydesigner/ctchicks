@@ -334,7 +334,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                     <?php } ?>
                     </a>
                     <!-- <span class="favourite" id="favourite"><?= $heart ?></span> -->
-                    <span class="image-count"><?= $camera ?><?php if(isset($image_count)){ echo count($image_count); } ?></span>
+                    <!-- <span class="image-count"><?= $camera ?><?php if(isset($image_count)){ echo count($image_count); } ?></span> -->
                 </div>
                 <div class="long-profile-detail">
                     <a href="<?= $create_url ?>">

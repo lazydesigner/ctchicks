@@ -1,4 +1,4 @@
-<?php http_response_code(404); include './inc.php' ?>
+<?php http_response_code(404);  include './inc.php' ?>
 <?php 
 
 $uri = explode('/', $_SERVER['REQUEST_URI']);

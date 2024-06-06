@@ -4,19 +4,27 @@
 $h1 = '';
 if(isset($city)){
     if($cat == 'escorts'){
-        $h1 = 'Live your erotic vibes in the confluence of <?= ucwords($city) ?> escorts';
+        $h1 = 'Live your erotic vibes in the confluence of '. ucwords($city) .' escorts';
     }else{
-        $h1 = 'Elite '.ucwords($city).' Escorts With Genuine Photo And Phone Numbers';
+        $h1 = 'Latest Ads By Call Girls in '.ucwords($city).' with Real Images and Phone Number';
     }
 }else{
     $h1 = "Find Elite Call girls In Your City";
 }
 if(isset($area)){
-    $h1 = 'Call girls in '.ucwords($city).' '.ucwords($area).' with WhatsApp number'; 
+    if($cat == 'escorts'){
+        $h1 = 'Escorts in '.ucwords($city).' '.ucwords($area).' with WhatsApp number';
+    }else{
+        $h1 = 'Call girls in '.ucwords($city).' '.ucwords($area).' with WhatsApp number';
+    }
 }
 
 if(isset($profile)){
-    $h1 = 'Ready To Meet '.ucwords($city).' '.ucwords($area).' Call Girls With No Advance';
+    if($cat == 'escorts'){
+        $h1 = 'Ready To Meet '.ucwords($city).' '.ucwords($area).' Escorts With No Advance';
+    }else{
+        $h1 = 'Ready To Meet '.ucwords($city).' '.ucwords($area).' Call Girls With No Advance';
+    }
 }
 
 if(isset($error_cat)){
@@ -76,28 +84,28 @@ if(isset($error_cat)){
                         <option value="">All Location</option>
                     </select>
                 </div>
-                <div class="form-box">
+                <!-- <div class="form-box">
                     <select name="gender" id="gender">
                         <option value="">All Gender</option>
                         <option value="female">Female</option>
                     </select>
-                </div>
-                <div class="form-box">
+                </div> -->
+                <!-- <div class="form-box">
                     <select name="age" id="age">
                         <option value="">Age Group (Any)</option>
                         <option value="18-22">18 - 22 Years</option>
                         <option value="27-30">27 - 30 Years</option>
                         <option value="35">35+ Years</option>
                     </select>
-                </div>
-                <div class="form-box">
+                </div> -->
+                <!-- <div class="form-box">
                     <select name="short" id="short">
                         <option value="">Short By</option>
                         <option value="new-first">New First</option>
                         <option value="old-first">Old First</option>
                         <option value="most-viewed">Most Viewed</option>
                     </select>
-                </div>
+                </div> -->
                 <div class="form-box">
                     <button>Submit</button>
                 </div>
