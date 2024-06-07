@@ -524,20 +524,20 @@ if (!$city_result) {
                     </div>
                 </a>
             </div>
-            <!-- <div class="grid-items">
-                <h3>Best Call girl in City <span>"J"</span></h3>
-                <a href="https://ctchicks.com/call-girls/jhansi/">
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"M"</span></h3>
+                <a href="https://ctchicks.com/call-girls/mysore/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
-                            <p>Jhansi (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'jhansi'";
+                            <p>Mysore (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'mysore'";
                                                                                                                         $res = mysqli_query($con, $sql);
                                                                                                                         $row = mysqli_fetch_array($res);
                                                                                                                         echo $row['a'] ?>)</p>
                         </div>
                     </div>
                 </a>
-            </div> -->
+            </div>
             <div class="grid-items">
                 <h3>Best Call girl in City <span>"P"</span></h3>
                 <a href="https://ctchicks.com/call-girls/pune/">
