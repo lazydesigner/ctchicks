@@ -552,6 +552,20 @@ if (!$city_result) {
                     </div>
                 </a>
             </div>
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"S"</span></h3>
+                <a href="https://ctchicks.com/call-girls/surat/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Surat (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'surat'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
 
