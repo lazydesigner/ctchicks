@@ -1,5 +1,11 @@
 User-Agent: *
 Allow: /
 Disallow: /search/?
+Disallow: https://ctchicks.com/81182512092634.html
+Disallow: https://ctchicks.com/81182512094778.html
+Disallow: https://ctchicks.com/81182512093250.html
+Disallow: https://ctchicks.com/81182512093788.html
+Disallow: https://ctchicks.com/81182512093735.html
+Disallow: https://ctchicks.com/81182512093249.html
 
 Sitemap: https://ctchicks.com/sitemap.xml
