@@ -15,7 +15,7 @@ if(isset($area)){
     if($cat == 'escorts'){
         $h1 = 'Escorts in '.ucwords($city).' '.ucwords($area).' with WhatsApp number';
     }else{
-        $h1 = 'Call girls in '.ucwords($city).' '.ucwords($area).' with WhatsApp number';
+        $h1 = 'Call girls in '.ucwords($area).' '.ucwords($city).' with WhatsApp number';
     }
 }
 
