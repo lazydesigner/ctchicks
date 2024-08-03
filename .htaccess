@@ -71,15 +71,15 @@ RewriteRule ^call-girls/agra/all/call-girl-234?$ /call-girls/agra/ [R=301,L]
 
 # Redirect /escorts/city/area/ to /call-girls/city/
 
-#RewriteCond %{HTTP_HOST} ^ctchicks\.net$ [NC]
-#RewriteRule ^escorts/?$ https://ctchicks.net/call-girls/ [L,R=301,NC]
+RewriteCond %{HTTP_HOST} ^ctchicks\.com$ [NC]
+RewriteRule ^escorts/?$ https://ctchicks.com/call-girls/ [L,R=301,NC]
 
-#RewriteCond %{HTTP_HOST} ^ctchicks\.net$ [NC]
-#RewriteRule ^escorts/([^/]+)/([^/]+)/?$ https://ctchicks.net/call-girls/$1/ [L,R=301,NC]
+RewriteCond %{HTTP_HOST} ^ctchicks\.com$ [NC]
+RewriteRule ^escorts/([^/]+)/([^/]+)/?$ https://ctchicks.com/call-girls/$1/ [L,R=301,NC]
 
 # Redirect /escorts/city/ to /call-girls/city/
-#RewriteCond %{HTTP_HOST} ^ctchicks\.net$ [NC]
-#RewriteRule ^escorts/([^/]+)/?$ https://ctchicks.net/call-girls/$1/ [L,R=301,NC]
+RewriteCond %{HTTP_HOST} ^ctchicks\.com$ [NC]
+RewriteRule ^escorts/([^/]+)/?$ https://ctchicks.com/call-girls/$1/ [L,R=301,NC]
 
 
 
