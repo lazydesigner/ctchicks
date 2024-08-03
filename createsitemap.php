@@ -14,8 +14,7 @@ if (!$con) {
 // Retrieve the list of pages from the database
 
 $type = array(
-    'call-girls',
-    'escorts'
+    'call-girls'
 );
 
 $pagess = array(
@@ -24,7 +23,7 @@ $pagess = array(
 );
 $xml = '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;
 $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL;
-$url = htmlspecialchars('https://ctchicks.com');
+$url = htmlspecialchars('https://ctchicks.net');
 $xml .= "\t<url>\n";
 $xml .= "\t\t<loc>$url</loc>\n";
 $xml .= "\t\t<lastmod>"."2024-03-01T13:23:31+05:30"."</lastmod>\n";
@@ -42,7 +41,7 @@ foreach($type as $t){
         if(mysqli_num_rows($result)>0){
             while ($row = mysqli_fetch_assoc($result)) {
                 if($page == 'city'){
-                    $url = htmlspecialchars('https://ctchicks.com/'.$t.'/'.strtolower($row['city_name']).'/');
+                    $url = htmlspecialchars('https://ctchicks.net/'.$t.'/'.strtolower($row['city_name']).'/');
                     $xml .= "\t<url>\n";
                     $xml .= "\t\t<loc>$url</loc>\n";
                     $xml .= "\t\t<lastmod>2024-03-01T13:23:31+05:30</lastmod>\n";
@@ -50,7 +49,7 @@ foreach($type as $t){
                     $xml .= "\t\t<priority>0.9</priority>\n";
                     $xml .= "\t</url>\n";
                 }elseif($page == 'area'){
-                    $url = htmlspecialchars('https://ctchicks.com/'.$t.'/'.strtolower($row['area_city_name']).'/'.strtolower($row['area_name']).'/');
+                    $url = htmlspecialchars('https://ctchicks.net/'.$t.'/'.strtolower($row['area_city_name']).'/'.strtolower($row['area_name']).'/');
                     $xml .= "\t<url>\n";
                     $xml .= "\t\t<loc>$url</loc>\n";
                     $xml .= "\t\t<lastmod>2024-03-01T06:13:31+05:30</lastmod>\n";

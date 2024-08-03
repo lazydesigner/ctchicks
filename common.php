@@ -21,8 +21,8 @@ $noindex = '<meta name="robots" content="index, follow, max-snippet:-1, max-vide
     ';
 $page_css = ' 
 <meta name="google-site-verification" content="OJnuULYZypg92ZykxEaJRmcvnjS75k4YNcGSLziVQ_Y" />
-<link rel="stylesheet" href="'.get_url().'assets/css/navbar.css">
-<link rel="stylesheet" href="'.get_url().'assets/fonts/remixicon.css">
+<!--<link rel="stylesheet" href="'.get_url().'assets/css/navbar.css" async>-->
+<link as="style"  rel="preload" href="'.get_url().'assets/fonts/remixicon.css">
 
 <script>
 function setCookie(cname, cvalue, exdays) {
@@ -32,8 +32,8 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     let user = getCookie("confirm_ctchick");
     if (user != "") {
-        var remove_agree_terms = document.getElementById("confirm-18");
-        remove_agree_terms.style.display = "none";
+        //var remove_agree_terms = document.getElementById("confirm-18");
+        //remove_agree_terms.style.display = "none";
     }
 }
 
@@ -56,8 +56,8 @@ function getCookie(cname) {
 function checkCookie() {
     let user = getCookie("confirm_ctchick");
     if (user != "") {
-        var remove_agree_terms = document.getElementById("confirm-18");
-        remove_agree_terms.style.display = "none";
+        //var remove_agree_terms = document.getElementById("confirm-18");
+        //remove_agree_terms.style.display = "none";
     } else {
         var remove_agree_terms = document.getElementById("confirm-18");
         remove_agree_terms.style.display = "block";
@@ -70,12 +70,26 @@ function checkCookie() {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Ctchicks call girls provider",
-  "url": "https://ctchicks.com/",
-  "logo": "https://ctchicks.com/home/assets/images/logo.webp"
+  "url": "https://ctchicks.net/",
+  "logo": "https://ctchicks.net/home/assets/images/logo.webp"
 }
 </script>
 
 ';
+
+$_18 = '<div class="confirm-18" id="confirm-18">
+        <div class="confirm-18-body" style="text-align: center;">
+            <p style="font-size: x-large;font-weight:bolder;margin-bottom:2%"><strong>Important Notice: Please Review Before Proceeding</strong></p>
+            <p><b>I hereby confirm that I am 18 years of age or older.</b></p>
+            <p>Posting ads for sexual services or explicit content on Ctchicks is prohibited. Violators will be reported to authorities and face legal consequences. By submitting an ad, advertisers confirm they are 18 or older, own the rights to their content, and approve its publication on Ctchicks. By clicking "confirm," users verify they are over 18 and release Ctchicks\' owners from any responsibility for the content or its use.</p>
+            <p>
+
+                By clicking the <b>"confirm"</b> button, users certify that they are over 18 years old and release the service providers, owners, and creators of ctchicks.com from any responsibility regarding the content and use of this service.</p>
+            <div style="margin-top: 2%;"><button class="btn1" onclick="setCookie(\'confirm_ctchick\', \'accepted_ctchick\', 30)">Confirm</button>
+                <a href="<?= get_url() ?>"><button class="btn2">Reject</button></a>
+            </div>
+        </div>
+</div>';
 
 
 ?>

@@ -36,7 +36,7 @@ if(isset($error_cat)){
 <header>
         <nav>
             <div class="main-ul">
-                <div class="brand"><a href="<?= get_url() ?>"><img src="<?=get_url() ?>home/assets/images/logo.webp" width="100%"
+                <div class="brand"><a href="<?= get_url() ?>"><img src="https://ctchicks.com/home/assets/images/logo.webp" width="100%"
         height="100%" alt="ctckicks escort service  logo" loading="lazy"></a>
                 </div>
                 <ul class="nav-ul">
@@ -59,12 +59,12 @@ if(isset($error_cat)){
                 <div class="form-box">
 
                     <?php if($cat == 'call-girls' || $cat == 'call girls'){ ?>
-                        <select name="category" id="category">
+                        <select aria-label="Select a category" name="category" id="category">
                         <option value="call-girls" selected>Call Girls</option>
                         <option value="escorts">Escorts</option>
                     </select>
                     <?php }else{ ?>
-                        <select name="category" id="category">
+                        <select aria-label="Select a category" name="category" id="category">
                         <option value="call-girls">Call Girls</option>
                         <option value="escorts" selected>Escorts</option>
                     </select>
@@ -80,7 +80,7 @@ if(isset($error_cat)){
                 
                 </div>
                 <div class="form-box">
-                    <select name="locality" id="locality">
+                    <select aria-label="Select a locality" name="locality" id="locality">
                         <option value="">All Location</option>
                     </select>
                 </div>

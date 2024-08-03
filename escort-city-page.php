@@ -21,6 +21,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     $profile_query = "SELECT * FROM profiles WHERE  cities = '{$_GET['city']}'  AND callgirl_escort = '$cat' ";
     $profile_query_result = mysqli_query($con, $profile_query);
     if (mysqli_num_rows($profile_query_result) < 1) {
+        header("Location: https://ctchicks.com/404");
     }
 }
 ?>
@@ -33,18 +34,413 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     <?= $noindex ?>
     <title>Escorts in <?=$city ?>: Free Delivery 24x7 at Your Doorstep</title>
     <meta name="description" content="Being one of the top <?=$city ?> Escorts directory we provide fast delivery in 20 mins. All our Escorts in <?=$city ?> are available 24/7 in Cash on delivery." />
-    <link rel="canonical" href="https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/' ?>" />
+    <link rel="canonical" href="<?=get_url() ?><?=$cat.'/'.$_GET['city'].'/' ?>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Escorts in <?=$city ?>: Free Delivery 24x7 at Your Doorstep" />
     <meta property="og:description" content="Being one of the top <?=$city ?> Escorts directory we provide fast delivery in 20 mins. All our Escorts in <?=$city ?> are available 24/7 in Cash on delivery." />
-    <meta property="og:url" content="https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/' ?>" />
+    <meta property="og:url" content="<?=get_url() ?><?=$cat.'/'.$_GET['city'].'/' ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Escorts in <?=$city ?>: Free Delivery 24x7 at Your Doorstep" />
     <meta name="twitter:description" content="Being one of the top <?=$city ?> Escorts directory we provide fast delivery in 20 mins. All our Escorts in <?=$city ?> are available 24/7 in Cash on delivery." />
     <?= $page_css ?>
     <style>
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #0075da;
+    /* --primary: #022F52; */
+    --secondary: #A3B4C7;
+    --secondaryC:rgb(223, 229, 235);
+    --link: #0019da;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 24px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary);
+    position: relative;
+}
+
+header :is(nav, .main-ul, .nav-ul, a) {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: white;
+}
+
+nav {
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto !important;
+}
+
+.main-ul {
+    width: 85%;
+    gap: 5%;
+    align-items: center;
+}
+
+.nav-ul {
+    width: 50%;
+}
+
+.nav-ul li {
+    padding: 0 2%;
+}
+
+.brand {
+    font-size: 2.5rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 100px;
+}
+
+.ad-post2 {
+    display: block!important;
+}
+
+.ad-post-btn,
+.search-girl {
+    display: none;
+}
+
+/* navbar above */
+
+
+
+.container {
+    width: 75%;
+    margin: 1.5% auto;
+    height: auto;
+    padding:.5% 1%;
+    border-top: 5px solid var(--primary);
+    background-color: var(--secondaryC);
+}
+
+.container a {
+    font-weight: 900;
+    color: var(--primary);
+}
+
+form {
+    margin: 1% 2%;
+}
+
+.form-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(24%, 1fr));
+    grid-template-rows: auto;
+    gap: 1%;
+    padding: 2% auto;
+}
+
+.form-box {
+    margin: auto 1%;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    position: relative;
+}
+
+select,
+input {
+    width: 100%;
+    height: 40px;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 0 2%;
+}
+
+.form-box button {
+    width: 120px;
+    height: 40px;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+}
+
+.page-detail-and-information {
+    width: 75%;
+    margin: auto;
+    padding: 1% 0 0 0;
+}
+
+.crumb {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+/* Footer  */
+/* Css */
+.footer-call-btn, .footer-whatsapp-btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: fixed;
+    bottom: 5%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 6px 3px rgb(115, 115, 115);
+}
+.footer-call-btn{left: 2.5%;color: white;}
+.footer-whatsapp-btn{right: 2.5%;background-color: green;color: white;}
+footer {
+    width: 100%;
+    height: auto;
+    padding: 2% 0;
+    background-color: var(--secondary);
+    color: rgb(25, 25, 25);
+}
+.footer-container{
+    width: 75%;
+    margin: auto;
+}
+.footer-container p{padding: 0;margin: 0;font-size: 1.2rem;font-weight: bold;}
+.footer-container ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: .5% 0;
+}
+.footer-container ul li{
+    margin: 0;
+    padding:0 2%;
+    border-right: 1px solid rgb(28, 28, 28);
+}
+.footer-container ul li:last-child{border: 0;}
+
+.slide-to-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+    display: none;
+    place-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    cursor: pointer;
+    box-shadow: 0 0 2px 1px white;
+}
+.slide-to-top2{
+    display: grid;}
+/*  */
+.confirm-18 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.confirm-18 p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.confirm-18-body {
+    width: 50%;
+    /* height: 50%; */
+    transform: translate(50%, 10%);
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.btn1 {
+    width: 100px;
+    height: 40px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--primary);
+    border-radius: 2px;
+    color: white;
+}
+
+.btn2 {
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 2px;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  
+}
+@media screen and (max-width: 770px) {
+    .page-detail-and-information,.container,nav{width: 90%;}
+    .nav-ul{width: 100%;}
+}
+@media screen and (max-width:700px) {
+
+    .confirm-18-body {
+        width: 100%;
+        /* height: 50%; */
+        transform: translate(0%, 0%);
+        background-color: white;
+        padding: 2%;
+        border-radius: 0px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        width: 95%;
+    }
+    .container{width: 100%;}
+
+    .main-ul {
+        width: 70%;
+    }
+    .ad-post2 {
+        display: none!important;
+    }
+
+    .post-btn {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        gap: 10%;
+    }
+
+    .ad-post-btn,
+    .search-girl {
+        display: block;
+    }
+
+    .nav-ul {
+        /* display: block!important; */
+        position: absolute !important;
+        width: 100% !important;
+        /* height: auto!important; */
+        /* padding: 2% .2%!important; */
+        top: 50px !important;
+        left: 0;
+        background-color: var(--primary);
+    }
+
+    .nav-ul li {
+        margin: 3% 0;
+        padding: 1% 3%;
+    }
+
+    .search-bar {
+        width: 95%;
+        margin-top: 20px;
+        overflow: hidden;
+        height: 0;
+        transition: .25s;
+    }
+    .form-container{
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+    }
+
+    .search-bar-show {
+        margin-top: 55px;
+        height: 100%;
+        transform: .25s;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .just-two-line{display: none;}
+  
+}
+
+@media screen and (max-width: 500px) {
+    .form-container{
+        grid-template-columns: repeat(1, minmax(100%, 1fr));
+    }  
+}
+
+@media screen and (max-width: 430px) {
+    .long-profile-image{width: 90px;}
+.long-profile-detail {width: calc(100% - 90px);}
+}
+
+.all-list-of-cities{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    display: none;
+    left: 0;
+    z-index: 1;
+    background-color: lightgray;
+}
+table{width: 100%;padding: 2% 10%;}
+table td{padding: 3%;border-bottom: 1px solid black;}
+
+
+/* Css */
+/* Footer  */
+
+
+
+
+/* HOME PAGE CSS */
+#search-for-cities-in-row {
+    margin: 1% 0;
+}
+
+
+
               .just-two-line {
             overflow: hidden;
             display: -webkit-box;
@@ -227,10 +623,12 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
 <body onload="checkCookie()">
 
+<?=$_18 ?>
+
     <?php include './navbar.php' ?>
 
     <div class="container">
-    <p>Do not impose any limitations as you have to sustain the real charm of your life. Which hot spirit is ready to follow your sensation urge while dwelling in <?= ucwords($city) ?> for a short time?  If you have the sure addiction to make the love sense. Then knocking on the bell of the brother agency is not a bad deal for you. At this destination, you can find the broad coverage of the Independent <a href='https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/' ?>'><?= ucwords($city) ?> escort</a>.  Engaging in the fantasy flavor is not a new act, but their biography attachment describes well how they can provide you the long-lasting service.</p>
+    <p>Do not impose any limitations as you have to sustain the real charm of your life. Which hot spirit is ready to follow your sensation urge while dwelling in <?= ucwords($city) ?> for a short time?  If you have the sure addiction to make the love sense. Then knocking on the bell of the brother agency is not a bad deal for you. At this destination, you can find the broad coverage of the Independent <a href='<?=get_url() ?><?=$cat.'/'.$_GET['city'].'/' ?>'><?= ucwords($city) ?> escort</a>.  Engaging in the fantasy flavor is not a new act, but their biography attachment describes well how they can provide you the long-lasting service.</p>
     <p>The main mission and vision of our escort agency is not to let you tired more, and to let you relax through doing a heartwarming massage to the concerned person. So, you never thought that taking the escort service was a bad decision for you. After spending some time with the beautiful girls, you can feel happy, and energetic.  So, you do not depress more and select the jovial escort to bring new hope into your life. The in-birth erotic vibes hold the full stamina to do something well in your life.</p>
     </div>
 
@@ -246,7 +644,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
             }
 
             
-            $create_url = 'https://ctchicks.com/' . $row['callgirl_escort'] . '/' . $row['cities'] . '/';
+            $create_url = '<?=get_url() ?>' . $row['callgirl_escort'] . '/' . $row['cities'] . '/';
             if (strtolower($row['areas']) == 'all') {
                 $create_url .= $row['identity_cat'] . '/';
             } else {
@@ -314,34 +712,34 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         <p>Nothing in this dynamic world is impossible to achieve.  If you have genuine intentions and take action according to them, then you find the best dating partner. They have a great attitude on how to meet with specific clients and provide them the unforgettable experiences.  They have the unbelievable power to seduce and provide youth with the desired satisfaction. No matter which escort you select, they provide you the deep interaction to provide you the sure affection. </p>
         <p>But, one thing you notice here is the huge difference between your religious partner and temporary partner.  Along with you, they have a better understanding of how to make you engage to represent what things are on the priority base.  If you are serious about making the real charm to rub the genital organ, then our blonde partner never leaves your expectations in the middle. They have a great sense of what their lustful customer looking forward to with their fetish organ.        </p>
         <p>The sexual practice is in them on the serious verge as their pussy becomes wet to fetish the most relatable loving practice.  The moral of the story is that the concerned person intends to find the advanced category of love.</p>
-        <h3>Money is no obstacle to hiring an <a href='https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/' ?>'>escort service in <?= ucwords($city) ?></a></h3>
+        <h3>Money is no obstacle to hiring an <a href='<?=get_url() ?><?=$cat.'/'.$_GET['city'].'/' ?>'>escort service in <?= ucwords($city) ?></a></h3>
         <p>Do not think finding hot and dirty personality escorts is the tough choice for you. In this glamorous world, taking an escort service becomes quite easy to delight the internal soul of the respective person. Many college girls wish to earn some decent pocket money without rubbing their shoulders.  These hot and energetic girls do not spend more money on making relationships and dating partners.</p>
-        <p>Our dating and escort directory enriches with many passionate girls to meet with prosperous men. They do not have the huge money demand as getting the satisfaction beam plays an important role in one’s life. If you intend to take the cheap level service, then you can count on our <a href='https://ctchicks.com'>professional escort service</a>.
+        <p>Our dating and escort directory enriches with many passionate girls to meet with prosperous men. They do not have the huge money demand as getting the satisfaction beam plays an important role in one’s life. If you intend to take the cheap level service, then you can count on our <a href='https://in.ctchicks.com'>professional escort service</a>.
         </p>
         <p>They do not make a big difference in their commitment as their listing sites and intend you the blessing touch of the sizzling expression. Thereby, you are requested not to shrink your expectations for making a relationship.</p>
         <h2>Hire an independent escort to go beyond the flirt</h2>
-        <p>Staying with an appealing causal soul mate that does not disobey your choice. Having the temporary gripping finds you this concern as if you live in paradise for the utmost pleasure.  Finding the company of independent escort girls gives you a different feeling as your dirty wishes do not need the explanation version of our lovable whores. Our <a href='https://ctchicks.com/<?=$cat.'/'.$_GET['city'].'/' ?>'>independent escorts</a> have a sure sense of how to reach as the lustful customer urges you for something.</p>
+        <p>Staying with an appealing causal soul mate that does not disobey your choice. Having the temporary gripping finds you this concern as if you live in paradise for the utmost pleasure.  Finding the company of independent escort girls gives you a different feeling as your dirty wishes do not need the explanation version of our lovable whores. Our <a href='<?=get_url() ?><?=$cat.'/'.$_GET['city'].'/' ?>'>independent escorts</a> have a sure sense of how to reach as the lustful customer urges you for something.</p>
 
         <h3>The customer provides feed for the best <?= ucwords($city) ?> escort</h3>
         <p>None of you can find any complaint regarding the seducing style and the sexual dosage. By the way, our escort girls have the full devotion to attend to a particular customer.  They hold a holistic approach to serving their customer and do not raise the senseless step. Likewise, other professionals, these sizzling and stunning girls are honing their practice to provide the best service. Tell your most appropriate time for making the happy moment without any sacrifice.  We provide the precise details of which time is available to seduce and warm your bed without making the nonsense talk. The best way is to boo their service as quickly as possible to grasp their love-making services.</p>
         <h2>Check the comfortless of our escort girls</h2>
         <p>If you do not want to see the dispute in in-call and outcall service, then you would have to seal your deal for completing the orgasm details. They are comfortable doing the cum on face, cum to swallow, blowjobs, and many dirty actions. Now, you do not stay in the sexual intimacy trouble anymore.</p>
-
+            <h3></h3>
     </div>
 
     <div class="container last-step">
         <h4>Top Cities Of India</h4>
         <div class="top-cities-of-india">
-            <a href="https://ctchicks.com/<?= $cat ?>/chennai/"><button>Chennai</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/ahmedabad/"><button>Ahmedabad</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/delhi/"><button>Delhi</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/indore/"><button>Indore</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/bangalore/"><button>Bangalore</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/pune/"><button>Pune</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/jaipur/"><button>Jaipur</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/gurgaon/"><button>Gurgaon</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/hyderabad/"><button>Hyderabad</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/kochi/"><button>Kochi</button></a>
+            <a href="<?=get_url() ?><?= $cat ?>/chennai/"><button>Chennai</button></a>
+            <a href="<?=get_url() ?><?= $cat ?>/ahmedabad/"><button>Ahmedabad</button></a>
+            <a href="<?=get_url() ?><?= $cat ?>/delhi/"><button>Delhi</button></a>
+            <a href="<?=get_url() ?><?= $cat ?>/indore/"><button>Indore</button></a>
+            <a href="<?=get_url() ?><?= $cat ?>/bangalore/"><button>Bangalore</button></a>
+            <a href="<?=get_url() ?><?= $cat ?>/pune/"><button>Pune</button></a>
+            <a href="<?=get_url() ?><?= $cat ?>/jaipur/"><button>Jaipur</button></a>
+            <a href="<?=get_url() ?><?= $cat ?>/gurgaon/"><button>Gurgaon</button></a>
+            <a href="<?=get_url() ?><?= $cat ?>/hyderabad/"><button>Hyderabad</button></a>
+            <a href="<?=get_url() ?><?= $cat ?>/kochi/"><button>Kochi</button></a>
         </div>
         <h4>Areas Of <?= ucwords($city) ?></h4>
         <div class="top-cities-of-india" id="areasOfCity">
@@ -360,7 +758,12 @@ if (mysqli_num_rows($res) > 0) {
         foreach (explode('-', $area) as $c) {
             $a .= $c . ' ';
         }
-        $areaX .= "<a href='" . get_url() . $cat . "/" . $row['area_city_name'] . "/" . strtolower($area) . "/'><button>" . ucwords(strtolower($a)) . "</button></a>";
+
+        $profile_exist = "SELECT * FROM profiles WHERE cities = '$cityX' AND areas = '$area' AND callgirl_escort = 'escorts'";
+        $result_profile_exist = mysqli_query($con, $profile_exist);
+        if (mysqli_num_rows($result_profile_exist) > 0) {
+            $areaX .= "<a href='" . get_url() . $cat . "/" . $row['area_city_name'] . "/" . strtolower($area) . "/'><button>" . ucwords(strtolower($a)) . "</button></a>";
+        }        
     }
 }
 echo $areaX;

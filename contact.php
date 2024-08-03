@@ -19,16 +19,16 @@ if (!$city_result) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <link rel="shortcut icon" type="image/x-icon" href="'.$cdn_url.'icon/favicon.png" />
     <title>Independent call girls with their phone numbers</title>
     <meta name="description" content="Browse our call girl directory for escorts service, independent Call Girls, and divorce escort girls with photos, WhatsApp and phone numbers. Get erotic service in India." />
-    <link rel="canonical" href="https://ctchicks.com/" />
+    <link rel="canonical" href="<?=get_url() ?>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Independent call girls with their phone numbers" />
     <meta property="og:description" content="Browse our call girl directory for escorts service, independent Call Girls, and divorce escort girls with photos, WhatsApp and phone numbers. Get erotic service in India." />
-    <meta property="og:url" content="https://ctchicks.com/" />
+    <meta property="og:url" content="<?=get_url() ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Independent call girls with their phone numbers" />

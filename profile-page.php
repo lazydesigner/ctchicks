@@ -53,13 +53,10 @@ if ($sitemap_content !== false) {
         $inde = '<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
         <link rel="shortcut icon" type="image/x-icon" href="'.$cdn_url.'icon/favicon.png" />';
     } else {
-        $inde = '<meta name="robots" content="noindex, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+        $inde = '<meta name="robots" content="noindex, nofollow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
         <link rel="shortcut icon" type="image/x-icon" href="'.$cdn_url.'icon/favicon.png" />';
     }
 }
-
-
-
 
 ?>
 
@@ -72,13 +69,13 @@ if ($sitemap_content !== false) {
     <?= $inde ?>
     <title><?= $row['page_title'] ?></title>
     <meta name="description" content="<?= $row['meta_description'] ?>" />
-    <link rel="canonical" href="https://ctchicks.com/<?= $cat . '/' . $_GET['city'] . '/' . $_GET['area'] . '/' . $id . '/' ?>" />
+    <link rel="canonical" href="<?=get_url() ?><?= $cat . '/' . $_GET['city'] . '/' . $_GET['area'] . '/' . $id . '/' ?>" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?= $row['page_title'] ?>" />
     <meta property="og:description" content="<?= $row['meta_description'] ?>" />
-    <meta property="og:url" content="https://ctchicks.com/<?= strtolower($cat) . '/' . strtolower($_GET['city']) . '/' . strtolower($_GET['area']) . '/' . strtolower($id) . '/' ?>" />
+    <meta property="og:url" content="<?=get_url() ?><?= strtolower($cat) . '/' . strtolower($_GET['city']) . '/' . strtolower($_GET['area']) . '/' . strtolower($id) . '/' ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="<?= $row['page_title'] ?>" />
@@ -298,6 +295,8 @@ if ($sitemap_content !== false) {
 </head>
 
 <body onload="checkCookie()">
+
+<?=$_18 ?>
 
     <?php include './navbar.php' ?>
 

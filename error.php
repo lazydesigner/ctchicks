@@ -16,12 +16,12 @@ $error_cat =  trim($uri[1]);
     <link rel="shortcut icon" type="image/x-icon" href="'.$cdn_url.'icon/favicon.png" />
     <title>404 - Page Not Found</title>
     <meta name="description" content="Browse our call girl directory for escorts service, independent Call Girls, and divorce escort girls with photos, WhatsApp and phone numbers. Get erotic service in India." />
-    <link rel="canonical" href="https://ctchicks.com/404" />
+    <link rel="canonical" href="<?=get_url() ?>404" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="404 - Page Not Found" />
     <meta property="og:description" content="Browse our call girl directory for escorts service, independent Call Girls, and divorce escort girls with photos, WhatsApp and phone numbers. Get erotic service in India." />
-    <meta property="og:url" content="https://ctchicks.com/404" />
+    <meta property="og:url" content="<?=get_url() ?>404" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="404 - Page Not Found" />

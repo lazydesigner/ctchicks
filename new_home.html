@@ -269,4 +269,49 @@ ESCORTS
         </div>
 
 
+
+
+
+        RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+Options -Indexes
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^call-girls/agra/all/call-girl-234?$ /call-girls/agra/ [R=301,L] 
+
+RewriteRule ^$ home/home.php [NC,L]
+
+RewriteRule ^assets/css/(.*)\.css$ home/assets/css/$1.css [NC,L]
+ErrorDocument 404 https://ctchicks.com/404
+
+#NEW URL PATTERN
+
+ReWriteRule ^contact-us([/]?)$ home/contact.php [NC,L]
+#ReWriteRule ^call-girls([/]?)$ call-girls.php [NC,L]
+##ReWriteRule ^faqs([/]?)$ faq.php [NC,L]
+#ReWriteRule ^terms-and-conditions([/]?)$ terms-and-condition.php [NC,L]
+#ReWriteRule ^disclaimer([/]?)$ privacy.php [NC,L]
+ReWriteRule ^login([/]?)$ home/login.php [NC,L]
+ReWriteRule ^sign-up([/]?)$ home/sign-up.php [NC,L]
+#ReWriteRule ^about-us([/]?)$ about-us.php [NC,L]
+ReWriteRule ^search([/]?)$ home/search.php [NC,L]
+
+#FOR CALL GIRLS
+ReWriteRule ^call-girls/([A-Za-z\-]+)([/]?)$ home/city-page.php?city=$1 [NC,L]
+ReWriteRule ^call-girls/([A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ home/area-page.php?city=$1&area=$2 [NC,L]
+ReWriteRule ^call-girls/([A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ home/profile-page.php?city=$1&area=$2&id=$3 [NC,L]
+
+#FOR ESCORTS
+
+ReWriteRule ^escorts/([0-9A-Za-z\-]+)([/]?)$ home/escort-city-page.php?city=$1 [NC,L]
+ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ home/area-page.php?city=$1&area=$2 [NC,L]
+ReWriteRule ^escorts/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ home/profile-page.php?city=$1&area=$2&id=$3 [NC,L]
+
+
+
+RewriteRule ^sitemap\.xml/?$ home/sitemap.xml [NC,L]
+ReWriteRule ^404([/]?)$ home/error.php [NC,L]
+
+
  -->

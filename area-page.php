@@ -71,6 +71,399 @@ if($cat == 'call-girls'){
     <meta name="twitter:description" content="<?=$meta_description ?>" />
     <?= $page_css ?>
     <style>
+        * {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #0075da;
+    /* --primary: #022F52; */
+    --secondary: #A3B4C7;
+    --secondaryC:rgb(223, 229, 235);
+    --link: #0019da;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 24px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary);
+    position: relative;
+}
+
+header :is(nav, .main-ul, .nav-ul, a) {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: white;
+}
+
+nav {
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto !important;
+}
+
+.main-ul {
+    width: 85%;
+    gap: 5%;
+    align-items: center;
+}
+
+.nav-ul {
+    width: 50%;
+}
+
+.nav-ul li {
+    padding: 0 2%;
+}
+
+.brand {
+    font-size: 2.5rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 100px;
+}
+
+.ad-post2 {
+    display: block!important;
+}
+
+.ad-post-btn,
+.search-girl {
+    display: none;
+}
+
+/* navbar above */
+
+
+
+.container {
+    width: 75%;
+    margin: 1.5% auto;
+    height: auto;
+    padding:.5% 1%;
+    border-top: 5px solid var(--primary);
+    background-color: var(--secondaryC);
+}
+
+.container a {
+    font-weight: bold;
+    color: var(--link);
+}
+
+form {
+    margin: 1% 2%;
+}
+
+.form-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(24%, 1fr));
+    grid-template-rows: auto;
+    gap: 1%;
+    padding: 2% auto;
+}
+
+.form-box {
+    margin: auto 1%;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    position: relative;
+}
+
+select,
+input {
+    width: 100%;
+    height: 40px;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 0 2%;
+}
+
+.form-box button {
+    width: 120px;
+    height: 40px;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+}
+
+.page-detail-and-information {
+    width: 75%;
+    margin: auto;
+    padding: 1% 0 0 0;
+}
+
+.crumb {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+/* Footer  */
+/* Css */
+.footer-call-btn, .footer-whatsapp-btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: fixed;
+    bottom: 5%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 6px 3px rgb(115, 115, 115);
+}
+.footer-call-btn{left: 2.5%;color: white;}
+.footer-whatsapp-btn{right: 2.5%;background-color: green;color: white;}
+footer {
+    width: 100%;
+    height: auto;
+    padding: 2% 0;
+    background-color: var(--secondary);
+    color: rgb(25, 25, 25);
+}
+.footer-container{
+    width: 75%;
+    margin: auto;
+}
+.footer-container p{padding: 0;margin: 0;font-size: 1.2rem;font-weight: bold;}
+.footer-container ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: .5% 0;
+}
+.footer-container ul li{
+    margin: 0;
+    padding:0 2%;
+    border-right: 1px solid rgb(28, 28, 28);
+}
+.footer-container ul li:last-child{border: 0;}
+
+.slide-to-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+    display: none;
+    place-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    cursor: pointer;
+    box-shadow: 0 0 2px 1px white;
+}
+.slide-to-top2{
+    display: grid;}
+/*  */
+.confirm-18 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.confirm-18 p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.confirm-18-body {
+    width: 50%;
+    /* height: 50%; */
+    transform: translate(50%, 10%);
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.btn1 {
+    width: 100px;
+    height: 40px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--primary);
+    border-radius: 2px;
+    color: white;
+}
+
+.btn2 {
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 2px;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  
+}
+@media screen and (max-width: 770px) {
+    .page-detail-and-information,.container,nav{width: 90%;}
+    .nav-ul{width: 100%;}
+}
+@media screen and (max-width:700px) {
+
+    .confirm-18-body {
+        width: 100%;
+        /* height: 50%; */
+        transform: translate(0%, 0%);
+        background-color: white;
+        padding: 2%;
+        border-radius: 0px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        width: 95%;
+    }
+    .container{width: 100%;}
+
+    .main-ul {
+        width: 70%;
+    }
+    .ad-post2 {
+        display: none!important;
+    }
+
+    .post-btn {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        gap: 10%;
+    }
+
+    .ad-post-btn,
+    .search-girl {
+        display: block;
+    }
+
+    .nav-ul {
+        /* display: block!important; */
+        position: absolute !important;
+        width: 100% !important;
+        /* height: auto!important; */
+        /* padding: 2% .2%!important; */
+        top: 50px !important;
+        left: 0;
+        background-color: var(--primary);
+    }
+
+    .nav-ul li {
+        margin: 3% 0;
+        padding: 1% 3%;
+    }
+
+    .search-bar {
+        width: 95%;
+        margin-top: 20px;
+        overflow: hidden;
+        height: 0;
+        transition: .25s;
+    }
+    .form-container{
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+    }
+
+    .search-bar-show {
+        margin-top: 55px;
+        height: 100%;
+        transform: .25s;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .just-two-line{display: none;}
+  
+}
+
+@media screen and (max-width: 500px) {
+    .form-container{
+        grid-template-columns: repeat(1, minmax(100%, 1fr));
+    }  
+}
+
+@media screen and (max-width: 430px) {
+    .long-profile-image{width: 90px;}
+.long-profile-detail {width: calc(100% - 90px);}
+}
+
+.all-list-of-cities{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    display: none;
+    left: 0;
+    z-index: 1;
+    background-color: lightgray;
+}
+table{width: 100%;padding: 2% 10%;}
+table td{padding: 3%;border-bottom: 1px solid black;}
+
+
+/* Css */
+/* Footer  */
+
+
+
+
+/* HOME PAGE CSS */
+#search-for-cities-in-row {
+    margin: 1% 0;
+}
+
+
         .just-two-line {
             overflow: hidden;
             display: -webkit-box;
@@ -262,6 +655,8 @@ if($cat == 'call-girls'){
 
 <body onload="checkCookie()">
 
+        <?=$_18 ?>
+
     <?php include './navbar.php' ?>
 
     <div class="container" style="border: 0;padding:0;background:transparent">
@@ -345,7 +740,7 @@ if($cat == 'call-girls'){
     <div class="container" style="user-select: none;">
         <h2>Are you looking for young <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($area) ?>  <?= ucwords($city) ?>for friendship?</h2>
         <p>On our <a href="<?= get_url() ?>">Ctchicks website</a>, you will find hundreds of classified profiles of <a href="<?= get_url() . $cat . '/' . $_GET['city'] . '/' ?>"><?= ucwords($city) ?> <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?></a>. All <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> near <?= ucwords($city) ?> profiles are 100% genuine and verified from our end through video calls. These hot and charming models can be contacted easily through our website. All our <?= ucwords($city) ?> female models are curvy, passionate, experienced, harmonious, and sexually excited.</p>
-        <p>You can easily find phone numbers of <a href='<?= get_url() . $cat . '/' . $_GET['area'] . '/' ?>'>independent <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($area) ?></a> on Ctchicks. These females are readily available anywhere in the <?= ucwords($city) ?>. These girls can come to your place or hotel room without any advance. You need to pay only after they arrive at your location. You can find <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($city) ?> as per your particular taste 24x7 in <?= ucwords($city) ?>.</p>
+        <p>You can easily find phone numbers of <a href='<?= get_url() . $cat . '/'.$_GET['city'].'/'. $_GET['area'] . '/' ?>'>independent <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($area) ?></a> on Ctchicks. These females are readily available anywhere in the <?= ucwords($city) ?>. These girls can come to your place or hotel room without any advance. You need to pay only after they arrive at your location. You can find <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in the <?= ucwords($city) ?> as per your particular taste 24x7 in <?= ucwords($city) ?>.</p>
 
         <h2>Mature ladies and housewives <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> near me in the <?= ucwords($area) ?>.</h2>
 
@@ -355,47 +750,30 @@ if($cat == 'call-girls'){
 
         <p><a href="<?= get_url() ?>">Ctchicks.com</a> is not an escort service agency; we are just any classified ad platform. We work as a communication medium between visitors and models. We are not reliable for any financial activity between them.</p>
 
-        <h3 class="third-heading">FAQ</h3>
-        <div class="faq">
-            <div class="question">
-                <h4><strong>Can We Bring <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> To Hotel In <?= ucwords($area) ?> ?</strong></h4>
-            </div>
-            <div class="answer">
-                <p>Yes! <?= $area ?> is a beautiful Area and one that has even its air laden with love. To clear your doubts, simply reach out to our team of dedicated staff, and we will point you in the direction of hotels that are warm and luxurious.</p>
-            </div>
-            <div class="question">
-                <h4><strong>Is The Photo Of The <?= ucwords($area) ?> <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> Genuine ?</strong></h4>
-            </div>
-            <div class="answer">
-                <p>As we offer cheap <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> service in <?= ucwords($area) ?>, we do well to make sure that all our girls are properly vetted and their photos genuine, so you have nothing to worry about. Just sit back and relax.</p>
-            </div>
-            <div class="question">
-                <h4>What Benefits Of Choosing <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> At Ctchicks.com ?</h4>
-            </div>
-            <div class="answer">
-                <p>We guarantee you maximum enjoyment when you choose ctchicks.com. Also, your identity is safe with us. Only the girl and you will know you used our service. We also guarantee you your value for your money due to our pocket-friendly rates for premium service and many more.</p>
-            </div>
-            <div class="question">
-                <h4>What is price of <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?> ?</h4>
-            </div>
-            <div class="answer">
-                <p>Low to High-priced sex workers <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in <?= ucwords($area) ?> charge anywhere from 10,000 ( 10k ) to 50,000 (50k) rupees for an hour, but some charge many times more. Also Available for budget clints.</p>
-            </div>
-            <div class="question">How do I book a <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?> ?</div>
-            <div class="answer">
-                <p>If you want to Hire a <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?> then follow these simple steps:</p>
-                <p> <br>• Make a list of all genuine <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> service provider agencies by searching “<?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> Near Me in <?= ucwords($area) ?>” on the Internet.
-                    <br>• Visit ctchicks.com websites in <?= ucwords($area) ?> city one by one and read all things carefully.
-                    <br>• Select your desired <?= ucwords($area) ?> <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?>, and provide your identity details for verification.
-                    <br>• Get a <?= ucwords($area) ?> call girl’s Number and fix your meeting date and time.
-                    <br>• Take the <?= ucwords($area) ?> <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> service and pay the amount to the <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> in <?= ucwords($area) ?>.
-                </p>
-            </div>
-            <div class="question">
-                <h4>Is There a Refund Policy Available</h4>
-            </div>
-            <div class="answer">No, once you pay our <?php if($cat == 'escorts'){echo 'escort';}else{ echo 'call girl'; } ?> in <?= ucwords($area) ?>, we cannot refund the money.</div>
-        </div>
+        <h3 class="third-heading">Bring call girls To your Hotel room In ( <?= ucwords($area) ?> ).</h3>
+        <p>Yes, you can enjoy private services from top call girls at any hotel. ( <?= ucwords($area) ?>
+        )is a beautiful area that has its air laden with love. To clear your doubts, simply reach out to our team of dedicated staff, and we will point you in the direction of warm and luxurious hotels. If you don't know which hotel is good for you. Let us make the arrangements for the happiest night of your life. Make sure to reach the room on time and enjoy every last moment. If you book a room in some good hotels they could be a safer place to relax with our lovely girls. So invest your money in a night where you enjoy satisfying services from start to end.</p>
+
+        <h2>How to check the authenticity of (<?= ucwords($area) ?>) call girls</h2>
+
+        <p>As we offer cheap call girl service in ( <?= ucwords($area) ?>
+    ), we do well to make sure that all our girls are properly vetted and their photos genuine, so you have nothing to worry about. Just sit back and relax. We will make sure that you get the sexiest call girl available at your time. To make your time with us best we only share real images of our female staff. You can rely on us as we offer doorstep delivery with no advance. Images might be old but you are going to get the same girl as the images. If you are going for Russian you are going to get images that are just one week old.</p>
+
+    <h2>How do you know if the price of a call girl in ( <?= ucwords($area) ?> ) is genuine or not?</h2>
+
+    <p>If you want to Hire a call girl in ( <?= ucwords($area) ?> )then follow these simple steps:</p>
+<ul>
+    <li>Make a list of all genuine call girls service provider agencies by searching “call girls Near Me in ( <?= ucwords($area) ?>  ) on the Internet.</li>
+    <li>Visit ctchicks.com websites in ( <?= ucwords($area) ?> ) city one by one and read all things carefully.</li>
+    <li>Select your desired ( <?= ucwords($area) ?> ) call girls, and provide your identity details for verification.</li>
+    <li>Get a ( <?= ucwords($area) ?> ) call girl’s Number and fix your meeting date and time.</li>
+    <li>Take the ( <?= ucwords($area) ?> ) call girls service and pay the amount to the call girls in ( <?= ucwords($area) ?> ).</li>
+</ul>
+
+
+
+
+
     </div>
     <div class="container last-step">
         <h4>Top Cities Of India</h4>
@@ -428,7 +806,11 @@ if($cat == 'call-girls'){
                     foreach (explode('-', $area) as $c) {
                         $a .= $c . ' ';
                     }
-                    $areaX .= "<a href='" . get_url() . $cat . "/" . $row['area_city_name'] . "/" . strtolower($area) . "/'><button>" . ucwords(strtolower($a)) . "</button></a>";
+                    $profile_exist = "SELECT * FROM profiles WHERE cities = '$cityX' AND areas = '$area' AND callgirl_escort = '$cat'";
+                    $result_profile_exist = mysqli_query($con, $profile_exist);
+                    if (mysqli_num_rows($result_profile_exist) > 0) {
+                        $areaX .= "<a href='" . get_url() . $cat . "/" . $row['area_city_name'] . "/" . strtolower($area) . "/'><button>" . ucwords(strtolower($a)) . "</button></a>";
+                    }        
                 }
             }
             echo $areaX;

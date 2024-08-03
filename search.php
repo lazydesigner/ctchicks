@@ -40,12 +40,12 @@ $count = "SELECT COUNT(*) as a FROM profiles WHERE `callgirl_escort` = '{$_GET['
 if (!empty($city)) {
     $sql .= "and `cities` = '$city' ";
     $count .= "and `cities` = '$city' ";
-    $city_url = "https://ctchicks.com/".$_GET['category'].'/'.$_GET['city'].'/';
+    $city_url = "https://in.ctchicks.com/".$_GET['category'].'/'.$_GET['city'].'/';
 }
 if (!empty($_GET['locality'])) {
     $sql .= "and `areas` = '{$_GET['locality']}' ";
     $count .= "and `areas` = '{$_GET['locality']}' ";
-    $area_url = "https://ctchicks.com/".$_GET['category'].'/'.$_GET['city'].'/'.$_GET['locality'].'/';
+    $area_url = "https://in.ctchicks.com/".$_GET['category'].'/'.$_GET['city'].'/'.$_GET['locality'].'/';
 }
 // if(!empty($gender)){
 
@@ -84,7 +84,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <?= $noindex ?>
     <title>Ctchicks - Search your Escort</title>
-    <link rel="canonical" href="https://ctchicks/search/" />
+    <link rel="canonical" href="https://ctchicks.com/search/" />
     <meta name="description" content="Being one of the top <?= $city ?> call girls directory we provide fast delivery in 20 mins. All our call girls in <?= $city ?> are available 24/7 in Cash on delivery." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -258,7 +258,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Ctchicks",
-            "url": "https://ctchicks.com",
+            "url": "https://ctchicks.net/",
             "logo": ""
         }
     </script>
