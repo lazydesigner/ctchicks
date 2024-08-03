@@ -217,7 +217,6 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     <?php include './navbar.php' ?>
 
     <div class="container" style="user-select: none;">
-        <h2></h2>
 
         <p>Check out a collection of hot <?= ucwords($city) ?> calls girls on Ctchicks. Find thousands of <a href="<?= get_url() . $cat . '/' . $_GET['city'] . '/' ?>">independent call girls in <?= ucwords($city) ?></a> and pick one that suits your taste. Our website is an embodiment of versatility, style, and authenticity too. For an easy surfing experience, our site has been designed as a seamless extension to other similar websites on the web. Hence, you can just flip through the extensive list of profiles we have or portfolios which are inclusive of the full bio as well as information about service areas covered by each girl, body figures, skin tones besides pictures. Ctchicks does more than just provide profiles; it is your trusted companion for call girls nationwide. We can say that beauty has no limits and there are endless opportunities that come with us. From your doorstep to any hotel rooms our girls will blow your mind in every way possible.</p>
 
@@ -338,12 +337,12 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 <p>It is extraordinary to find unmatched entertainment with independent models from <?= ucwords($city) ?>. These girls are polite and belong to the elite society of <?= ucwords($city) ?>. Our platform lets you quickly find advertisements for independent <a href="<?= get_url() . $cat . '/' . $_GET['city'] . '/' ?>">call girls in <?= ucwords($city) ?></a>. You can quickly contact them and have the sexiest night. They are open-minded and independent in every way. They are perfect as they provide personalized companionship for your fantasies. You can easily connect with them with their real photo and personal number given on their profile on our website. Booking a passionate date with high-profile call girls in <?= ucwords($city) ?> is straightforward. Just visit as many profiles as you like and view actual photos of passionate girls to choose one; call her as per your schedule, and enjoy your time.</p>
 <p>These independent prostitutes could be affordable or a little expensive, depending on the time, service, and requirements. All our independent models are very health conscious and maintain their bodies well. These <a href="<?= get_url() . $cat . '/' . $_GET['city'] . '/' ?>"><?= ucwords($city) ?> calls girls</a> also undergo regular medical checkups to ensure that they are free from any STDs. Their bodies are slim and graceful, and they can spend anywhere from an hour to the whole night with you. After getting a glare from them, you will just want to fuck them on your bed. You can easily find an independent call girl within <?= ucwords($city) ?> for in-call and out-call services.</p>
 
-<h2>Feedback and Review from Customers for Best Call Girls Service in <?= ucwords($city) ?></h2>
+<h3>Feedback and Review from Customers for Best Call Girls Service in <?= ucwords($city) ?></h3>
 
 <p>We believe in authentic and genuine service so that our clients have the best and most genuine experience of the most intimate moments with the best call girls service in <?= ucwords($city) ?>. That's why we created a completely transparent and trustworthy review system. We have collected data from all the call girls who want to satisfy your sexual needs. We have collected feedback and reviews from our customers regarding call girl services with the help of an online review system.</p>
 <p>Our experts have correctly collected and divided the reviews to get the best model for your erotic fun. We have categorized all the data and created a list of <a href="<?= get_url() . $cat . '/' . $_GET['city'] . '/' ?>">call girls in <?= ucwords($city) ?></a> from our customers' experience and feedback, dividing them according to their service and rates so that you can easily find the best female administration in <?= ucwords($city) ?> under your budget. You can easily save time by visiting Ctchicks PRO prostitute profiles, as these call girls are providing the best erotic service within budget as per the latest reviews.</p>
 
-<h2>How can we trust to hire call girls in <?= ucwords($city) ?> from ctchicks.net?</h2>
+<h3>How can we trust to hire call girls in <?= ucwords($city) ?> from ctchicks.net?</h3>
 
 <p>ctchicks.net is one of the leading call girl classified websites in India. Our platform is free to post ads. Generally, we inspect each profile manually to guarantee that all published profiles are genuine. Apart from this, we are not liable for any financial fraud. So, we do not encourage advance payment in any case. Ctchicks maintains full privacy and confidentiality while booking any profile. Please choose from our vast range of call girls in <?= ucwords($city) ?> ads. You can quickly contact our female executive by phone and share your requirements. Our executives will understand your needs and send pictures of good girls on WhatsApp. Just look at the images of sexy and glamorous girls, select one, and get attractive beauty at your place in real-time. If you have any issues while booking or after booking female staff, contact our technical team using the Contact Us page.</p>
 
@@ -403,7 +402,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     </div>
 
     <div class="container" style="background-color: transparent;border:0">
-        <h2 style="font-size: 1.1rem;">Ctchicks.com never intervene between ad publisher and online user</h2>
+        <p style="font-size: 1.1rem;font-width:bold">Ctchicks.com never intervene between ad publisher and online user</p>
 
         <p style="font-size: .9rem;">By accessing our website you confirm all our escort classified ad network’s policy – we do not mediate between ad publisher and online user. Our platform is built to ensure that people who need services are able to get them from providers in a smooth and effective way. We facilitate the two parties communicating with each other without any disruption because we believe it is important for them to engage in open talks and rely upon each other. Therefore, as you go through our listings please note that you can talk with the advertisers directly hence be confident of your choices. We are not responsible for any transaction between user and publisher. Enjoy Browsing!</p>
     </div>

@@ -61,7 +61,7 @@ if(isset($error_cat)){
                     <?php if($cat == 'call-girls' || $cat == 'call girls'){ ?>
                         <select aria-label="Select a category" name="category" id="category">
                         <option value="call-girls" selected>Call Girls</option>
-                        <option value="escorts">Escorts</option>
+                        <!-- <option value="escorts">Escorts</option> -->
                     </select>
                     <?php }else{ ?>
                         <select aria-label="Select a category" name="category" id="category">

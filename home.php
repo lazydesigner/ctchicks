@@ -964,8 +964,8 @@ table td{padding: 3%;border-bottom: 1px solid black;}
 
 
     </div>
-    <div class="container" style="background-color:transparent;border:0;padding:0;font-size:1rem;font-weight: 400;"><h2 style="font-weight: 400;">Find Passionate Escorts In Your City</h2></div>
-    <div class="container">
+    <div class="container" style="background-color:transparent;border:0;padding:0;font-size:1rem;font-weight: 400; display:none"><h2 style="font-weight: 400;">Find Passionate Escorts In Your City</h2></div>
+    <div class="container" style=" display:none">
         <strong style="display: none;">Indian Escorts(<?php $sql2 = "SELECT COUNT(profile_id) as aa FROM `profiles` WHERE `callgirl_escort` = 'escorts'";
                                 $res2 = mysqli_query($con, $sql2);
                                 $row2 = mysqli_fetch_array($res2);
