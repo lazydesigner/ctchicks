@@ -55,6 +55,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         ORDER BY RAND()";
         $profile_query_result = mysqli_query($con, $profile_query);
         if (mysqli_num_rows($profile_query_result) < 1) {
+            header("Location: https://ctchicks.com/404");
         }
     }
 }
