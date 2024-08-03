@@ -402,7 +402,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     </div>
 
     <div class="container" style="background-color: transparent;border:0">
-        <p style="font-size: 1.1rem;font-width:bold">Ctchicks.com never intervene between ad publisher and online user</p>
+        <p style="font-size: 1.1rem;font-weight:bold">Ctchicks.com never intervene between ad publisher and online user</p>
 
         <p style="font-size: .9rem;">By accessing our website you confirm all our escort classified ad network’s policy – we do not mediate between ad publisher and online user. Our platform is built to ensure that people who need services are able to get them from providers in a smooth and effective way. We facilitate the two parties communicating with each other without any disruption because we believe it is important for them to engage in open talks and rely upon each other. Therefore, as you go through our listings please note that you can talk with the advertisers directly hence be confident of your choices. We are not responsible for any transaction between user and publisher. Enjoy Browsing!</p>
     </div>
