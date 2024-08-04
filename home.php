@@ -646,6 +646,19 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                         </div>
                     </div>
                 </a>
+                
+                <a href="<?=get_url() ?>call-girls/aligarh/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>
+                            Aligarh (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'aligarh'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="grid-items">
                 <h3>Best Call girl in City <span>"B"</span></h3>
@@ -794,6 +807,17 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                         </div>
                     </div>
                 </a>
+                <a href="<?=get_url() ?>call-girls/gorakhpur/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Gorakhpur (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'gorakhpur'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="grid-items">
                 <h3>Best Call girl in City <span>"H"</span></h3>
@@ -930,6 +954,17 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                         </div>
                     </div>
                 </a>
+                <a href="<?=get_url() ?>call-girls/mumbai/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Mumbai (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'mumbai'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="grid-items">
                 <h3>Best Call girl in City <span>"P"</span></h3>
@@ -952,6 +987,20 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
                         <div class="name_city">
                             <p>Surat (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'surat'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-items">
+                <h3>Best Call girl in City <span>"T"</span></h3>
+                <a href="<?=get_url() ?>call-girls/thane/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Thane (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'thane'";
                                                                                                                         $res = mysqli_query($con, $sql);
                                                                                                                         $row = mysqli_fetch_array($res);
                                                                                                                         echo $row['a'] ?>)</p>

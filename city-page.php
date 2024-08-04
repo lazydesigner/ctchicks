@@ -148,7 +148,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         .image-count {width: 30px;color: white;position: absolute;display: flex;align-items: center;border-radius: 2px;bottom: 1%;left: 1%;padding: 1%;            background-color: rgba(0, 0, 0, 0.628);}
         .favourite {width: 30px;color: white;position: absolute;top: 1%;right: 1%;}
         .long-profile-detail {width: calc(100% - 160px);height: 100%;padding: 1%;display: flex;flex-direction: column;justify-content: space-between;}
-        .long-profile-detail h3 {font-size: 1.3rem;margin: 0;padding: 0;}
+        .long-profile-detail h3 {font-size: 1.4rem;margin: 0;padding: 0;}
         .long-btn-action {width: 100%;display: flex;justify-content: end;gap: 2%;}
         .long-profile-detail p {padding: 0;margin: 1% 0;}
         .long-btn-action button {/* width: 100px; */height: 40px;border: 0;font-size: 1.05rem;border-radius: 100px;padding: 0 15px;cursor: pointer;}

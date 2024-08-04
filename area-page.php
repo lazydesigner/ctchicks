@@ -547,7 +547,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
         }
 
         .long-profile-detail h3 {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin: 0;
             padding: 0;
         }
