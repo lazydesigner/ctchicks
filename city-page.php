@@ -38,27 +38,7 @@ $looking_for_city = "SELECT * FROM city WHERE city_name = '{$_GET['city']}'";
 $looking_for_city_result = mysqli_query($con, $looking_for_city);
 if (!mysqli_num_rows($looking_for_city_result)) {
     header("Location: https://ctchicks.com/404");
-} else {
-
-    $profile_query2 = "
-        SELECT * 
-        FROM new_profiles 
-        WHERE cities = '{$_GET['city']}' AND callgirl_escort = '$cat'";
-    $profile_query_result = mysqli_query($con, $profile_query2);
-
-    if (mysqli_num_rows($profile_query_result) < 1) {
-        $pre = 'notpresent';
-        $profile_query = "
-        SELECT * 
-        FROM profiles 
-        WHERE cities = '{$_GET['city']}' AND callgirl_escort = '$cat' 
-        ORDER BY RAND()";
-        $profile_query_result = mysqli_query($con, $profile_query);
-        if (mysqli_num_rows($profile_query_result) < 1) {
-            header("Location: https://ctchicks.com/404");
-        }
-    }
-}
+} else {}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -227,6 +207,24 @@ if (!mysqli_num_rows($looking_for_city_result)) {
 
 
         <?php
+        $profile_query2 = "
+        SELECT * 
+        FROM new_profiles 
+        WHERE cities = '{$_GET['city']}' AND callgirl_escort = '$cat'";
+    $profile_query_result = mysqli_query($con, $profile_query2);
+
+    if (mysqli_num_rows($profile_query_result) < 1) {
+        $pre = 'notpresent';
+        $profile_query = "
+        SELECT * 
+        FROM profiles 
+        WHERE cities = '{$_GET['city']}' AND callgirl_escort = '$cat' 
+        ORDER BY RAND()";
+        $profile_query_result = mysqli_query($con, $profile_query);
+        if (mysqli_num_rows($profile_query_result) < 1) {
+            header("Location: https://ctchicks.com/404");
+        }
+    }
         // $count_pro =  count(mysqli_fetch_assoc($profile_query_result));
         $count_pro = 1;
         while ($row = mysqli_fetch_assoc($profile_query_result)) {
@@ -316,7 +314,8 @@ if (!mysqli_num_rows($looking_for_city_result)) {
                 </div>
             </div>
 
-        <?php } ?>
+        <?php }; 
+        // mysqli_close($con) ?>
 
 
 
