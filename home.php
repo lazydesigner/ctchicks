@@ -818,6 +818,17 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                         </div>
                     </div>
                 </a>
+                <a href="<?=get_url() ?>call-girls/greater-noida/">
+                    <div class="item-city-name">
+                        <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
+                        <div class="name_city">
+                            <p>Greater Noida (<?php $sql = "SELECT COUNT(profile_id) as a FROM profiles WHERE callgirl_escort = 'call-girls' && cities = 'greater-noida'";
+                                                                                                                        $res = mysqli_query($con, $sql);
+                                                                                                                        $row = mysqli_fetch_array($res);
+                                                                                                                        echo $row['a'] ?>)</p>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="grid-items">
                 <h3>Best Call girl in City <span>"H"</span></h3>
