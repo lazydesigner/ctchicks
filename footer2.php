@@ -142,10 +142,13 @@
             question.classList.toggle('active');
         });
     });
-    
-    setTimeout(()=>{
+
+    function remove_agree_terms_hide(){
+        setTimeout(()=>{
         hidepop()
     },500)
+    }  
+    
 
     function hidepop(){
         var remove_agree_terms = document.getElementById("confirm-18");

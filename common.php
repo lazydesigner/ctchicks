@@ -58,6 +58,7 @@ function checkCookie() {
     if (user != "") {
         //var remove_agree_terms = document.getElementById("confirm-18");
         //remove_agree_terms.style.display = "none";
+        remove_agree_terms_hide()
     } else {
         var remove_agree_terms = document.getElementById("confirm-18");
         remove_agree_terms.style.display = "block";
