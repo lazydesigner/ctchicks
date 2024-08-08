@@ -410,21 +410,6 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     <?php include './footer2.php' ?>
 
 
-    <script>
-        // window.onscroll = function(){
-        //     const loaddata = new FormData();
-        //     loaddata.append('city', '<?= $_GET['city'] ?>');
-        //     loaddata.append('cat', '<?= $cat ?>');
-        //     fetch('./loaddata.php',{
-        //         method: 'POST',
-        //         body:loaddata
-        //     }).then(res=>res.json())
-        //     .then(data=>{
-
-        //     })
-        // }
-    </script>
-
 </body>
 
 </html>

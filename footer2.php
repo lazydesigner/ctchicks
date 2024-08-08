@@ -28,6 +28,17 @@
 
 </footer>
 <script>
+    function remove_agree_terms_hide(){
+        setTimeout(()=>{
+        hidepop()
+    },500)
+    }  
+    
+
+    function hidepop(){
+        var remove_agree_terms = document.getElementById("confirm-18");
+        remove_agree_terms.style.display = "none";
+    }
 
 
     if (!window.location.href.endsWith('/')) {
@@ -143,17 +154,6 @@
         });
     });
 
-    function remove_agree_terms_hide(){
-        setTimeout(()=>{
-        hidepop()
-    },500)
-    }  
-    
-
-    function hidepop(){
-        var remove_agree_terms = document.getElementById("confirm-18");
-        remove_agree_terms.style.display = "none";
-    }
 })
 
 </script>
