@@ -1,5 +1,6 @@
 User-Agent: *
 Allow: /
 Disallow: /search/?
+Disallow: /call-girls/*/*/call-girl-*
 
 Sitemap: https://in.ctchicks.com/sitemap.xml
