@@ -87,7 +87,7 @@ $_18 = '<div class="confirm-18" id="confirm-18">
 
                 By clicking the <b>"confirm"</b> button, users certify that they are over 18 years old and release the service providers, owners, and creators of ctchicks.com from any responsibility regarding the content and use of this service.</p>
             <div style="margin-top: 2%;"><button class="btn1" onclick="setCookie(\'confirm_ctchick\', \'accepted_ctchick\', 30)">Confirm</button>
-                <a href="<?= get_url() ?>"><button class="btn2">Reject</button></a>
+                <a href="'.get_url().'"><button class="btn2">Reject</button></a>
             </div>
         </div>
 </div>';
