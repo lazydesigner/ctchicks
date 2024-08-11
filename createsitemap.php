@@ -26,64 +26,62 @@ $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL
 $url = htmlspecialchars('https://ctchicks.net');
 $xml .= "\t<url>\n";
 $xml .= "\t\t<loc>$url</loc>\n";
-$xml .= "\t\t<lastmod>"."2024-08-12T13:23:31+05:30"."</lastmod>\n";
+$xml .= "\t\t<lastmod>" . "2024-08-12T13:23:31+05:30" . "</lastmod>\n";
 $xml .= "\t\t<changefreq>weekly</changefreq>\n";
 $xml .= "\t\t<priority>1.00</priority>\n";
 $xml .= "\t</url>\n";
 
-foreach($type as $t){
-    foreach($pagess as $page){
-    
+foreach ($type as $t) {
+    foreach ($pagess as $page) {
+
         $query = "SELECT * FROM  $page";
-    
-        $result =  mysqli_query($con,$query);
+
+        $result =  mysqli_query($con, $query);
         // Create the sitemap XML
-        if(mysqli_num_rows($result)>0){
+        if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-                if($page == 'city'){
-                    
+                if ($page == 'city') {
+
                     $pro = "SELECT * 
         FROM profiles 
         WHERE cities = '{$row['city_name']}' AND callgirl_escort = 'call-girls'";
 
-        $result2 =  mysqli_query($con,$pro);
+                    $result2 =  mysqli_query($con, $pro);
 
-if(mysqli_num_rows($result2)>0){
+                    if (mysqli_num_rows($result2) > 0) {
 
-                    $url = htmlspecialchars('https://ctchicks.net/'.$t.'/'.strtolower($row['city_name']).'/');
-                    $xml .= "\t<url>\n";
-                    $xml .= "\t\t<loc>$url</loc>\n";
-                    $xml .= "\t\t<lastmod>2024-08-12T13:23:31+05:30</lastmod>\n";
-                    $xml .= "\t\t<changefreq>weekly</changefreq>\n";
-                    $xml .= "\t\t<priority>0.9</priority>\n";
-                    $xml .= "\t</url>\n";
-                }
-                }elseif($page == 'area'){
+                        $url = htmlspecialchars('https://ctchicks.net/' . $t . '/' . strtolower($row['city_name']) . '/');
+                        $xml .= "\t<url>\n";
+                        $xml .= "\t\t<loc>$url</loc>\n";
+                        $xml .= "\t\t<lastmod>2024-08-12T13:23:31+05:30</lastmod>\n";
+                        $xml .= "\t\t<changefreq>weekly</changefreq>\n";
+                        $xml .= "\t\t<priority>0.9</priority>\n";
+                        $xml .= "\t</url>\n";
+                    }
+                } elseif ($page == 'area') {
                     $pro = "SELECT * 
                     FROM profiles 
-                    WHERE cities = '{$row['city_name']}' AND areas = '{$row['area_name']}' AND callgirl_escort = 'call-girls'";
-            
-                    $result2 =  mysqli_query($con,$pro);
-            
-            if(mysqli_num_rows($result2)>0){
-                    $url = htmlspecialchars('https://ctchicks.net/'.$t.'/'.strtolower($row['area_city_name']).'/'.strtolower($row['area_name']).'/');
-                    $xml .= "\t<url>\n";
-                    $xml .= "\t\t<loc>$url</loc>\n";
-                    $xml .= "\t\t<lastmod>2024-08-12T06:13:31+05:30</lastmod>\n";
-                    $xml .= "\t\t<changefreq>weekly</changefreq>\n";
-                    $xml .= "\t\t<priority>0.8</priority>\n";
-                    $xml .= "\t</url>\n";
-            }
+                    WHERE cities = '{$row['area_city_name']}' AND areas = '{$row['area_name']}' AND callgirl_escort = 'call-girls'";
+
+                    $result2 =  mysqli_query($con, $pro);
+
+                    if (mysqli_num_rows($result2) > 0) {
+                        $url = htmlspecialchars('https://ctchicks.net/' . $t . '/' . strtolower($row['area_city_name']) . '/' . strtolower($row['area_name']) . '/');
+                        $xml .= "\t<url>\n";
+                        $xml .= "\t\t<loc>$url</loc>\n";
+                        $xml .= "\t\t<lastmod>2024-08-12T06:13:31+05:30</lastmod>\n";
+                        $xml .= "\t\t<changefreq>weekly</changefreq>\n";
+                        $xml .= "\t\t<priority>0.8</priority>\n";
+                        $xml .= "\t</url>\n";
+                    }
                 }
             }
         }
-    
-       
     }
 }
 
 // $query = "SELECT * FROM  profiles";
-    
+
 // $result =  mysqli_query($con,$query);
 // Create the sitemap XML
 
@@ -112,4 +110,3 @@ $con->close();
 
 // Output a success message
 echo "Sitemap generated successfully!";
-?>
