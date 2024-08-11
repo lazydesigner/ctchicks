@@ -46,9 +46,9 @@ foreach($type as $t){
         FROM profiles 
         WHERE cities = '{$row['city_name']}' AND callgirl_escort = 'call-girls'";
 
-        $result =  mysqli_query($con,$pro);
+        $result2 =  mysqli_query($con,$pro);
 
-if(mysqli_num_rows($result)>0){
+if(mysqli_num_rows($result2)>0){
 
                     $url = htmlspecialchars('https://ctchicks.net/'.$t.'/'.strtolower($row['city_name']).'/');
                     $xml .= "\t<url>\n";
@@ -63,9 +63,9 @@ if(mysqli_num_rows($result)>0){
                     FROM profiles 
                     WHERE cities = '{$row['city_name']}' AND areas = '{$row['area_name']}' AND callgirl_escort = 'call-girls'";
             
-                    $result =  mysqli_query($con,$pro);
+                    $result2 =  mysqli_query($con,$pro);
             
-            if(mysqli_num_rows($result)>0){
+            if(mysqli_num_rows($result2)>0){
                     $url = htmlspecialchars('https://ctchicks.net/'.$t.'/'.strtolower($row['area_city_name']).'/'.strtolower($row['area_name']).'/');
                     $xml .= "\t<url>\n";
                     $xml .= "\t\t<loc>$url</loc>\n";
