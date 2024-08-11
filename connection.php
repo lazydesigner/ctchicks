@@ -20,7 +20,8 @@ if(localConnection()){
     }
 
 }else{
-    $con = mysqli_connect('localhost','u231955561_ctchicks','@Ctchicks1','u231955561_ct');
+    $con = mysqli_connect('localhost','u231955561_new_ct','@NewCt2024','u231955561_new_ct');
+    // $con = mysqli_connect('localhost','u231955561_ctchicks','@Ctchicks1','u231955561_ct');
     if(!$con){
         die('Not Connected');
     }
