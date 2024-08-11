@@ -31,6 +31,30 @@ $xml .= "\t\t<changefreq>weekly</changefreq>\n";
 $xml .= "\t\t<priority>1.00</priority>\n";
 $xml .= "\t</url>\n";
 
+$url = htmlspecialchars('https://ctchicks.net/login/');
+$xml .= "\t<url>\n";
+$xml .= "\t\t<loc>$url</loc>\n";
+$xml .= "\t\t<lastmod>" . "2024-08-12T13:23:31+05:30" . "</lastmod>\n";
+$xml .= "\t\t<changefreq>weekly</changefreq>\n";
+$xml .= "\t\t<priority>0.7</priority>\n";
+$xml .= "\t</url>\n";
+
+$url = htmlspecialchars('https://ctchicks.net/sign-up/');
+$xml .= "\t<url>\n";
+$xml .= "\t\t<loc>$url</loc>\n";
+$xml .= "\t\t<lastmod>" . "2024-08-12T13:23:31+05:30" . "</lastmod>\n";
+$xml .= "\t\t<changefreq>weekly</changefreq>\n";
+$xml .= "\t\t<priority>0.7</priority>\n";
+$xml .= "\t</url>\n";
+
+$url = htmlspecialchars('https://ctchicks.net/contact-us/');
+$xml .= "\t<url>\n";
+$xml .= "\t\t<loc>$url</loc>\n";
+$xml .= "\t\t<lastmod>" . "2024-08-12T13:23:31+05:30" . "</lastmod>\n";
+$xml .= "\t\t<changefreq>weekly</changefreq>\n";
+$xml .= "\t\t<priority>0.7</priority>\n";
+$xml .= "\t</url>\n";
+
 foreach ($type as $t) {
     foreach ($pagess as $page) {
 
