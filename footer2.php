@@ -23,7 +23,7 @@
             <li>Twitter</li>
             <li>Pinterest</li>
         </ul>
-        <small>copyright &copy; 2024 ctchicks.com All right reserved</small>
+        <small>copyright &copy; 2024 ctchicks.net All right reserved</small>
     </div>
 
 </footer>

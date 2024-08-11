@@ -37,7 +37,7 @@ foreach ($c as $i => $ct) {
 $looking_for_city = "SELECT * FROM city WHERE city_name = '{$_GET['city']}'";
 $looking_for_city_result = mysqli_query($con, $looking_for_city);
 if (!mysqli_num_rows($looking_for_city_result)) {
-    header("Location: https://ctchicks.com/404");
+    header("Location: https://ctchicks.net/404");
 } else {}
 ?>
 <!DOCTYPE html>
@@ -222,7 +222,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
         ORDER BY RAND()";
         $profile_query_result = mysqli_query($con, $profile_query);
         if (mysqli_num_rows($profile_query_result) < 1) {
-            header("Location: https://ctchicks.com/404");
+            header("Location: https://ctchicks.net/404");
         }
     }
         // $count_pro =  count(mysqli_fetch_assoc($profile_query_result));
@@ -402,7 +402,7 @@ if (!mysqli_num_rows($looking_for_city_result)) {
     </div>
 
     <div class="container" style="background-color: transparent;border:0">
-        <p style="font-size: 1.1rem;font-weight:bold">Ctchicks.com never intervene between ad publisher and online user</p>
+        <p style="font-size: 1.1rem;font-weight:bold">Ctchicks.net never intervene between ad publisher and online user</p>
 
         <p style="font-size: .9rem;">By accessing our website you confirm all our escort classified ad network’s policy – we do not mediate between ad publisher and online user. Our platform is built to ensure that people who need services are able to get them from providers in a smooth and effective way. We facilitate the two parties communicating with each other without any disruption because we believe it is important for them to engage in open talks and rely upon each other. Therefore, as you go through our listings please note that you can talk with the advertisers directly hence be confident of your choices. We are not responsible for any transaction between user and publisher. Enjoy Browsing!</p>
     </div>

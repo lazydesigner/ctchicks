@@ -84,7 +84,7 @@ RewriteRule ^escorts/([^/]+)/?$ https://ctchicks.com/call-girls/$1/ [L,R=301,NC]
 
 
 RewriteRule ^$ home.php [NC,L]
-ErrorDocument 404 https://ctchicks.com/404
+ErrorDocument 404 https://ctchicks.net/404
 
 #NEW URL PATTERN
 

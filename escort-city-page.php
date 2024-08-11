@@ -16,12 +16,12 @@ foreach ($c as $i => $ct) {
 $looking_for_city = "SELECT * FROM city WHERE city_name = '{$_GET['city']}'";
 $looking_for_city_result = mysqli_query($con, $looking_for_city);
 if (!mysqli_num_rows($looking_for_city_result)) {
-    header("Location: https://ctchicks.com/404");
+    header("Location: https://ctchicks.net/404");
 } else {
     $profile_query = "SELECT * FROM profiles WHERE  cities = '{$_GET['city']}'  AND callgirl_escort = '$cat' ";
     $profile_query_result = mysqli_query($con, $profile_query);
     if (mysqli_num_rows($profile_query_result) < 1) {
-        header("Location: https://ctchicks.com/404");
+        header("Location: https://ctchicks.net/404");
     }
 }
 ?>
@@ -714,7 +714,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
         <p>The sexual practice is in them on the serious verge as their pussy becomes wet to fetish the most relatable loving practice.  The moral of the story is that the concerned person intends to find the advanced category of love.</p>
         <h3>Money is no obstacle to hiring an <a href='<?=get_url() ?><?=$cat.'/'.$_GET['city'].'/' ?>'>escort service in <?= ucwords($city) ?></a></h3>
         <p>Do not think finding hot and dirty personality escorts is the tough choice for you. In this glamorous world, taking an escort service becomes quite easy to delight the internal soul of the respective person. Many college girls wish to earn some decent pocket money without rubbing their shoulders.  These hot and energetic girls do not spend more money on making relationships and dating partners.</p>
-        <p>Our dating and escort directory enriches with many passionate girls to meet with prosperous men. They do not have the huge money demand as getting the satisfaction beam plays an important role in one’s life. If you intend to take the cheap level service, then you can count on our <a href='https://in.ctchicks.com'>professional escort service</a>.
+        <p>Our dating and escort directory enriches with many passionate girls to meet with prosperous men. They do not have the huge money demand as getting the satisfaction beam plays an important role in one’s life. If you intend to take the cheap level service, then you can count on our <a href='https://ctchicks.net'>professional escort service</a>.
         </p>
         <p>They do not make a big difference in their commitment as their listing sites and intend you the blessing touch of the sizzling expression. Thereby, you are requested not to shrink your expectations for making a relationship.</p>
         <h2>Hire an independent escort to go beyond the flirt</h2>

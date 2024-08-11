@@ -29,12 +29,12 @@ foreach ($a as $j => $ar) {
 $looking_for_city_area = "SELECT * FROM area WHERE area_city_name = '{$_GET['city']}' and area_name = '{$_GET['area']}'";
 $looking_for_city_area_result = mysqli_query($con, $looking_for_city_area);
 if (!mysqli_num_rows($looking_for_city_area_result)) {
-    header("Location: https://ctchicks.com/404");
+    header("Location: https://ctchicks.net/404");
 } else {
     $profile_query = "SELECT * FROM profiles WHERE  cities = '{$_GET['city']}' AND areas = '{$_GET['area']}' AND callgirl_escort = '$cat' ";
     $profile_query_result = mysqli_query($con, $profile_query);
     if (mysqli_num_rows($profile_query_result) < 1) {
-        header("Location: https://ctchicks.com/404");
+        header("Location: https://ctchicks.net/404");
     }
 }
 
@@ -58,13 +58,13 @@ if($cat == 'call-girls'){
     <?= $noindex ?>
     <title><?=$meta_title ?></title>
     <meta name="description" content="<?=$meta_description ?>" />
-    <link rel="canonical" href="https://ctchicks.com/<?= strtolower($cat) . '/' . strtolower($_GET['city']) . '/' . strtolower($_GET['area']) . '/' ?>" />
+    <link rel="canonical" href="https://ctchicks.net/<?= strtolower($cat) . '/' . strtolower($_GET['city']) . '/' . strtolower($_GET['area']) . '/' ?>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?=$meta_title ?>
 " />
     <meta property="og:description" content="<?=$meta_description ?>" />
-    <meta property="og:url" content="https://ctchicks.com/<?= $cat . '/' . $_GET['city'] . '/' . $_GET['area'] . '/' ?>" />
+    <meta property="og:url" content="https://ctchicks.net/<?= $cat . '/' . $_GET['city'] . '/' . $_GET['area'] . '/' ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="<?=$meta_title ?>
@@ -670,7 +670,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 $image_count_alt = json_decode($row['image_alt_'], true);
             }
 
-            $create_url = 'https://ctchicks.com/' . $row['callgirl_escort'] . '/' . $row['cities'] . '/';
+            $create_url = 'https://ctchicks.net/' . $row['callgirl_escort'] . '/' . $row['cities'] . '/';
             if (strtolower($row['areas']) == 'all') {
                 $create_url .= $row['identity_cat'] . '/';
             } else {
@@ -747,9 +747,9 @@ table td{padding: 3%;border-bottom: 1px solid black;}
 
         <p>Apart from thousands of young college girls, you can find hot and juicy mature milfs in the <?= ucwords($city) ?>. Many newly married or divorced ladies are available near you in the <?= ucwords($area) ?> <?= ucwords($city) ?>. These adult females are chubby and experienced in erotic desires. Most of them are well experienced to satisfy the urge of your inner desires.</p>
 
-        <p>Ctchicks.com allows our visitors to find a suitable partner for them. Our visitors can browse all the available profiles and communicate with them without fees or charges. You can date these <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> or get them for sexual encounters without any commitment. Many YouTube models, Facebook girls, and Instagram sensations post their ads for some extra income or fun.</p>
+        <p>Ctchicks.net allows our visitors to find a suitable partner for them. Our visitors can browse all the available profiles and communicate with them without fees or charges. You can date these <?php if($cat == 'escorts'){echo 'escorts';}else{ echo 'call girls'; } ?> or get them for sexual encounters without any commitment. Many YouTube models, Facebook girls, and Instagram sensations post their ads for some extra income or fun.</p>
 
-        <p><a href="<?= get_url() ?>">Ctchicks.com</a> is not an escort service agency; we are just any classified ad platform. We work as a communication medium between visitors and models. We are not reliable for any financial activity between them.</p>
+        <p><a href="<?= get_url() ?>">Ctchicks.net</a> is not an escort service agency; we are just any classified ad platform. We work as a communication medium between visitors and models. We are not reliable for any financial activity between them.</p>
 
         <h3 class="third-heading">Bring call girls To your Hotel room In <?= ucwords($area) ?> .</h3>
         <p>Yes, you can enjoy private services from top call girls at any hotel. <?= ucwords($area) ?> is a beautiful area that has its air laden with love. To clear your doubts, simply reach out to our team of dedicated staff, and we will point you in the direction of warm and luxurious hotels. If you don't know which hotel is good for you. Let us make the arrangements for the happiest night of your life. Make sure to reach the room on time and enjoy every last moment. If you book a room in some good hotels they could be a safer place to relax with our lovely girls. So invest your money in a night where you enjoy satisfying services from start to end.</p>
@@ -763,7 +763,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
     <p>If you want to Hire a call girl in <?= ucwords($area) ?> then follow these simple steps:</p>
 <ul>
     <li>Make a list of all genuine call girls service provider agencies by searching “call girls Near Me in <?= ucwords($area) ?> on the Internet.</li>
-    <li>Visit ctchicks.com websites in <?= ucwords($area) ?> city one by one and read all things carefully.</li>
+    <li>Visit ctchicks.net websites in <?= ucwords($area) ?> city one by one and read all things carefully.</li>
     <li>Select your desired <?= ucwords($area) ?> call girls, and provide your identity details for verification.</li>
     <li>Get a <?= ucwords($area) ?> call girl’s Number and fix your meeting date and time.</li>
     <li>Take the <?= ucwords($area) ?> call girls service and pay the amount to the call girls in <?= ucwords($area) ?>.</li>
@@ -777,16 +777,16 @@ table td{padding: 3%;border-bottom: 1px solid black;}
     <div class="container last-step">
         <h4>Top Cities Of India</h4>
         <div class="top-cities-of-india">
-            <a href="https://ctchicks.com/<?= $cat ?>/chennai/"><button>Chennai</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/ahmedabad/"><button>Ahmedabad</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/delhi/"><button>Delhi</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/indore/"><button>Indore</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/bangalore/"><button>Bangalore</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/pune/"><button>Pune</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/jaipur/"><button>Jaipur</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/gurgaon/"><button>Gurgaon</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/hyderabad/"><button>Hyderabad</button></a>
-            <a href="https://ctchicks.com/<?= $cat ?>/kochi/"><button>Kochi</button></a>
+            <a href="https://ctchicks.net/<?= $cat ?>/chennai/"><button>Chennai</button></a>
+            <a href="https://ctchicks.net/<?= $cat ?>/ahmedabad/"><button>Ahmedabad</button></a>
+            <a href="https://ctchicks.net/<?= $cat ?>/delhi/"><button>Delhi</button></a>
+            <a href="https://ctchicks.net/<?= $cat ?>/indore/"><button>Indore</button></a>
+            <a href="https://ctchicks.net/<?= $cat ?>/bangalore/"><button>Bangalore</button></a>
+            <a href="https://ctchicks.net/<?= $cat ?>/pune/"><button>Pune</button></a>
+            <a href="https://ctchicks.net/<?= $cat ?>/jaipur/"><button>Jaipur</button></a>
+            <a href="https://ctchicks.net/<?= $cat ?>/gurgaon/"><button>Gurgaon</button></a>
+            <a href="https://ctchicks.net/<?= $cat ?>/hyderabad/"><button>Hyderabad</button></a>
+            <a href="https://ctchicks.net/<?= $cat ?>/kochi/"><button>Kochi</button></a>
         </div>
         <h4>Areas Of <?= ucwords($city) ?></h4>
         <div class="top-cities-of-india" id="areasOfCity">

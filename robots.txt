@@ -3,4 +3,4 @@ Allow: /
 Disallow: /search/?
 Disallow: /call-girls/*/*/call-girl-*
 
-Sitemap: https://in.ctchicks.com/sitemap.xml
+Sitemap: https://ctchicks.net/sitemap.xml

@@ -35,12 +35,12 @@ $result = mysqli_query($con, $profile_query);
 if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
 } else {
-    header("Location: https://ctchicks.com/404");
+    header("Location: https://ctchicks.net/404");
 }
 
 
 // URL of the sitemap
-$sitemap_url = 'https://ctchicks.com/sitemap.xml';
+$sitemap_url = 'https://ctchicks.net/sitemap.xml';
 
 // Fetch the sitemap contents
 $sitemap_content = file_get_contents($sitemap_url);
@@ -901,7 +901,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                         $alt = json_decode($row['image_alt_'], true);
                         for ($j = 0; $j < count($a); $j++) {
                     ?>
-                            <div class="profile-image-grid-col"><img src="https://cdn.ctchicks.com/profiles/<?= $a[$j] ?>" alt="<?= $alt[$j] ?>" width="100%" height="100%"></div>
+                            <div class="profile-image-grid-col"><img src="https://cdn.ctchicks.net/profiles/<?= $a[$j] ?>" alt="<?= $alt[$j] ?>" width="100%" height="100%"></div>
                     <?php  }
                     } ?>
                 </div>
@@ -1048,7 +1048,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                                 $all_img_alt = json_decode($row['image_alt_'], true);
                             }
 
-                            $create_url = 'https://ctchicks.com/' . $all_row['callgirl_escort'] . '/' . $all_row['cities'] . '/';
+                            $create_url = 'https://ctchicks.net/' . $all_row['callgirl_escort'] . '/' . $all_row['cities'] . '/';
                             if (strtolower($all_row['areas']) == 'all') {
                                 $create_url .= $all_row['identity_cat'] . '/';
                             } else {

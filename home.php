@@ -1238,9 +1238,9 @@ table td{padding: 3%;border-bottom: 1px solid black;}
 
         <h1>Girls for friendship or dating near me</h1>
 
-        </p>You can easily find girls near you on <a href="<?=get_url() ?>">Ctchicks.com</a>. You can easily find not only straight girls but also male escorts, shemales, lesbians, and other LGBTQA+ communities. Recently, we have collaborated with the most trusted and famous escort agencies in India and published almost 1200+ new profiles to cater to genuine service. Nowadays, it's quite difficult to find genuine girls for dating as most of the dating apps are fake to earn money on the name of subscriptions. We don’t charge any subscription fees to our visitors. Yes, girls may ask for money, but we are not responsible for any transactions between clients and girls. So please make sure that you contact only verified profiles or numbers on our platform. Otherwise, avoid any advance payment.</p>
+        </p>You can easily find girls near you on <a href="<?=get_url() ?>">Ctchicks.net</a>. You can easily find not only straight girls but also male escorts, shemales, lesbians, and other LGBTQA+ communities. Recently, we have collaborated with the most trusted and famous escort agencies in India and published almost 1200+ new profiles to cater to genuine service. Nowadays, it's quite difficult to find genuine girls for dating as most of the dating apps are fake to earn money on the name of subscriptions. We don’t charge any subscription fees to our visitors. Yes, girls may ask for money, but we are not responsible for any transactions between clients and girls. So please make sure that you contact only verified profiles or numbers on our platform. Otherwise, avoid any advance payment.</p>
 
-        <h2>Why trust only Ctchicks.com for adult entertainment?</h2>
+        <h2>Why trust only Ctchicks.net for adult entertainment?</h2>
 
         <p>As this industry gets more vulnerable day by day. As we used to get news regarding frauds by pimps, brokers, or sometimes independent models, They used to take advance money and never provide any service. Girls used to leave a room or place immediately after taking payment, and clients left with disappointment and loss. To tackle such trust issues in major cities like Jaipur, Lucknow, Goa, etc., we introduce safety features on our website.</p>
 
