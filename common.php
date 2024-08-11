@@ -32,8 +32,8 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     let user = getCookie("confirm_ctchick");
     if (user != "") {
-        //var remove_agree_terms = document.getElementById("confirm-18");
-        //remove_agree_terms.style.display = "none";
+        var remove_agree_terms = document.getElementById("confirm-18");
+        remove_agree_terms.style.display = "none";
     }
 }
 
