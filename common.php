@@ -20,7 +20,7 @@ $noindex = '<meta name="robots" content="index, follow, max-snippet:-1, max-vide
     <link rel="shortcut icon" type="image/x-icon" href="'.$cdn_url.'icon/favicon.png" />
     ';
 $page_css = ' 
-<meta name="google-site-verification" content="OJnuULYZypg92ZykxEaJRmcvnjS75k4YNcGSLziVQ_Y" />
+<meta name="google-site-verification" content="wzD7JyCNBsUVl3FL5qJaRALaIosrEQZYgsaCFcp9lhg" />
 <!--<link rel="stylesheet" href="'.get_url().'assets/css/navbar.css" async>-->
 <link as="style"  rel="preload" href="'.get_url().'assets/fonts/remixicon.css">
 
