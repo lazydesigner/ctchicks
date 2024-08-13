@@ -248,7 +248,8 @@ if (!$city_result) {
 <header>
         <nav>
             <div class="main-ul">
-                <div class="brand"><a href="<?= get_url() ?>">CtChicks</a>
+            <div class="brand"><a href="<?= get_url() ?>"><img src="https://ctchicks.com/home/assets/images/logo.webp" width="100%"
+        height="100%" alt="ctckicks escort service  logo" loading="lazy"></a>
                 </div>
                 <ul class="nav-ul">
                     <li><a href="<?= get_url() ?>">Home</a></li>
@@ -278,7 +279,7 @@ if (!$city_result) {
             <h1>Ctchicks - Contact Us</h1>
         </div>
         <div class="container">
-            <form action="">
+            <!-- <form action="">
                 <div class="contact-form-row">
                     <div class="contact-form-group">
                         <label for="">First Name</label>
@@ -306,7 +307,10 @@ if (!$city_result) {
                 <div class="contact-form-group">
                     <button>Send</button>
                 </div>
-            </form>
+            </form> -->
+
+            <div><strong>Email : </strong><a href="">Remanescorts@gmail.com</a></div>
+            <div><strong>Phone : </strong><a href="">+91 00000 00000</a></div>
 
         </div>
 

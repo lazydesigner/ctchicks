@@ -468,20 +468,21 @@ table td{padding: 3%;border-bottom: 1px solid black;}
             background-color: white;
         }
 
-        .grid-items h3{
+        .grid-items .h3_{
             text-align: center;
             font-size: 1.3rem;
+            font-weight: 700;
             display: flex;
             justify-content: center;
             gap: 2%;
         }
-        .grid-items h3 span{
+        .grid-items .h3_ span{
             color: tomato;
             display: block;
             position: relative;
         }
 
-        .grid-items h3 span::after{
+        .grid-items .h3_ span::after{
             content: '';
             width: 0%;
             height: 25px;
@@ -504,12 +505,12 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 width: 100%;
             }
         }
-.grid-items h3 {
+.grid-items .h3_ {
             text-align: center;
             font-size: 1.3rem;
         }
 
-        .grid-items h3 span {
+        .grid-items .h3_ span {
             color: tomato;
             position: relative;
         }
@@ -578,7 +579,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
 
         <div class="city-grid">
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"A"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"A"</span></div>
                 <a href="<?=get_url() ?>call-girls/agra/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -661,7 +662,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"B"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"B"</span></div>
                 <a href="<?=get_url() ?>call-girls/bangalore/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -698,7 +699,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
             </div>
             <div class="grid-items">
 
-                <h3>Best Call girl in City <span>"C"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"C"</span></div>
                 <a href="<?=get_url() ?>call-girls/chennai/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -723,7 +724,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"D"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"D"</span></div>
                 <a href="<?=get_url() ?>call-girls/dehradun/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -748,7 +749,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"F"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"F"</span></div>
                 <a href="<?=get_url() ?>call-girls/faridabad/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -762,7 +763,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"G"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"G"</span></div>
                 <a href="<?=get_url() ?>call-girls/goa/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -831,7 +832,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"H"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"H"</span></div>
                 <a href="<?=get_url() ?>call-girls/hyderabad/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -856,7 +857,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"J"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"J"</span></div>
                 <a href="<?=get_url() ?>call-girls/jalandhar/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -903,7 +904,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"K"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"K"</span></div>
                 <a href="<?=get_url() ?>call-girls/kanpur/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -928,7 +929,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"L"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"L"</span></div>
                 <a href="<?=get_url() ?>call-girls/lucknow/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -953,7 +954,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"M"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"M"</span></div>
                 <a href="<?=get_url() ?>call-girls/mysore/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -978,7 +979,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"P"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"P"</span></div>
                 <a href="<?=get_url() ?>call-girls/pune/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -992,7 +993,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"S"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"S"</span></div>
                 <a href="<?=get_url() ?>call-girls/surat/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -1006,7 +1007,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Call girl in City <span>"T"</span></h3>
+                <div class="h3_">Best Call girl in City <span>"T"</span></div>
                 <a href="<?=get_url() ?>call-girls/thane/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -1033,7 +1034,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
 
 <div class="city-grid">
             <div class="grid-items">
-                <h3>Best Escorts in City <span>"A"</span></h3>
+                <div class="h3_">Best Escorts in City <span>"A"</span></div>
                 <a href="<?=get_url() ?>escorts/ahmedabad/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -1092,7 +1093,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Escorts in City <span>"B"</span></h3>
+                <div class="h3_">Best Escorts in City <span>"B"</span></div>
                 <a href="<?=get_url() ?>escorts/bangalore/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -1118,7 +1119,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
             </div>
             <div class="grid-items">
 
-                <h3>Best Escorts in City <span>"C"</span></h3>
+                <div class="h3_">Best Escorts in City <span>"C"</span></div>
                 <a href="<?=get_url() ?>escorts/chennai/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -1132,7 +1133,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Escorts in City <span>"D"</span></h3>
+                <div class="h3_">Best Escorts in City <span>"D"</span></div>
                 <a href="<?=get_url() ?>escorts/dehradun/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -1157,7 +1158,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Escorts in City <span>"G"</span></h3>
+                <div class="h3_">Best Escorts in City <span>"G"</span></div>
                 <a href="<?=get_url() ?>escorts/guwahati/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -1171,7 +1172,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Escorts in City <span>"F"</span></h3>
+                <div class="h3_">Best Escorts in City <span>"F"</span></div>
                 <a href="<?=get_url() ?>escorts/faridabad/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -1185,7 +1186,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Escorts in City <span>"K"</span></h3>
+                <div class="h3_">Best Escorts in City <span>"K"</span></div>
                 <a href="<?=get_url() ?>escorts/kanpur/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -1200,7 +1201,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
             </div>
             
             <div class="grid-items">
-                <h3>Best Escorts in City <span>"L"</span></h3>
+                <div class="h3_">Best Escorts in City <span>"L"</span></div>
                 <a href="<?=get_url() ?>escorts/lucknow/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
@@ -1214,7 +1215,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
                 </a>
             </div>
             <div class="grid-items">
-                <h3>Best Escorts in City <span>"P"</span></h3>
+                <div class="h3_">Best Escorts in City <span>"P"</span></div>
                 <a href="<?=get_url() ?>escorts/pune/">
                     <div class="item-city-name">
                         <div class="location-logo"><img src="<?=get_url() ?>home/assets/loca.png" width="100%" height="100%" alt=""></div>
