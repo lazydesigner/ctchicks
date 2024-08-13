@@ -66,7 +66,8 @@ if ($sitemap_content !== false) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?= $inde ?>
+    <meta name="robots" content="noindex, nofollow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+        <link rel="shortcut icon" type="image/x-icon" href="'.$cdn_url.'icon/favicon.png" />
     <title><?= $row['page_title'] ?></title>
     <meta name="description" content="<?= $row['meta_description'] ?>" />
     <link rel="canonical" href="<?=get_url() ?><?= $cat . '/' . $_GET['city'] . '/' . $_GET['area'] . '/' . $id . '/' ?>" />
