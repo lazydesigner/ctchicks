@@ -22,7 +22,7 @@ $noindex = '<meta name="robots" content="index, follow, max-snippet:-1, max-vide
 $page_css = ' 
 <meta name="google-site-verification" content="wzD7JyCNBsUVl3FL5qJaRALaIosrEQZYgsaCFcp9lhg" />
 <!--<link rel="stylesheet" href="'.get_url().'assets/css/navbar.css" async>-->
-<link as="style"  rel="preload" href="'.get_url().'home/assets/fonts/remixicon.css">
+<link as="style"  rel="preload" href="'.get_url().'fonts/remixicon.css">
 
 <script>
 function setCookie(cname, cvalue, exdays) {
