@@ -474,6 +474,7 @@ table td{padding: 3%;border-bottom: 1px solid black;}
             font-weight: 700;
             display: flex;
             justify-content: center;
+            margin-top: 5%;
             gap: 2%;
         }
         .grid-items .h3_ span{
