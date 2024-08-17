@@ -17,5 +17,6 @@ Disallow: /0*
 
 Disallow: /call-girls/*/*/call-girl-*
 Disallow: /escorts/*/*/escort-*
+Disallow: /escorts
 
 Sitemap: https://ctchicks.net/sitemap.xml
