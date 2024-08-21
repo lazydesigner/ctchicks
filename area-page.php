@@ -41,7 +41,7 @@ if (!mysqli_num_rows($looking_for_city_area_result)) {
 
 if($cat == 'call-girls'){
     $meta_title = ' Call girls in '.ucwords($area) .'('. ucwords($city) .') with Real Phone Number';
-    $meta_description = "Hey! I am independent call girl near  ucwords($area) in ucwords($city), I offer services at low prices. I'm offering you these services at your home or hotel room.";
+    $meta_description = "Hey! I am independent call girl near  ".ucwords($area)." in ".ucwords($city).", I offer services at low prices. I'm offering you these services at your home or hotel room.";
 }else{
     $meta_title = ' Escorts in '.ucwords($area).'('. ucwords($city) .') with Real Phone Number';
     $meta_description = "Hey! I am independent Escorts near  ucwords($area) in ucwords($city), I offer services at low prices. I'm offering you these services at your home or hotel room."; 
